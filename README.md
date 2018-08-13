@@ -30,6 +30,8 @@ Note that in the second case, the ``subfigure`` style will override some of the 
 Example
 -------
 
+![alt text](examples/figures/fig3.jpg)
+
 ![alt text](examples/figures/fig1.jpg)
 
 **Note:** See the ``examples/`` directory for more!
