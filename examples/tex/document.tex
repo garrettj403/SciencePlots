@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\geometry{a4paper}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{pgfplots}  % This package is required for the PGF plots
+
+\begin{document}
+
+\section{Single figures}
+
+\blindtext
+\blindtext
+
+\begin{figure}[h!]
+\centering 
+\input{../figures/fig1.pgf}
+\caption{An example figure.}
+\end{figure}
+
+\blindtext
+\blindtext
+
+\section{Subfigures}
+
+\blindtext
+\blindtext
+
+\begin{figure}[h!]
+\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    \centering
+    \input{../figures/fig2.pgf}
+    \caption{Subfigure 1}
+    \end{subfigure}\hfill
+    %
+    \begin{subfigure}[b]{0.49\textwidth}
+    \centering
+    \input{../figures/fig2.pgf}
+    \caption{Subfigure 2}
+    \end{subfigure}
+\caption{An example of the subfigure style.}
+\end{figure}
+
+\blindtext
+
+\end{document}  
