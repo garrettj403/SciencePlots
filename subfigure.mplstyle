@@ -1,4 +1,4 @@
-# Make subfigure plots slightly smaller so that they fit on the page
+# Make subfigure plots slightly narrower so that they fit side-by-side on the page
 
 figure.figsize : 2.9, 2.625
 
