@@ -2035,7 +2035,7 @@
 \pgftext[x=0.210764in,y=1.431130in,,bottom,rotate=90.000000]{\rmfamily\fontsize{10.000000}{12.000000}\selectfont \(\displaystyle I_\mathrm{{dc}}^0 / I_\mathrm{{gap}}\)}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}} %
+\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}}%
 \pgfusepath{clip}%
 \pgfsetrectcap%
 \pgfsetroundjoin%
@@ -2096,7 +2096,7 @@
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}} %
+\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}}%
 \pgfusepath{clip}%
 \pgfsetrectcap%
 \pgfsetroundjoin%
@@ -2162,7 +2162,7 @@
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}} %
+\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}}%
 \pgfusepath{clip}%
 \pgfsetrectcap%
 \pgfsetroundjoin%
@@ -2223,7 +2223,7 @@
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}} %
+\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}}%
 \pgfusepath{clip}%
 \pgfsetrectcap%
 \pgfsetroundjoin%
@@ -2283,7 +2283,7 @@
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}} %
+\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}}%
 \pgfusepath{clip}%
 \pgfsetrectcap%
 \pgfsetroundjoin%
@@ -2338,7 +2338,7 @@
 \pgfusepath{stroke}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}} %
+\pgfpathrectangle{\pgfqpoint{0.492400in}{0.422430in}}{\pgfqpoint{2.712500in}{2.017400in}}%
 \pgfusepath{clip}%
 \pgfsetrectcap%
 \pgfsetroundjoin%
