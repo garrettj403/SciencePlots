@@ -3,7 +3,7 @@ Science Plots
 
 *Format Matplotlib for scientific plotting* 
 
-This repo has Matplotlib styles to format your plots for scientific papers, presentations or theses.
+This repo has Matplotlib styles to format your plots for scientific papers, presentations and theses.
 
 Installation
 ------------
@@ -15,23 +15,26 @@ import matplotlib
 print(matplotlib.get_configdir())
 ```
 
-You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory). If your computer is setup like mine, you can use the Makefile contained within the repo to do this automatically.
+You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory). If you're on macOS, you can run:
+
+```bash
+cp *.mplstyle ~/.matplotlib/stylelib/
+```
 
 Using the Styles
 ----------------
 
-Whenever you want to use one of these styles, simply add the following to the top of your python script:
+``science.mplstyle`` is the main Matplotlib style that you should alway import. Whenever you want to use it, simply add the following to the top of your python script:
 
 ```python
 import matplotlib.pyplot as plt
  
 plt.style.use('science')
 # or
-plt.style.use(['science','subfigure'])
+plt.style.use(['science','ieee'])
 ```
-In the second case, the ``subfigure`` style will override some of the parameters from the ``science`` style.
 
-You can also use the styles temporarily by:
+In the second case, the ``ieee`` style will override some of the parameters from the main ``science`` style in order to configure the plot for IEEE graphics (column width, fontsize, etc.). You can also use any of the styles temporarily by:
 
 ```python
 with plt.style.context(['science']):
