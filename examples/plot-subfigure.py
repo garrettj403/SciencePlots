@@ -13,10 +13,9 @@ def model(x, p):
 fig, ax = plt.subplots()
 for p in [10, 15, 20, 30, 50, 100]:
     ax.plot(x, model(x, p), label=p)
-ax.legend(title=r'Order')
-ax.set(xlabel=r'$V_0 / V_\mathrm{{gap}}$')
-ax.set(ylabel=r'$I_\mathrm{{dc}}^0 / I_\mathrm{{gap}}$')
+ax.legend(title='Order')
+ax.set(xlabel='Voltage (mV)')
+ax.set(ylabel='Current ($\mu$A)')
 ax.autoscale(tight=True)
 fig.savefig('figures/fig2.pdf')
-fig.savefig('figures/fig2.pgf')
 fig.savefig('figures/fig2.jpg', dpi=300)
