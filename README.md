@@ -57,10 +57,18 @@ Please feel free to add to this repo! For example, it would be good to add style
 Examples
 --------
 
-![alt text](examples/figures/fig3.jpg)
+The ``science`` style:
 
 ![alt text](examples/figures/fig1.jpg)
 
+The ``science`` + ``scatter`` styles:
+
+![alt text](examples/figures/fig3.jpg)
+
+The ``science`` + ``subfigure`` styles:
+
 ![alt text](examples/subfigure-example.png)
+
+This example is from my DPhil thesis. It shows how the ``subfigure`` style can be used to generate plots that fit side-by-side on A4 paper.
 
 **Note:** See the ``examples/`` directory for more!
