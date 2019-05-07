@@ -1,7 +1,7 @@
-# Setup plots for IEEE papers
+# Matplotlib style for IEEE plots
 
 # Set color cycle
-# Set line style cycle as well (for black and white graphs)
+# Set line style as well for black and white graphs
 axes.prop_cycle : (cycler('color', ['k', 'r', 'b', 'g']) + cycler('ls', ['-', '--', ':', '-.']))
 
 # Set default figure size
