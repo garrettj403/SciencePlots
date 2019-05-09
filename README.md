@@ -46,7 +46,7 @@ To use any of the styles temporarily, you can use:
 ```python
 with plt.style.context(['science', 'subfigure']):
     plt.plot(x, y)
-plt.show()
+    plt.show()
 ```
 
 Contribution
@@ -70,5 +70,9 @@ The ``science`` + ``subfigure`` styles:
 ![alt text](examples/subfigure-example.png)
 
 This example is from my DPhil thesis. It shows how the ``subfigure`` style can be used to generate plots that fit side-by-side on A4 paper.
+
+You can also combine these styles with the other styles that come with Matplotlib. For example, the ``dark_background`` + ``science`` + ``high-vis`` styles:
+
+![alt text](examples/figures/fig5.jpg)
 
 **Note:** See the ``examples/`` directory for more!
