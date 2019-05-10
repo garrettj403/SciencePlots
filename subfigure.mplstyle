@@ -1,9 +1,0 @@
-# Matplotlib style for sub-figures
-# Make subfigure plots slightly narrower so that they fit side-by-side on an A4 page
-
-figure.figsize : 2.9, 2.625
-
-legend.fontsize : 9
-axes.labelsize : 9
-xtick.labelsize : 9
-ytick.labelsize : 9

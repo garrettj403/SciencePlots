@@ -65,12 +65,6 @@ The ``science`` + ``scatter`` styles:
 
 ![alt text](examples/figures/fig3.jpg)
 
-The ``science`` + ``subfigure`` styles:
-
-![alt text](examples/subfigure-example.png)
-
-This example is from my DPhil thesis. It shows how the ``subfigure`` style can be used to generate plots that fit side-by-side on A4 paper.
-
 You can also combine these styles with the other styles that come with Matplotlib. For example, the ``dark_background`` + ``science`` + ``high-vis`` styles:
 
 ![alt text](examples/figures/fig5.jpg)
