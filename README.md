@@ -8,7 +8,7 @@ This repo has Matplotlib styles to format your plots for scientific papers, pres
 Installation
 ------------
 
-Put the ``*.mplstyle`` files in your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
+Put all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
 
 ```python
 import matplotlib
@@ -19,7 +19,7 @@ You should get back something like ``/home/garrett/.matplotlib``. You would then
 
 ```bash
 mkdir -p ~/.matplotlib/stylelib/
-cp *.mplstyle ~/.matplotlib/stylelib/
+cp styles/*.mplstyle ~/.matplotlib/stylelib/
 ```
 
 Using the Styles
