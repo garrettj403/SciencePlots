@@ -45,6 +45,7 @@ To use any of the styles temporarily, you can use:
 
 ```python
 with plt.style.context(['science', 'subfigure']):
+    plt.figure()
     plt.plot(x, y)
     plt.show()
 ```
@@ -60,6 +61,10 @@ Examples
 The ``science`` style:
 
 ![alt text](examples/figures/fig1.jpg)
+
+The ``science`` + ``high-vis`` styles:
+
+![alt text](examples/figures/fig4.jpg)
 
 The ``science`` + ``scatter`` styles:
 
