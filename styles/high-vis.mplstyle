@@ -1,4 +1,4 @@
 # Matplotlib style for high visability plots (i.e., bright colors!!!)
 
 # Set color cycle
-axes.prop_cycle : (cycler('color', ["0d49fb", "e6091c", "26eb47", "8936df", "fec32d", "25d7fd"]) + cycler('ls', ['-', '--', '-.', '-', '--', '-.']))
+axes.prop_cycle : (cycler('color', ["0d49fb", "e6091c", "26eb47", "8936df", "fec32d", "25d7fd"]) + cycler('ls', ['-', '--', '-.', ':', '-', '--']))
