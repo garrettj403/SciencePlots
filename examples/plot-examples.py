@@ -3,12 +3,11 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 
-x = np.linspace(0.75, 1.25, 201)
-
 def model(x, p):
     return x ** (2 * p + 1) / (1 + x ** (2 * p))
 
 with plt.style.context(['science']):
+    x = np.linspace(0.75, 1.25, 201)
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -20,8 +19,9 @@ with plt.style.context(['science']):
     fig.savefig('figures/fig1.jpg', dpi=300)
 
 with plt.style.context(['science', 'ieee']):
+    x = np.linspace(0.75, 1.25, 201)
     fig, ax = plt.subplots()
-    for p in [10, 15, 20, 30, 50, 100]:
+    for p in [10, 20, 50]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
     ax.set(xlabel='Voltage (mV)')
@@ -31,7 +31,6 @@ with plt.style.context(['science', 'ieee']):
     fig.savefig('figures/fig2.jpg', dpi=300)
 
 with plt.style.context(['science', 'scatter']):
-
     fig, ax = plt.subplots(figsize=(4,4))
     ax.plot([-2, 2], [-2, 2], 'k--')
     ax.fill_between([-2, 2], [-2.2, 1.8], [-1.8, 2.2], color='dodgerblue', alpha=0.2, lw=0)
@@ -48,6 +47,7 @@ with plt.style.context(['science', 'scatter']):
     fig.savefig('figures/fig3.jpg', dpi=300)
 
 with plt.style.context(['science', 'high-vis']):
+    x = np.linspace(0.75, 1.25, 201)
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -59,6 +59,7 @@ with plt.style.context(['science', 'high-vis']):
     fig.savefig('figures/fig4.jpg', dpi=300)
 
 with plt.style.context(['dark_background', 'science', 'high-vis']):
+    x = np.linspace(0.75, 1.25, 201)
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
