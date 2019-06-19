@@ -74,7 +74,10 @@ You can also combine these styles with the other styles that come with Matplotli
 
 ![alt text](examples/figures/fig5.jpg)
 
-**Color Styles**
+**Note:** See the ``examples/`` directory for more!
+
+Color Cycles
+------------
 
 The ``science`` + ``bright`` styles:
 
@@ -88,4 +91,4 @@ The ``science`` + ``muted`` styles:
 
 ![alt text](examples/figures/fig8.jpg)
 
-**Note:** See the ``examples/`` directory for more!
+**Note:** The 3 styles above are from Paul Tot's website (https://personal.sron.nl/~pault/).

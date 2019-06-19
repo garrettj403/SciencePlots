@@ -1,4 +1,5 @@
 # Matplotlib style for IEEE plots
+# This style should work for most two-column journals
 
 # Set color cycle
 # Set line style as well for black and white graphs
