@@ -74,4 +74,18 @@ You can also combine these styles with the other styles that come with Matplotli
 
 ![alt text](examples/figures/fig5.jpg)
 
+**Color Styles**
+
+The ``science`` + ``bright`` styles:
+
+![alt text](examples/figures/fig6.jpg)
+
+The ``science`` + ``vibrant`` styles:
+
+![alt text](examples/figures/fig7.jpg)
+
+The ``science`` + ``muted`` styles:
+
+![alt text](examples/figures/fig8.jpg)
+
 **Note:** See the ``examples/`` directory for more!

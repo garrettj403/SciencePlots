@@ -1,0 +1,6 @@
+# Muted color scheme
+# color-blind safe
+# from Paul Tot's website: https://personal.sron.nl/~pault/
+
+# Set color cycle
+axes.prop_cycle : cycler('color', ['332288', '88CCEE', '44AA99', '117733', '999933', 'DDCC77', 'CC6677', '882255', 'AA4499', 'DDDDDD'])

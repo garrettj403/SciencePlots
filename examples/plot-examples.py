@@ -69,3 +69,41 @@ with plt.style.context(['dark_background', 'science', 'high-vis']):
     ax.autoscale(tight=True)
     fig.savefig('figures/fig5.pdf')
     fig.savefig('figures/fig5.jpg', dpi=300)
+
+# Plot different color cycles 
+
+with plt.style.context(['science', 'bright']):
+    x = np.linspace(0.75, 1.25, 201)
+    fig, ax = plt.subplots()
+    for p in [5, 10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.set(xlabel='Voltage (mV)')
+    ax.set(ylabel='Current ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig6.pdf')
+    fig.savefig('figures/fig6.jpg', dpi=300)
+
+with plt.style.context(['science', 'vibrant']):
+    x = np.linspace(0.75, 1.25, 201)
+    fig, ax = plt.subplots()
+    for p in [5, 10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.set(xlabel='Voltage (mV)')
+    ax.set(ylabel='Current ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig7.pdf')
+    fig.savefig('figures/fig7.jpg', dpi=300)
+
+with plt.style.context(['science', 'muted']):
+    x = np.linspace(0.75, 1.25, 201)
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100, 500]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order', fontsize=7)
+    ax.set(xlabel='Voltage (mV)')
+    ax.set(ylabel='Current ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig8.pdf')
+    fig.savefig('figures/fig8.jpg', dpi=300)

@@ -1,0 +1,6 @@
+# Vibrant color scheme
+# color-blind safe
+# from Paul Tot's website: https://personal.sron.nl/~pault/
+
+# Set color cycle
+axes.prop_cycle : cycler('color', ['0077BB', '33BBEE', '009988', 'EE7733', 'CC3311', 'EE3377', 'BBBBBB'])
