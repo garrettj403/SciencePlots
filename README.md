@@ -39,7 +39,7 @@ You can also combine multiple styles together by:
 plt.style.use(['science','ieee'])
 ```
 
-In this case, the ``ieee`` style will override some of the parameters from the main ``science`` style in order to configure the plot for IEEE papers (column width, fontsize, etc.). 
+In this case, the ``ieee`` style will override some of the parameters from the main ``science`` style in order to configure the plot for IEEE papers (column width, fontsizes, etc.). 
 
 To use any of the styles temporarily, you can use:
 
@@ -91,4 +91,4 @@ The ``science`` + ``muted`` styles:
 
 ![alt text](examples/figures/fig8.jpg)
 
-**Note:** The 3 styles above are from Paul Tot's website (https://personal.sron.nl/~pault/).
+**Note:** The ``bright``, ``vibrant`` and ``muted`` styles are from Paul Tot's website (https://personal.sron.nl/~pault/). **They are color-blind safe.**
