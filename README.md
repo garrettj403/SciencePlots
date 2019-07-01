@@ -91,4 +91,4 @@ The ``science`` + ``muted`` styles:
 
 ![alt text](examples/figures/fig8.jpg)
 
-**Note:** The ``bright``, ``vibrant`` and ``muted`` styles are from Paul Tot's website (https://personal.sron.nl/~pault/). **They are color-blind safe.**
+**Note:** The ``bright``, ``vibrant`` and ``muted`` styles are from Paul Tol's website (https://personal.sron.nl/~pault/). **They are color-blind safe.**
