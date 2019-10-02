@@ -42,4 +42,4 @@ font.family : serif
 
 # Use LaTeX for math formatting
 text.usetex : True
-text.latex.preamble : \usepackage{amsmath}, \usepackage[T1]{fontenc} 
+text.latex.preamble : \usepackage{amsmath}

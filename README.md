@@ -44,7 +44,7 @@ In this case, the ``ieee`` style will override some of the parameters from the m
 To use any of the styles temporarily, you can use:
 
 ```python
-with plt.style.context(['science', 'subfigure']):
+with plt.style.context(['science', 'ieee']):
     plt.figure()
     plt.plot(x, y)
     plt.show()
