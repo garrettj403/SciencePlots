@@ -20,6 +20,8 @@ You should get back something like ``/home/garrett/.matplotlib``. You would then
 ```bash
 mkdir -p ~/.matplotlib/stylelib/
 cp styles/*.mplstyle ~/.matplotlib/stylelib/
+cp styles/misc/*.mplstyle ~/.matplotlib/stylelib/
+cp styles/color/*.mplstyle ~/.matplotlib/stylelib/
 ```
 
 Using the Styles
