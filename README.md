@@ -94,3 +94,17 @@ The ``science`` + ``muted`` styles:
 ![alt text](examples/figures/fig8.jpg)
 
 **Note:** The ``bright``, ``vibrant`` and ``muted`` styles are from Paul Tol's website (https://personal.sron.nl/~pault/). **They are color-blind safe.**
+
+SciencePlots in Academic Papers
+-------------------------------
+
+The following papers use ``SciencePlots``:
+
+- J. Garrett, *et al.*, ["Simulating the Behavior of a 230 GHz SIS Mixer Using Multi-Tone Spectral Domain Analysis,"](https://ora.ox.ac.uk/objects/uuid:0fd4537d-258c-454a-bbfb-09b1bcd88d49/download_file?file_format=pdf&safe_filename=XXXX_final.pdf&type_of_work=Journal+article) *IEEE Trans. THz Sci. Technol.*, vol. 9, no. 9, pp. 540-548, Nov. 2019.
+
+- J. Garrett, A. Pollak, G. Yassin, and M. Henry, ["A Compact and Easy to Fabricate $E$-plane Waveguide Bend,"](https://ora.ox.ac.uk/objects/uuid:496855f9-be2a-47cd-b498-1753d8033f50/download_file?file_format=pdf&safe_filename=Waveguide_Bend__IEEE_MWCL_.pdf&type_of_work=Journal+article) *IEEE Microw. Wireless Compon. Lett.*,
+vol. 29, no. 8, pp. 529-531, Aug. 2019.
+
+- J. Garrett, ["A 230 GHz Focal Plane Array Using a Wide IF Bandwidth SIS Receiver,"](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis) DPhil thesis, University of Oxford, Oxford, UK, 2018.
+
+Feel free to add your paper to the list if you use ``SciencePlots``! 
