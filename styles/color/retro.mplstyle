@@ -1,0 +1,4 @@
+# Retro color style
+
+# Set color cycle
+axes.prop_cycle : cycler('color', ['4165c0', 'e770a2', '5ac3be', '696969', 'f79a1e', 'ba7dcd'])
