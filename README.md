@@ -5,7 +5,7 @@ Science Plots
 
 This repo has Matplotlib styles to format your plots for scientific papers, presentations and theses.
 
-![alt text](examples/figures/fig1.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 
 Installation
 ------------
@@ -64,25 +64,25 @@ Examples
 
 The ``science`` style:
 
-![alt text](examples/figures/fig1.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 
 The ``science`` + ``ieee`` styles:
 
-![alt text](examples/figures/fig2.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2.jpg" width="500">
 
 IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
 
 The ``science`` + ``high-vis`` styles:
 
-![alt text](examples/figures/fig4.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig4.jpg" width="500">
 
 The ``science`` + ``scatter`` styles:
 
-![alt text](examples/figures/fig3.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig3.jpg" width="500">
 
 You can also combine these styles with the other styles that come with Matplotlib. For example, the ``dark_background`` + ``science`` + ``high-vis`` styles:
 
-![alt text](examples/figures/fig5.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig5.jpg" width="500">
 
 **Note:** See the ``examples/`` directory for more!
 
@@ -91,19 +91,19 @@ Color Cycles
 
 The ``science`` + ``bright`` styles:
 
-![alt text](examples/figures/fig6.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
 
 The ``science`` + ``vibrant`` styles:
 
-![alt text](examples/figures/fig7.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig7.jpg" width="500">
 
 The ``science`` + ``muted`` styles:
 
-![alt text](examples/figures/fig8.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig8.jpg" width="500">
 
 The ``science`` + ``retro`` styles:
 
-![alt text](examples/figures/fig9.jpg)
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig9.jpg" width="500">
 
 **Note:** The ``bright``, ``vibrant`` and ``muted`` styles are from Paul Tol's website (https://personal.sron.nl/~pault/). **They are color-blind safe!**
 
