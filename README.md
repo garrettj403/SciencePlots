@@ -24,6 +24,7 @@ mkdir -p ~/.matplotlib/stylelib/
 cp styles/*.mplstyle ~/.matplotlib/stylelib/
 cp styles/misc/*.mplstyle ~/.matplotlib/stylelib/
 cp styles/color/*.mplstyle ~/.matplotlib/stylelib/
+cp styles/journals/*.mplstyle ~/.matplotlib/stylelib/
 ```
 
 Using the Styles
@@ -72,10 +73,6 @@ The ``science`` + ``ieee`` styles:
 
 IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
 
-The ``science`` + ``high-vis`` styles:
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig4.jpg" width="500">
-
 The ``science`` + ``scatter`` styles:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig3.jpg" width="500">
@@ -89,19 +86,23 @@ You can also combine these styles with the other styles that come with Matplotli
 Color Cycles
 ------------
 
-The ``science`` + ``bright`` styles:
+The ``high-vis`` color cycle:
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig4.jpg" width="500">
+
+The ``bright`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
 
-The ``science`` + ``vibrant`` styles:
+The ``vibrant`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig7.jpg" width="500">
 
-The ``science`` + ``muted`` styles:
+The ``muted`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig8.jpg" width="500">
 
-The ``science`` + ``retro`` styles:
+The ``retro`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig9.jpg" width="500">
 
