@@ -1,0 +1,35 @@
+# Matplotlib style for Jupyter Notebooks
+
+# Set default figure size
+figure.figsize : 8, 6
+
+# Set x axis
+xtick.major.size : 6
+xtick.major.width : 1
+xtick.minor.size : 3
+xtick.minor.width : 1
+
+# Set y axis
+ytick.major.size : 6
+ytick.major.width : 1
+ytick.minor.size : 3
+ytick.minor.width : 1
+
+# Fontsizes
+xtick.labelsize       : 16
+ytick.labelsize       : 16
+legend.fontsize       : 16
+legend.title_fontsize : 16
+axes.titlesize        : 16
+axes.labelsize        : 16
+
+# Set line widths
+axes.linewidth : 1
+grid.linewidth : 1
+lines.linewidth : 2.
+
+# Use sans-serif fonts
+font.family : sans-serif
+
+# Use LaTeX for math formatting
+text.usetex : False
