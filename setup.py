@@ -12,18 +12,12 @@ from setuptools.command.install import install
 import os
 import shutil
 import atexit
-# import fnmatch
 import glob
 
 import matplotlib
 
 def install_styles():
-
     # Find all style files
-    # stylefiles = []
-    # for root, dirnames, filenames in os.walk('styles'):
-    #     for filename in fnmatch.filter(filenames, '*.mplstyle'):
-    #         stylefiles.append(os.path.join(root, filename))
     stylefiles = glob.glob('styles/**/*.mplstyle', recursive=True)
 
     # Find stylelib directory (where the *.mplstyle files go)
@@ -36,8 +30,9 @@ def install_styles():
     for stylefile in stylefiles:
         print(os.path.basename(stylefile))
         shutil.copy(
-            os.path.join(os.path.dirname(__file__), stylefile),
-            os.path.join(mpl_stylelib_dir, stylefile))
+            # os.path.join(os.path.dirname(__file__), stylefile),
+            stylefile, 
+            os.path.join(mpl_stylelib_dir, os.path.basename(stylefile)))
 
 class PostInstallMoveFile(install):
     def __init__(self, *args, **kwargs):
