@@ -10,22 +10,20 @@ This repo has Matplotlib styles to format your plots for scientific papers, pres
 Installation
 ------------
 
-Put all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
+The easiest way to install SciencePlots is using ``pip``:
+
+```bash
+python -m pip install git+https://github.com/garrettj403/SciencePlots.git
+```
+
+This will move all of the ``*.mplstyle`` files into the appropriate directory. You can also do this manually, if you like. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
 
 ```python
 import matplotlib
 print(matplotlib.get_configdir())
 ```
 
-You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory). If you're on macOS, you can run:
-
-```bash
-mkdir -p ~/.matplotlib/stylelib/
-cp styles/*.mplstyle ~/.matplotlib/stylelib/
-cp styles/misc/*.mplstyle ~/.matplotlib/stylelib/
-cp styles/color/*.mplstyle ~/.matplotlib/stylelib/
-cp styles/journals/*.mplstyle ~/.matplotlib/stylelib/
-```
+You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory).
 
 Using the Styles
 ----------------

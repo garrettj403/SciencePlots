@@ -7,16 +7,18 @@ https://stackoverflow.com/questions/31559225/how-to-ship-or-distribute-a-matplot
 
 """
 
-from setuptools import setup
-from setuptools.command.install import install
-import os
-import shutil
 import atexit
 import glob
+import os
+import shutil
 
 import matplotlib
+from setuptools import setup
+from setuptools.command.install import install
+
 
 def install_styles():
+    
     # Find all style files
     stylefiles = glob.glob('styles/**/*.mplstyle', recursive=True)
 
@@ -30,7 +32,6 @@ def install_styles():
     for stylefile in stylefiles:
         print(os.path.basename(stylefile))
         shutil.copy(
-            # os.path.join(os.path.dirname(__file__), stylefile),
             stylefile, 
             os.path.join(mpl_stylelib_dir, os.path.basename(stylefile)))
 
