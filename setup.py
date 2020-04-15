@@ -17,6 +17,11 @@ from setuptools import setup
 from setuptools.command.install import install
 
 
+# Get description from README
+root = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
+    long_description = f.read()
+
 def install_styles():
     
     # Find all style files
@@ -42,10 +47,12 @@ class PostInstallMoveFile(install):
 
 setup(
     name='SciencePlots',
-    version='1.0.0',
+    version='1.0.3',
     author="John Garrett",
     author_email="garrettj403@gmail.com",
     description="Format Matplotlib for scientific plotting",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     license="MIT",
     keywords=[
         "matplotlib-style-sheets", 
@@ -56,26 +63,6 @@ setup(
         "python"
     ],
     url="https://github.com/garrettj403/SciencePlots/",
-    # py_modules=['styles'],
-    package_data = {
-        'styles': [
-            "misc/no-latex.mplstyle",
-            "misc/pgf.mplstyle",
-            "science.mplstyle",
-            "color/muted.mplstyle",
-            "color/vibrant.mplstyle",
-            "color/high-vis.mplstyle",
-            "color/bright.mplstyle",
-            "color/retro.mplstyle",
-            "scatter.mplstyle",
-            "journals/ieee.mplstyle",
-            "notebook.mplstyle"
-        ]
-    },
-    install_requires=[
-        'matplotlib',
-    ],
-    cmdclass={
-        'install': PostInstallMoveFile,
-    }
+    install_requires=['matplotlib',],
+    cmdclass={'install': PostInstallMoveFile,},
 )
