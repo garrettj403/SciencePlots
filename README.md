@@ -13,7 +13,11 @@ Installation
 The easiest way to install SciencePlots is using ``pip``:
 
 ```bash
+# for latest version
 python -m pip install git+https://github.com/garrettj403/SciencePlots.git
+
+# for last release
+pip install SciencePlots
 ```
 
 This will move all of the ``*.mplstyle`` files into the appropriate directory. You can also do this manually, if you like. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
@@ -120,4 +124,4 @@ vol. 29, no. 8, pp. 529-531, Aug. 2019.
 
 - J. Garrett, ["A 230 GHz Focal Plane Array Using a Wide IF Bandwidth SIS Receiver,"](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis) DPhil thesis, University of Oxford, Oxford, UK, 2018.
 
-Feel free to add your paper to the list if you use ``SciencePlots``! 
+If you use ``SciencePlots`` for your paper/thesis, feel free to add it to the list! 
