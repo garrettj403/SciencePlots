@@ -68,6 +68,17 @@ with plt.style.context(['dark_background', 'science', 'high-vis']):
     fig.savefig('figures/fig5.pdf')
     fig.savefig('figures/fig5.jpg', dpi=300)
 
+with plt.style.context(['science', 'notebook']):
+    fig, ax = plt.subplots()
+    for p in [10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.set(xlabel='Voltage (mV)')
+    ax.set(ylabel='Current ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig10.pdf')
+    fig.savefig('figures/fig10.jpg', dpi=300)
+
 # Plot different color cycles 
 
 with plt.style.context(['science', 'bright']):
