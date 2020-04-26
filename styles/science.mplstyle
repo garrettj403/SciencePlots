@@ -39,6 +39,7 @@ savefig.pad_inches : 0.05
 # Use serif fonts
 font.serif : Times New Roman
 font.family : serif
+mathtext.fontset : dejavuserif
 
 # Use LaTeX for math formatting
 text.usetex : True
