@@ -114,6 +114,17 @@ The ``retro`` color cycle:
 
 **Note:** The ``bright``, ``vibrant`` and ``muted`` styles are from Paul Tol's website (https://personal.sron.nl/~pault/). **They are color-blind safe!**
 
+FAQ
+---
+
+1. Errors related to Latex:
+
+   - The default ``science`` style uses Latex font rendering. If you do not have Latex on your computer or if you think that Latex takes too long, you can disable Latex using the ``no-latex`` style:
+
+      ```python
+      plt.style.use(['science','no-latex'])
+      ```
+
 SciencePlots in Academic Papers
 -------------------------------
 
