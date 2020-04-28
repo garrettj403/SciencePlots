@@ -124,3 +124,14 @@ with plt.style.context(['science', 'retro']):
     ax.autoscale(tight=True)
     fig.savefig('figures/fig9.pdf')
     fig.savefig('figures/fig9.jpg', dpi=300)
+
+with plt.style.context(['science', 'grid']):
+    fig, ax = plt.subplots()
+    for p in [10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.set(xlabel='Voltage (mV)')
+    ax.set(ylabel='Current ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig11.pdf')
+    fig.savefig('figures/fig11.jpg', dpi=300)

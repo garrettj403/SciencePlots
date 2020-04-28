@@ -1,0 +1,14 @@
+# Add grid lines and turn the legend frame on
+
+# Grid lines
+axes.grid : True
+grid.linestyle : :
+grid.color : k
+grid.alpha : 0.5
+grid.linewidth : 0.5
+
+# Legend
+legend.frameon : True
+legend.framealpha : 1.0
+legend.fancybox : True
+legend.numpoints : 1
