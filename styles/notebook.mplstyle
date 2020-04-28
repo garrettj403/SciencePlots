@@ -1,4 +1,4 @@
-# Matplotlib style for Jupyter Notebooks
+# Matplotlib style for Jupyter notebooks
 
 # Set default figure size
 figure.figsize : 8, 6
@@ -16,12 +16,12 @@ ytick.minor.size : 3
 ytick.minor.width : 1
 
 # Fontsizes
-xtick.labelsize       : 16
-ytick.labelsize       : 16
-legend.fontsize       : 16
+xtick.labelsize : 16
+ytick.labelsize : 16
+legend.fontsize : 16
 legend.title_fontsize : 16
-axes.titlesize        : 16
-axes.labelsize        : 16
+axes.titlesize : 16
+axes.labelsize : 16
 
 # Set line widths
 axes.linewidth : 1
