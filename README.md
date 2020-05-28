@@ -130,6 +130,7 @@ FAQ
       ```python
       plt.style.use(['science','no-latex'])
       ```
+   - For Windows users, you may need to manually add Latex to your environment path ([see issue](https://github.com/garrettj403/SciencePlots/issues/9)).
 
 SciencePlots in Academic Papers
 -------------------------------
