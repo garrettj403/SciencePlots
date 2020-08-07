@@ -13,14 +13,14 @@ Installation
 The easiest way to install SciencePlots is using ``pip``:
 
 ```bash
-# for latest version
+# for latest commit
 pip install git+https://github.com/garrettj403/SciencePlots.git
 
-# for last release
+# for lastest release
 pip install SciencePlots
 ```
 
-The pip installation will automatically move all of the ``*.mplstyle`` files into the appropriate directory. You can also do this manually, if you like. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
+The pip installation will automatically move all of the ``*.mplstyle`` files into the appropriate directory. If you like, you can also do this manually. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
 
 ```python
 import matplotlib
@@ -46,7 +46,7 @@ You can also combine multiple styles together by:
 plt.style.use(['science','ieee'])
 ```
 
-In this case, the ``ieee`` style will override some of the parameters from the main ``science`` style in order to configure the plot for IEEE papers (column width, fontsizes, etc.). 
+In this case, the ``ieee`` style will override some of the parameters from the ``science`` style in order to configure the plot for IEEE papers (column width, fontsizes, etc.). 
 
 To use any of the styles temporarily, you can use:
 
@@ -60,7 +60,7 @@ with plt.style.context(['science', 'ieee']):
 Examples
 --------
 
-The ``science`` style (the base style):
+The ``science`` style:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 
@@ -72,7 +72,7 @@ The ``science`` + ``ieee`` styles for IEEE papers:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2.jpg" width="500">
 
-IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
+   - IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
 
 The ``science`` + ``scatter`` styles for scatter plots:
 
@@ -113,12 +113,14 @@ The ``retro`` color cycle:
 
 **Note:** The ``bright``, ``vibrant`` and ``muted`` color cycles are from [Paul Tol's website](https://personal.sron.nl/~pault/). **They are color-blind safe!**
 
-Contribution
-------------
+Help and Contributing
+---------------------
 
-Please feel free to add to this repo! For example, it would be good to add styles for different journals or perhaps new color cycles.
+Please feel free to contribute to the SciencePlots repo! For example, it would be good to add new styles for different journals and add new color cycles. Before starting a new style or making any changes, please create an issue through the [GitHub issue tracker](https://github.com/garrettj403/SciencePlots/issues). That way we can discuss if the changes are necessary and the best approach.
 
-You can checkout [Matplotlib's documentation](https://matplotlib.org/tutorials/introductory/customizing.html) for more plotting options.
+If you need any help with SciencePlots, please first check the [FAQ](https://github.com/garrettj403/SciencePlots#faq) and search through the [previous GitHub issues](https://github.com/garrettj403/SciencePlots/issues). If you can't find an answer, create a new issue through the [GitHub issue tracker](https://github.com/garrettj403/SciencePlots/issues).
+
+You can checkout [Matplotlib's documentation](https://matplotlib.org/tutorials/introductory/customizing.html) for more information on plotting settings.
 
 FAQ
 ---
