@@ -125,11 +125,12 @@ FAQ
 
 1. Errors related to Latex:
 
-   - The default ``science`` style uses Latex font rendering. If you do not have Latex on your computer or if you think that Latex takes too long, you can disable Latex using the ``no-latex`` style:
+   - If you get an error saying ``RuntimeError: Failed to process string with tex because latex could not be found``, this means that you do not have Latex installed on your computer (or at least that Python/Matplotlib can't find it). You have two options: (1) install Latex, or (2) disable Latex using the ``no-latex`` option:
 
       ```python
       plt.style.use(['science','no-latex'])
       ```
+
    - For Windows users, you may need to manually add Latex to your environment path ([see issue](https://github.com/garrettj403/SciencePlots/issues/9)).
 
 SciencePlots in Academic Papers
@@ -145,4 +146,4 @@ The following papers use ``SciencePlots``:
 
 - J. Garrett, ["A 230 GHz Focal Plane Array Using a Wide IF Bandwidth SIS Receiver,"](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis) DPhil thesis, University of Oxford, Oxford, UK, 2018. ([open access](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis))
 
-If you use ``SciencePlots`` for your paper/thesis, feel free to add it to the list! 
+If you use ``SciencePlots`` in your paper/thesis, feel free to add it to the list! 
