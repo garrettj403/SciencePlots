@@ -1,2 +1,5 @@
 .ipynb_checkpoints/
 SciencePlots.egg-info/
+dist/
+
+TODO.md
