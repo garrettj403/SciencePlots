@@ -135,3 +135,25 @@ with plt.style.context(['science', 'grid']):
     ax.autoscale(tight=True)
     fig.savefig('figures/fig11.pdf')
     fig.savefig('figures/fig11.jpg', dpi=300)
+
+with plt.style.context(['science', 'high-contrast']):
+    fig, ax = plt.subplots()
+    for p in [10, 20, 50]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.set(xlabel='Voltage (mV)')
+    ax.set(ylabel='Current ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig12.pdf')
+    fig.savefig('figures/fig12.jpg', dpi=300)
+
+with plt.style.context(['science', 'light']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order', fontsize=7)
+    ax.set(xlabel='Voltage (mV)')
+    ax.set(ylabel='Current ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig13.pdf')
+    fig.savefig('figures/fig13.jpg', dpi=300)

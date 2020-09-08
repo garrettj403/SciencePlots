@@ -88,30 +88,41 @@ You can also combine these styles with the other styles that come with Matplotli
 
 **Note:** See the ``examples/`` directory for more!
 
-Color Cycles
-------------
+Color-blind Safe Color Cycles
+-----------------------------
+
+The ``bright`` color cycle (7 colors):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
+
+The ``vibrant`` color cycle (7 colors):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig7.jpg" width="500">
+
+The ``muted`` color cycle (10 colors):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig8.jpg" width="500">
+
+The ``high-contrast`` color cycle (3 colors):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig12.jpg" width="500">
+
+The ``light`` color cycle (9 colors):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig13.jpg" width="500">
+
+**Note:** These color cycles are from [Paul Tol's website](https://personal.sron.nl/~pault/).
+
+Other Color Cycles
+------------------
 
 The ``high-vis`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig4.jpg" width="500">
 
-The ``bright`` color cycle:
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
-
-The ``vibrant`` color cycle:
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig7.jpg" width="500">
-
-The ``muted`` color cycle:
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig8.jpg" width="500">
-
 The ``retro`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig9.jpg" width="500">
-
-**Note:** The ``bright``, ``vibrant`` and ``muted`` color cycles are from [Paul Tol's website](https://personal.sron.nl/~pault/). **They are color-blind safe!**
 
 Help and Contributing
 ---------------------
