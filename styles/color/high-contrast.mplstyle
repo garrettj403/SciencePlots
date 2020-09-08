@@ -1,0 +1,6 @@
+# High-contrast color scheme
+# color-blind safe
+# from Paul Tot's website: https://personal.sron.nl/~pault/
+
+# Set color cycle
+axes.prop_cycle : cycler('color', ['004488', 'DDAA33', 'BB5566'])
