@@ -1,5 +1,11 @@
-v1.0.4 (unreleased)
+v1.0.5 (8-Sep-2020)
 ===================
+
+- New color blind safe color cycles (``high-contrast.mplstyle``, ``light.mplstyle``). Taken from [Paul Tol's website](https://personal.sron.nl/~pault/).
+- Fixed color order in ``muted.mplstyle``, ``vibrant.mplstyle``, and ``bright.mplstyle``.
+
+v1.0.4 (14-Aug-2020)
+====================
 
 - New style: ``grid``
    - this will add grid lines

@@ -88,7 +88,7 @@ You can also combine these styles with the other styles that come with Matplotli
 
 **Note:** See the ``examples/`` directory for more!
 
-Color-blind Safe Color Cycles
+Color Blind Safe Color Cycles
 -----------------------------
 
 The ``bright`` color cycle (7 colors):
