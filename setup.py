@@ -13,6 +13,7 @@ import os
 import shutil
 
 import matplotlib
+import matplotlib.pyplot as plt
 from setuptools import setup
 from setuptools.command.install import install
 
@@ -39,10 +40,6 @@ def install_styles():
         shutil.copy(
             stylefile, 
             os.path.join(mpl_stylelib_dir, os.path.basename(stylefile)))
-
-    # Reload matplotlib styles
-    matplotlib.style.reload_library()
-
 
 class PostInstallMoveFile(install):
     def __init__(self, *args, **kwargs):
