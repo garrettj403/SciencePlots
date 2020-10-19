@@ -2,6 +2,7 @@ Science Plots
 =============
 
 [![PyPI version](https://badge.fury.io/py/SciencePlots.svg)](https://badge.fury.io/py/SciencePlots)
+[![DOI](https://zenodo.org/badge/144605189.svg)](https://zenodo.org/badge/latestdoi/144605189)
 
 *Matplotlib styles for scientific plotting* 
 
