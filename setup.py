@@ -48,7 +48,7 @@ class PostInstallMoveFile(install):
 
 setup(
     name='SciencePlots',
-    version='1.0.5',
+    version='1.0.6',
     author="John Garrett",
     author_email="garrettj403@gmail.com",
     description="Format Matplotlib for scientific plotting",

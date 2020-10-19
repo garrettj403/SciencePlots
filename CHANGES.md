@@ -1,9 +1,13 @@
-v1.0.6 (unreleased)
+v1.0.7 (unreleased)
 ===================
 
-- Added SciencePlots to Zenodo:
-   - archiving service
-- Misc changes to README:
+v1.0.6 (19-Oct-2020)
+====================
+
+- The main reason for this release is to trigger Zenodo:
+   - I've added SciencePlots to Zenodo (an archiving service).
+   - It only archives after new releases, so I will make a trivial version bump.
+- Trivial changes to README:
    - Added installation info for Google Colab, Jupyter Notebooks, etc.
    - Added PyPI badge
    - Added more papers to list
