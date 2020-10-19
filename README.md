@@ -1,6 +1,8 @@
 Science Plots
 =============
 
+[![PyPI version](https://badge.fury.io/py/SciencePlots.svg)](https://badge.fury.io/py/SciencePlots)
+
 *Matplotlib styles for scientific plotting* 
 
 This repo has Matplotlib styles to format your plots for scientific papers, presentations and theses.
