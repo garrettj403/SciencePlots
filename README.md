@@ -150,15 +150,15 @@ FAQ
 
    You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory).
 
-3. Using SciencePlots with Google Colab:
+3. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
 
-   - After installing SciencePlots in Google Colab, you will need to reload the style library. For example:
+   - After installing SciencePlots within one of these environments, you may need to reload the Matplotlib style library. For example:
 
       ```python
       !pip install SciencePlots
       import matplotlib.pyplot as plt
       plt.style.reload_library()
-      plt.style.use(['science', 'no-latex'])
+      plt.style.use('science')
       ```
 
 SciencePlots in Academic Papers
