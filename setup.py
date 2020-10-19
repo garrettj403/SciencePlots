@@ -40,6 +40,10 @@ def install_styles():
             stylefile, 
             os.path.join(mpl_stylelib_dir, os.path.basename(stylefile)))
 
+    # Reload matplotlib styles
+    matplotlib.style.reload_library()
+
+
 class PostInstallMoveFile(install):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
