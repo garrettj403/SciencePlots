@@ -182,3 +182,18 @@ The following papers use ``SciencePlots``:
 - J. Garrett, ["A 230 GHz Focal Plane Array Using a Wide IF Bandwidth SIS Receiver,"](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis) DPhil thesis, University of Oxford, Oxford, UK, 2018. ([open access](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis))
 
 If you use ``SciencePlots`` in your paper/thesis, feel free to add it to the list! 
+
+Citing SciencePlots
+-------------------
+
+You don't have to cite SciencePlots if you use it, but it's nice if you do:
+
+    @article{SciencePlots,
+      author       = {J. D. Garrett},
+      title        = {{SciencePlots (v1.0.6)}},
+      month        = oct,
+      year         = 2020,
+      publisher    = {Zenodo},
+      doi          = {10.5281/zenodo.4106650},
+      url          = {http://doi.org/10.5281/zenodo.4106650}
+    }

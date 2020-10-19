@@ -1,6 +1,10 @@
 v1.0.7 (unreleased)
 ===================
 
+- Trivial changes to README:
+   - add badge for Zenodo
+   - add info on citing SciencePlots
+   
 v1.0.6 (19-Oct-2020)
 ====================
 
