@@ -20,14 +20,7 @@ pip install git+https://github.com/garrettj403/SciencePlots.git
 pip install SciencePlots
 ```
 
-The pip installation will automatically move all of the ``*.mplstyle`` files into the appropriate directory. If you like, you can also do this manually. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
-
-```python
-import matplotlib
-print(matplotlib.get_configdir())
-```
-
-You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory).
+The pip installation will automatically move all of the ``*.mplstyle`` files into the appropriate directory. Please see the [FAQ](#FAQ) for more information and troubleshooting.
 
 Using the Styles
 ----------------
@@ -145,6 +138,28 @@ FAQ
       ```
 
    - For Windows users, you may need to manually add Latex to your environment path ([see issue](https://github.com/garrettj403/SciencePlots/issues/9)).
+
+2. Manual installation: 
+
+   - If you like, you can install the ``*.mplstyle`` files manually. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
+
+      ```python
+      import matplotlib
+      print(matplotlib.get_configdir())
+      ```
+
+   You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory).
+
+3. Using SciencePlots with Google Colab:
+
+   - After installing SciencePlots in Google Colab, you will need to reload the style library. For example:
+
+      ```python
+      !pip install SciencePlots
+      import matplotlib.pyplot as plt
+      plt.style.reload_library()
+      plt.style.use(['science', 'no-latex'])
+      ```
 
 SciencePlots in Academic Papers
 -------------------------------
