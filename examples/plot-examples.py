@@ -157,3 +157,14 @@ with plt.style.context(['science', 'light']):
     ax.autoscale(tight=True)
     fig.savefig('figures/fig13.pdf')
     fig.savefig('figures/fig13.jpg', dpi=300)
+
+with plt.style.context(['science', 'no-latex', 'cjk-fonts']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order', fontsize=7)
+    ax.set(xlabel='電壓 (mV)')
+    ax.set(ylabel='電流 ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig13.pdf')
+    fig.savefig('figures/fig13.jpg', dpi=300)

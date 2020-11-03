@@ -1,0 +1,4 @@
+# Use serif fonts
+font.serif : Noto Serif CJK TC, Noto Serif CJK SC, Noto Serif CJK JP, Noto Serif CJK KR, Times New Roman
+font.family : serif
+
