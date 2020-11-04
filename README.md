@@ -84,6 +84,15 @@ You can also combine these styles with the other styles that come with Matplotli
 
 **Note:** See the ``examples/`` directory for more!
 
+CJK Fonts
+---------
+
+You can use CJK fonts by adding the ``cjk-fonts`` style:
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14.jpg" width="500">
+
+See the [FAQ](https://github.com/garrettj403/SciencePlots#faq) for information on installing the CJK fonts.
+
 Color Blind Safe Color Cycles
 -----------------------------
 
