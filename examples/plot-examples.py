@@ -1,10 +1,12 @@
 """ An example of the 'science' theme. """
 
-import numpy as np 
-import matplotlib.pyplot as plt 
+import numpy as np
+import matplotlib.pyplot as plt
+
 
 def model(x, p):
     return x ** (2 * p + 1) / (1 + x ** (2 * p))
+
 
 x = np.linspace(0.75, 1.25, 201)
 
@@ -31,16 +33,19 @@ with plt.style.context(['science', 'ieee']):
     fig.savefig('figures/fig2.jpg', dpi=300)
 
 with plt.style.context(['science', 'scatter']):
-    fig, ax = plt.subplots(figsize=(4,4))
+    fig, ax = plt.subplots(figsize=(4, 4))
     ax.plot([-2, 2], [-2, 2], 'k--')
-    ax.fill_between([-2, 2], [-2.2, 1.8], [-1.8, 2.2], color='dodgerblue', alpha=0.2, lw=0)
+    ax.fill_between([-2, 2], [-2.2, 1.8], [-1.8, 2.2],
+                    color='dodgerblue', alpha=0.2, lw=0)
     for i in range(7):
         x1 = np.random.normal(0, 0.5, 10)
         y1 = x1 + np.random.normal(0, 0.2, 10)
         ax.plot(x1, y1, label=r"$^\#${}".format(i+1))
     ax.legend(title='Sample', loc=2)
-    ax.set_xlabel(r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$")
-    ax.set_ylabel(r"$\log_{10}\left(\frac{L_\mathrm{6.2}}{\mathrm{L}_\odot}\right)$")
+    ax.set_xlabel(
+        r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$")
+    ax.set_ylabel(
+        r"$\log_{10}\left(\frac{L_\mathrm{6.2}}{\mathrm{L}_\odot}\right)$")
     ax.set_xlim([-2, 2])
     ax.set_ylim([-2, 2])
     fig.savefig('figures/fig3.pdf')
@@ -79,7 +84,7 @@ with plt.style.context(['science', 'notebook']):
     fig.savefig('figures/fig10.pdf')
     fig.savefig('figures/fig10.jpg', dpi=300)
 
-# Plot different color cycles 
+# Plot different color cycles
 
 with plt.style.context(['science', 'bright']):
     fig, ax = plt.subplots()
@@ -158,13 +163,24 @@ with plt.style.context(['science', 'light']):
     fig.savefig('figures/fig13.pdf')
     fig.savefig('figures/fig13.jpg', dpi=300)
 
-with plt.style.context(['science', 'no-latex', 'cjk-fonts']):
-    fig, ax = plt.subplots()
-    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
-        ax.plot(x, model(x, p), label=p)
-    ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='電壓 (mV)')
-    ax.set(ylabel='電流 ($\mu$A)')
-    ax.autoscale(tight=True)
-    fig.savefig('figures/fig13.pdf')
-    fig.savefig('figures/fig13.jpg', dpi=300)
+# It's important to install Noto Serif CJK Fonts before run the example 14 and 15.
+# with plt.style.context(['science', 'no-latex', 'cjk-fonts']):
+#     fig, ax = plt.subplots()
+#     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+#         ax.plot(x, model(x, p), label=p)
+#     ax.legend(title='Order', fontsize=7)
+#     ax.set(xlabel='電壓 (mV)')
+#     ax.set(ylabel='電流 ($\mu$A)')
+#     ax.autoscale(tight=True)
+#     fig.savefig('figures/fig14.pdf')
+#     fig.savefig('figures/fig14.jpg', dpi=300)
+
+# with plt.style.context(['science', 'cjk-fonts']):
+#     fig, ax = plt.subplots()
+#     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+#         ax.plot(x, model(x, p), label=p)
+#     ax.legend(title='Order', fontsize=7)
+#     ax.set(xlabel='電壓电压電圧전압 (mV)')
+#     ax.set(ylabel='電流电流電気전류 ($\mu$A)')
+#     ax.autoscale(tight=True)
+#     fig.savefig('figures/fig15.pdf', backend='pgf')
