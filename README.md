@@ -196,7 +196,7 @@ FAQ
       Note that `matplotlib` may not find the fonts correctly. You can refresh the font cache by running:
 
       ```python
-      import matplot.font_manager as fm
+      import matplotlib.font_manager as fm
       fm._rebuild()
       ```
 
