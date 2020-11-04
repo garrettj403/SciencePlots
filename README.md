@@ -4,7 +4,7 @@ Science Plots
 [![PyPI version](https://badge.fury.io/py/SciencePlots.svg)](https://badge.fury.io/py/SciencePlots)
 [![DOI](https://zenodo.org/badge/144605189.svg)](https://zenodo.org/badge/latestdoi/144605189)
 
-*Matplotlib styles for scientific plotting* 
+*Matplotlib styles for scientific plotting*
 
 This repo has Matplotlib styles to format your plots for scientific papers, presentations and theses.
 
@@ -32,7 +32,7 @@ Using the Styles
 
 ```python
 import matplotlib.pyplot as plt
- 
+
 plt.style.use('science')
 ```
 
@@ -42,7 +42,7 @@ You can also combine multiple styles together by:
 plt.style.use(['science','ieee'])
 ```
 
-In this case, the ``ieee`` style will override some of the parameters from the ``science`` style in order to configure the plot for IEEE papers (column width, fontsizes, etc.). 
+In this case, the ``ieee`` style will override some of the parameters from the ``science`` style in order to configure the plot for IEEE papers (column width, fontsizes, etc.).
 
 To use any of the styles temporarily, you can use:
 
@@ -142,7 +142,7 @@ FAQ
 
    - For Windows users, you may need to manually add Latex to your environment path ([see issue](https://github.com/garrettj403/SciencePlots/issues/9)).
 
-2. Manual installation: 
+2. Manual installation:
 
    - If you like, you can install the ``*.mplstyle`` files manually. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
 
@@ -164,6 +164,30 @@ FAQ
       plt.style.use('science')
       ```
 
+4. Use the `cjk-fonts` Style:
+
+   - Install the [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/) before use this style. You can download and install from the given link or install with the packages manager:
+
+      ```bash
+      # Ubuntu / Debian
+      $ sudo apt update
+      $ sudo apt install fonts-noto-cjk
+
+      # macOS
+      $ brew tap homebrew/cask-fonts
+      $ brew cask install font-noto-serif-cjk-tc
+      $ brew cask install font-noto-serif-cjk-sc
+      $ brew cask install font-noto-serif-cjk-jp
+      $ brew cask install font-noto-serif-cjk-kr
+
+      # archlinux
+      $ sudo pacman -S noto-fonts-cjk
+      ```
+
+   However, `matplotlib` sometimes may not find the fonts correctly, and you should refresh the fonts cache by running `matplotlib.font_manager._rebuild()`.
+
+   - You should use the parameter `backend='pgf'` for the `savefig()` to use XeLaTeX instead of PdfLaTeX (this LaTeX engine can't work with CJK fonts properly). Besides, it can't export the `jpg` format when you use the parameter `backend='pgf'` for the `savefig()`.
+
 SciencePlots in Academic Papers
 -------------------------------
 
@@ -181,7 +205,7 @@ The following papers use ``SciencePlots``:
 
 - J. Garrett, ["A 230 GHz Focal Plane Array Using a Wide IF Bandwidth SIS Receiver,"](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis) DPhil thesis, University of Oxford, Oxford, UK, 2018. ([open access](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis))
 
-If you use ``SciencePlots`` in your paper/thesis, feel free to add it to the list! 
+If you use ``SciencePlots`` in your paper/thesis, feel free to add it to the list!
 
 Citing SciencePlots
 -------------------
