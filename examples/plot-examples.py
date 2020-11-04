@@ -1,4 +1,4 @@
-""" An example of the 'science' theme. """
+"""Plot examples of SciencePlot styles."""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,6 +8,8 @@ def model(x, p):
     return x ** (2 * p + 1) / (1 + x ** (2 * p))
 
 
+pparam = dict(xlabel='Voltage (mV)', ylabel='Current ($\mu$A)')
+
 x = np.linspace(0.75, 1.25, 201)
 
 with plt.style.context(['science']):
@@ -15,9 +17,8 @@ with plt.style.context(['science']):
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig1.pdf')
     fig.savefig('figures/fig1.jpg', dpi=300)
 
@@ -26,9 +27,8 @@ with plt.style.context(['science', 'ieee']):
     for p in [10, 20, 50]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig2.pdf')
     fig.savefig('figures/fig2.jpg', dpi=300)
 
@@ -42,10 +42,10 @@ with plt.style.context(['science', 'scatter']):
         y1 = x1 + np.random.normal(0, 0.2, 10)
         ax.plot(x1, y1, label=r"$^\#${}".format(i+1))
     ax.legend(title='Sample', loc=2)
-    ax.set_xlabel(
-        r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$")
-    ax.set_ylabel(
-        r"$\log_{10}\left(\frac{L_\mathrm{6.2}}{\mathrm{L}_\odot}\right)$")
+    xlbl = r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$"
+    ylbl = r"$\log_{10}\left(\frac{L_\mathrm{6.2}}{\mathrm{L}_\odot}\right)$"
+    ax.set_xlabel(xlbl)
+    ax.set_ylabel(ylbl)
     ax.set_xlim([-2, 2])
     ax.set_ylim([-2, 2])
     fig.savefig('figures/fig3.pdf')
@@ -56,9 +56,8 @@ with plt.style.context(['science', 'high-vis']):
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig4.pdf')
     fig.savefig('figures/fig4.jpg', dpi=300)
 
@@ -67,9 +66,8 @@ with plt.style.context(['dark_background', 'science', 'high-vis']):
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig5.pdf')
     fig.savefig('figures/fig5.jpg', dpi=300)
 
@@ -78,9 +76,8 @@ with plt.style.context(['science', 'notebook']):
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig10.pdf')
     fig.savefig('figures/fig10.jpg', dpi=300)
 
@@ -91,9 +88,8 @@ with plt.style.context(['science', 'bright']):
     for p in [5, 10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig6.pdf')
     fig.savefig('figures/fig6.jpg', dpi=300)
 
@@ -102,9 +98,8 @@ with plt.style.context(['science', 'vibrant']):
     for p in [5, 10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig7.pdf')
     fig.savefig('figures/fig7.jpg', dpi=300)
 
@@ -113,9 +108,8 @@ with plt.style.context(['science', 'muted']):
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100, 500]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig8.pdf')
     fig.savefig('figures/fig8.jpg', dpi=300)
 
@@ -124,9 +118,8 @@ with plt.style.context(['science', 'retro']):
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig9.pdf')
     fig.savefig('figures/fig9.jpg', dpi=300)
 
@@ -135,9 +128,8 @@ with plt.style.context(['science', 'grid']):
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig11.pdf')
     fig.savefig('figures/fig11.jpg', dpi=300)
 
@@ -146,9 +138,8 @@ with plt.style.context(['science', 'high-contrast']):
     for p in [10, 20, 50]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig12.pdf')
     fig.savefig('figures/fig12.jpg', dpi=300)
 
@@ -157,13 +148,14 @@ with plt.style.context(['science', 'light']):
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='Voltage (mV)')
-    ax.set(ylabel='Current ($\mu$A)')
     ax.autoscale(tight=True)
+    ax.set(**pparam)
     fig.savefig('figures/fig13.pdf')
     fig.savefig('figures/fig13.jpg', dpi=300)
 
-# It's important to install Noto Serif CJK Fonts before run the example 14 and 15.
+# Note: You need to install the Noto Serif CJK Fonts before running 
+# examples 14 and 15. See FAQ in README.
+
 # with plt.style.context(['science', 'no-latex', 'cjk-fonts']):
 #     fig, ax = plt.subplots()
 #     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
