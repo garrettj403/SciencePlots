@@ -87,11 +87,11 @@ You can also combine these styles with the other styles that come with Matplotli
 CJK Fonts
 ---------
 
-You can use CJK fonts by adding the ``cjk-fonts`` style:
+You can use CJK fonts by adding the ``cjk-fonts`` style (requires ``no-latex``):
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14.jpg" width="500">
 
-See the [FAQ](https://github.com/garrettj403/SciencePlots#faq) for information on installing the CJK fonts.
+See the [FAQ](https://github.com/garrettj403/SciencePlots#faq) for information on installing CJK fonts.
 
 Color Blind Safe Color Cycles
 -----------------------------
@@ -173,9 +173,9 @@ FAQ
       plt.style.use('science')
       ```
 
-4. Using the `cjk-fonts` style:
+4. Using CJK fonts:
 
-   - To use `cjk-fonts`, you need to install the [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
+   - To use the `cjk-fonts` style, you first need to install [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
 
       ```bash
       # Ubuntu / Debian
