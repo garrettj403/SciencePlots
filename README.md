@@ -164,9 +164,9 @@ FAQ
       plt.style.use('science')
       ```
 
-4. Use the `cjk-fonts` Style:
+4. Using the `cjk-fonts` style:
 
-   - Install the [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/) before use this style. You can download and install from the given link or install with the packages manager:
+   - To use `cjk-fonts`, you need to install the [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
 
       ```bash
       # Ubuntu / Debian
@@ -184,9 +184,14 @@ FAQ
       $ sudo pacman -S noto-fonts-cjk
       ```
 
-   However, `matplotlib` sometimes may not find the fonts correctly, and you should refresh the fonts cache by running `matplotlib.font_manager._rebuild()`.
+      Note that `matplotlib` may not find the fonts correctly. You can refresh the font cache by running:
 
-   - You should use the parameter `backend='pgf'` for the `savefig()` to use XeLaTeX instead of PdfLaTeX (this LaTeX engine can't work with CJK fonts properly). Besides, it can't export the `jpg` format when you use the parameter `backend='pgf'` for the `savefig()`.
+      ```python
+      import matplot.font_manager as fm
+      fm._rebuild()
+      ```
+
+   - You should use the parameter `backend='pgf'` for the `savefig()` to use XeLaTeX instead of PdfLaTeX (this LaTeX engine doesn't work with CJK fonts properly). Besides, it can't export the `jpg` format when you use the parameter `backend='pgf'` for the `savefig()`.
 
 SciencePlots in Academic Papers
 -------------------------------
