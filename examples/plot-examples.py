@@ -156,16 +156,16 @@ with plt.style.context(['science', 'light']):
 # Note: You need to install the Noto Serif CJK Fonts before running 
 # examples 14 and 15. See FAQ in README.
 
-with plt.style.context(['science', 'no-latex', 'cjk-fonts']):
-    fig, ax = plt.subplots()
-    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
-        ax.plot(x, model(x, p), label=p)
-    ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='電壓电压電圧 (mV)')
-    ax.set(ylabel='電流电流電気 ($\mu$A)')
-    ax.autoscale(tight=True)
-    fig.savefig('figures/fig14.pdf')
-    fig.savefig('figures/fig14.jpg', dpi=300)
+# with plt.style.context(['science', 'no-latex', 'cjk-fonts']):
+#     fig, ax = plt.subplots()
+#     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+#         ax.plot(x, model(x, p), label=p)
+#     ax.legend(title='Order', fontsize=7)
+#     ax.set(xlabel='電壓电压電圧 (mV)')
+#     ax.set(ylabel='電流电流電気 ($\mu$A)')
+#     ax.autoscale(tight=True)
+#     fig.savefig('figures/fig14.pdf')
+#     fig.savefig('figures/fig14.jpg', dpi=300)
 
 # with plt.style.context(['science', 'cjk-fonts']):
 #     fig, ax = plt.subplots()
