@@ -167,12 +167,25 @@ with plt.style.context(['science', 'light']):
 #     fig.savefig('figures/fig14.pdf')
 #     fig.savefig('figures/fig14.jpg', dpi=300)
 
+# import matplotlib
+# matplotlib.use('pgf')  # stwich backend to pgf
+# matplotlib.rcParams.update({
+#     "pgf.preamble": [
+#         "\\usepackage{fontspec}",
+#         '\\usepackage{xeCJK}',
+#         r'\setmainfont{Times New Roman}',  # EN fonts Romans
+#         r'\setCJKmainfont{SimHei}',  # set CJK fonts as SimSun
+#         r'\setCJKsansfont{SimHei}',
+#         r'\newCJKfontfamily{\Song}{SimSun}',
+#         ]
+# })
+
 # with plt.style.context(['science', 'cjk-fonts']):
 #     fig, ax = plt.subplots()
 #     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
 #         ax.plot(x, model(x, p), label=p)
 #     ax.legend(title='Order', fontsize=7)
-#     ax.set(xlabel='電壓电压電圧전압 (mV)')
-#     ax.set(ylabel='電流电流電気전류 ($\mu$A)')
+#     ax.set(xlabel='電壓电压電圧 (mV)')  #전압
+#     ax.set(ylabel='電流电流電気 ($\mu$A)')  #전류
 #     ax.autoscale(tight=True)
 #     fig.savefig('figures/fig15.pdf', backend='pgf')
