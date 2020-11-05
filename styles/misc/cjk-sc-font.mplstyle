@@ -1,0 +1,5 @@
+# Add fonts for CJK characters (simplified Chinese)
+# See FAQ in README for installation instructions
+
+font.serif : Noto Serif CJK SC
+font.family : serif

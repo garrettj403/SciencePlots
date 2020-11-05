@@ -1,5 +1,0 @@
-# Add fonts for CJK characters
-# See FAQ in README for installation instructions
-
-font.serif : Noto Serif CJK TC, Noto Serif CJK SC, Noto Serif CJK JP, Noto Serif CJK KR, Times New Roman
-font.family : serif

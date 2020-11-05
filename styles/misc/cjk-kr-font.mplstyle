@@ -1,0 +1,5 @@
+# Add fonts for CJK characters (Korean)
+# See FAQ in README for installation instructions
+
+font.serif : Noto Serif CJK KR
+font.family : serif

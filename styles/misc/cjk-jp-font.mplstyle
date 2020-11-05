@@ -1,0 +1,5 @@
+# Add fonts for CJK characters (Japanese)
+# See FAQ in README for installation instructions
+
+font.serif : Noto Serif CJK JP
+font.family : serif
