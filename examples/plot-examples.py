@@ -29,6 +29,8 @@ with plt.style.context(['science', 'ieee']):
     ax.legend(title='Order')
     ax.autoscale(tight=True)
     ax.set(**pparam)
+    # Note: $\mu$ doesn't work with Times font (used by ieee style)
+    ax.set_ylabel(r'Current (\textmu A)')  
     fig.savefig('figures/fig2.pdf')
     fig.savefig('figures/fig2.jpg', dpi=300)
 
