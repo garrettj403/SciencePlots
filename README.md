@@ -187,18 +187,9 @@ FAQ
           "font.size":11})          # specify font size here
       ```
 
-4. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
+   - If you would like to use Times New Roman specifically, please see the discussion in [this issue](https://github.com/garrettj403/SciencePlots/issues/30).
 
-   - After installing SciencePlots within one of these environments, you may need to reload the Matplotlib style library. For example:
-
-      ```python
-      !pip install SciencePlots
-      import matplotlib.pyplot as plt
-      plt.style.reload_library()
-      plt.style.use('science')
-      ```
-
-5. Using CJK fonts:
+4. Using CJK fonts:
 
    - To use CJK fonts, you first need to install [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
 
@@ -226,6 +217,17 @@ FAQ
       ```
 
    - You should use the parameter `backend='pgf'` for the `savefig()` to use XeLaTeX instead of PdfLaTeX (this LaTeX engine doesn't work with CJK fonts properly). Besides, it can't export the `jpg` format when you use the parameter `backend='pgf'` for the `savefig()`.
+
+5. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
+
+   - After installing SciencePlots within one of these environments, you may need to reload the Matplotlib style library. For example:
+
+      ```python
+      !pip install SciencePlots
+      import matplotlib.pyplot as plt
+      plt.style.reload_library()
+      plt.style.use('science')
+      ```
 
 SciencePlots in Academic Papers
 -------------------------------
