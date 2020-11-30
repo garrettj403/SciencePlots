@@ -168,7 +168,11 @@ FAQ
       print(matplotlib.get_configdir())
       ```
 
-   You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory).
+   - You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory):
+
+      ```bash
+      cp styles/*/*.mplstyle ~/.matplotlib/stylelib/
+      ```
 
 3. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
 
