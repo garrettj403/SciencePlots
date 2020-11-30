@@ -174,7 +174,20 @@ FAQ
       cp styles/*/*.mplstyle ~/.matplotlib/stylelib/
       ```
 
-3. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
+3. Using different fonts:
+
+   - SciencePlots uses the default serif font. If you would like to specify a different font, you can use:
+
+      ```python
+      import matplotlib.pyplot as plt 
+      plt.style.use('science')
+      plt.rcParams.update({
+          "font.family": "serif",   # specify font family here
+          "font.serif": ["Times"],  # specify font here
+          "font.size":11})          # specify font size here
+      ```
+
+4. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
 
    - After installing SciencePlots within one of these environments, you may need to reload the Matplotlib style library. For example:
 
@@ -185,7 +198,7 @@ FAQ
       plt.style.use('science')
       ```
 
-4. Using CJK fonts:
+5. Using CJK fonts:
 
    - To use CJK fonts, you first need to install [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
 
