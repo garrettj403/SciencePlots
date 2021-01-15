@@ -25,6 +25,23 @@ pip install SciencePlots
 
 The pip installation will automatically move all of the ``*.mplstyle`` files into the appropriate directory. Please see the [FAQ](#FAQ) for more information and troubleshooting.
 
+Installing Latex
+----------------
+
+The SciencePlots package also requires Latex to be installed on your machine.
+
+   - On MacOS, I recommend [MacTex](https://www.tug.org/mactex/). Make sure that this Latex installation is added to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/18#issuecomment-752744850).
+
+   - On Windows, I recommend [MikTex](https://miktex.org/). Again, you have to add Latex to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/9).
+
+   - On Linux (Ubuntu), you can install Tex Live using:
+
+      ```bash
+      sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
+      ```
+
+Please see [Matplotlib's guide to using Latex for more troubleshooting tips](https://matplotlib.org/3.1.0/tutorials/text/usetex.html).
+
 Using the Styles
 ----------------
 
@@ -151,13 +168,13 @@ FAQ
 
 1. Errors related to Latex:
 
-   - If you get an error saying ``RuntimeError: Failed to process string with tex because latex could not be found``, this means that you do not have Latex installed on your computer (or at least that Python/Matplotlib can't find it). You have two options: (1) install Latex, or (2) disable Latex using the ``no-latex`` option:
+   - If you get an error saying ``RuntimeError: Failed to process string with tex because latex could not be found``, this means that you do not have Latex installed on your computer (or at least Python can't find it). You have three options: (1) install Latex, (2) fix the path to Latex, or (3) disable Latex using the ``no-latex`` option:
 
       ```python
       plt.style.use(['science','no-latex'])
       ```
 
-   - For Windows users, you may need to manually add Latex to your environment path ([see issue](https://github.com/garrettj403/SciencePlots/issues/9)).
+   - See [Latex](#Installing-Latex) for more information.
 
 2. Manual installation:
 
@@ -217,6 +234,8 @@ FAQ
       ```
 
    - You should use the parameter `backend='pgf'` for the `savefig()` to use XeLaTeX instead of PdfLaTeX (this LaTeX engine doesn't work with CJK fonts properly). Besides, it can't export the `jpg` format when you use the parameter `backend='pgf'` for the `savefig()`.
+
+   - See [this issue](https://github.com/garrettj403/SciencePlots/issues/16) for more information.
 
 5. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
 
