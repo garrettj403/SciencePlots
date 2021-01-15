@@ -10,17 +10,17 @@ This repo has Matplotlib styles to format your plots for scientific papers, pres
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 
-Installation
-------------
+Getting Started
+---------------
 
 The easiest way to install SciencePlots is using ``pip``:
 
 ```bash
-# for latest commit
-pip install git+https://github.com/garrettj403/SciencePlots.git
-
-# for lastest release
+# for lastest release (from PyPI)
 pip install SciencePlots
+
+# for latest version (from GitHub)
+pip install git+https://github.com/garrettj403/SciencePlots.git
 ```
 
 The pip installation will automatically move all of the ``*.mplstyle`` files into the appropriate directory. Please see the [FAQ](#FAQ) for more information and troubleshooting.
@@ -34,7 +34,7 @@ The SciencePlots package also requires Latex to be installed on your machine.
 
    - On Windows, I recommend [MikTex](https://miktex.org/). Again, you have to add Latex to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/9).
 
-   - On Linux (Ubuntu), you can install Tex Live using:
+   - On Linux (Ubuntu), you can install Tex Live and the other requirements using:
 
       ```bash
       sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
@@ -174,7 +174,7 @@ FAQ
       plt.style.use(['science','no-latex'])
       ```
 
-   - See [Latex](#Installing-Latex) for more information.
+   - See ["Installing Latex"](#Installing-Latex) for more information.
 
 2. Manual installation:
 
