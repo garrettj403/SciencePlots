@@ -1,9 +1,21 @@
-v1.0.7 (unreleased)
+v1.0.7 (28-02-2021)
 ===================
 
-- Trivial changes to README:
-   - add badge for Zenodo
+- Add support for CJK fonts:
+   - see README for details
+- Add example of CJK fonts:
+   - see Fig 14a, Fig 14b, Fig 14c, Fig 14d
+- ``science`` style:
+   - use default serif font
+- ``ieee`` style: 
+   - use Times font
+- ``grid`` style:
+   - change line style to '--'
+- README:
+   - add badge for Zenodo reference
    - add info on citing SciencePlots
+   - add info on using Times New Roman
+   - add more papers using SciencePlots
    
 v1.0.6 (19-Oct-2020)
 ====================
