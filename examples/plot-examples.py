@@ -158,49 +158,45 @@ with plt.style.context(['science', 'light']):
 # Note: You need to install the Noto Serif CJK Fonts before running 
 # examples 14 and 15. See FAQ in README.
 
-# with plt.style.context(['science', 'no-latex', 'cjk-tc-font']):
-#     fig, ax = plt.subplots()
-#     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
-#         ax.plot(x, model(x, p), label=p)
-#     ax.legend(title='Order', fontsize=7)
-#     ax.set(xlabel='電壓 (mV)')
-#     ax.set(ylabel='電流 ($\mu$A)')
-#     ax.autoscale(tight=True)
-#     fig.savefig('figures/fig14a.pdf')
-#     fig.savefig('figures/fig14a.jpg', dpi=300)
+with plt.style.context(['science', 'no-latex', 'cjk-tc-font']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order', fontsize=7)
+    ax.set(xlabel='電壓 (mV)')
+    ax.set(ylabel='電流 ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig14a.jpg', dpi=300)
 
-# with plt.style.context(['science', 'no-latex', 'cjk-sc-font']):
-#     fig, ax = plt.subplots()
-#     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
-#         ax.plot(x, model(x, p), label=p)
-#     ax.legend(title='Order', fontsize=7)
-#     ax.set(xlabel='电压 (mV)')
-#     ax.set(ylabel='电流 ($\mu$A)')
-#     ax.autoscale(tight=True)
-#     fig.savefig('figures/fig14b.pdf')
-#     fig.savefig('figures/fig14b.jpg', dpi=300)
+with plt.style.context(['science', 'no-latex', 'cjk-sc-font']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order', fontsize=7)
+    ax.set(xlabel='电压 (mV)')
+    ax.set(ylabel='电流 ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig14b.jpg', dpi=300)
 
-# with plt.style.context(['science', 'no-latex', 'cjk-jp-font']):
-#     fig, ax = plt.subplots()
-#     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
-#         ax.plot(x, model(x, p), label=p)
-#     ax.legend(title='Order', fontsize=7)
-#     ax.set(xlabel='電圧 (mV)')
-#     ax.set(ylabel='電気 ($\mu$A)')
-#     ax.autoscale(tight=True)
-#     fig.savefig('figures/fig14c.pdf')
-#     fig.savefig('figures/fig14c.jpg', dpi=300)
+with plt.style.context(['science', 'no-latex', 'cjk-jp-font']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order', fontsize=7)
+    ax.set(xlabel='電圧 (mV)')
+    ax.set(ylabel='電気 ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig14c.jpg', dpi=300)
 
-# with plt.style.context(['science', 'no-latex', 'cjk-kr-font']):
-#     fig, ax = plt.subplots()
-#     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
-#         ax.plot(x, model(x, p), label=p)
-#     ax.legend(title='Order', fontsize=7)
-#     ax.set(xlabel='전압 (mV)')
-#     ax.set(ylabel='전류 ($\mu$A)')
-#     ax.autoscale(tight=True)
-#     fig.savefig('figures/fig14d.pdf')
-#     fig.savefig('figures/fig14d.jpg', dpi=300)
+with plt.style.context(['science', 'no-latex', 'cjk-kr-font']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order', fontsize=7)
+    ax.set(xlabel='전압 (mV)')
+    ax.set(ylabel='전류 ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig14d.jpg', dpi=300)
 
 # import matplotlib
 # matplotlib.use('pgf')  # stwich backend to pgf
