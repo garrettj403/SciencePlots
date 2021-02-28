@@ -104,17 +104,21 @@ You can also combine these styles with the other styles that come with Matplotli
 CJK Fonts
 ---------
 
-Traditional Chinese (`science` + `cjk-tc-font` + `no-latex`):
+Traditional Chinese (`science` + `no-latex` + `cjk-tc-font`):
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14a.jpg" width="500">
 
-Simplified Chinese (`science` + `cjk-sc-font` + `no-latex`):
+Simplified Chinese (`science` + `no-latex` + `cjk-sc-font`):
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14b.jpg" width="500">
 
-Japanese (`science` + `cjk-jp-font` + `no-latex`):
+Japanese (`science` + `no-latex` + `cjk-jp-font`):
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14c.jpg" width="500">
+
+Korean (`science` + `no-latex` + `cjk-kr-font`):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14d.jpg" width="500">
 
 See the [FAQ](https://github.com/garrettj403/SciencePlots#faq) for information on installing CJK fonts.
 
