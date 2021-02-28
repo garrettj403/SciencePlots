@@ -276,14 +276,16 @@ If you use ``SciencePlots`` in your paper/thesis, feel free to add it to the lis
 Citing SciencePlots
 -------------------
 
-You don't have to cite SciencePlots if you use it, but it's nice if you do:
+You don't have to cite SciencePlots if you use it but it's nice if you do:
 
     @article{SciencePlots,
-      author       = {J. D. Garrett},
-      title        = {{SciencePlots (v1.0.6)}},
-      month        = oct,
-      year         = 2020,
+      author       = {J. D. Garrett and
+                      Hsin-Hsiang Peng},
+      title        = {{garrettj403/SciencePlots}},
+      month        = feb,
+      year         = 2021,
       publisher    = {Zenodo},
-      doi          = {10.5281/zenodo.4106650},
-      url          = {http://doi.org/10.5281/zenodo.4106650}
+      version      = {1.0.7},
+      doi          = {10.5281/zenodo.4106649},
+      url          = {http://doi.org/10.5281/zenodo.4106649}
     }
