@@ -26,10 +26,10 @@ pip install git+https://github.com/garrettj403/SciencePlots.git
 The pip installation will automatically move all of the Matplotlib style files `*.mplstyle` into the appropriate directory on your computer. 
 
 **Notes:** 
-- SciencePlots also requires Latex ([see Latex installation instructions]((https://github.com/garrettj403/SciencePlots#faq)). 
-- If you would like to use CJK fonts, you will need to install these font separately ([see CJK font installation instructions]((https://github.com/garrettj403/SciencePlots#faq)).
+- SciencePlots also requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots#faq)). 
+- If you would like to use CJK fonts, you will need to install these font separately ([see CJK font installation instructions](https://github.com/garrettj403/SciencePlots#faq)).
 
-Please see the [FAQ]((https://github.com/garrettj403/SciencePlots#faq) section for more information and troubleshooting.
+Please see the [FAQ](https://github.com/garrettj403/SciencePlots#faq) section for more information and troubleshooting.
 
 Using the Styles
 ----------------
