@@ -34,7 +34,7 @@ Please see the [FAQ](https://github.com/garrettj403/SciencePlots#faq) section fo
 Using the Styles
 ----------------
 
-``science.mplstyle`` is the main style from this repo. Whenever you want to use it, simply add the following to the top of your python script:
+``"science"`` is the main style from this repo. Whenever you want to use it, simply add the following to the top of your python script:
 
 ```python
 import matplotlib.pyplot as plt
