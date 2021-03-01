@@ -4,43 +4,32 @@ Science Plots
 [![PyPI version](https://badge.fury.io/py/SciencePlots.svg)](https://badge.fury.io/py/SciencePlots)
 [![DOI](https://zenodo.org/badge/144605189.svg)](https://zenodo.org/badge/latestdoi/144605189)
 
-*Matplotlib styles for scientific plotting*
+*Matplotlib styles for scientific figures*
 
-This repo has Matplotlib styles to format your plots for scientific papers, presentations and theses.
+This repo has Matplotlib styles to format your figures for scientific papers, presentations and theses.
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 
 Getting Started
 ---------------
 
-The easiest way to install SciencePlots is using ``pip``:
+The easiest way to install SciencePlots is by using `pip`:
 
 ```bash
-# for lastest release (from PyPI)
+# to install the lastest release (from PyPI)
 pip install SciencePlots
 
-# for latest version (from GitHub)
+# to install the latest commit (from GitHub)
 pip install git+https://github.com/garrettj403/SciencePlots.git
 ```
 
-The pip installation will automatically move all of the ``*.mplstyle`` files into the appropriate directory. Please see the [FAQ](#FAQ) for more information and troubleshooting.
+The pip installation will automatically move all of the Matplotlib style files `*.mplstyle` into the appropriate directory on your computer. 
 
-Installing Latex
-----------------
+**Notes:** 
+- SciencePlots also requires Latex ([see Latex installation instructions]((https://github.com/garrettj403/SciencePlots#faq)). 
+- If you would like to use CJK fonts, you will need to install these font separately ([see CJK font installation instructions]((https://github.com/garrettj403/SciencePlots#faq)).
 
-The SciencePlots package also requires Latex to be installed on your machine.
-
-   - On MacOS, I recommend [MacTex](https://www.tug.org/mactex/). Make sure that this Latex installation is added to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/18#issuecomment-752744850).
-
-   - On Windows, I recommend [MikTex](https://miktex.org/). Again, you have to add Latex to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/9).
-
-   - On Linux (Ubuntu), you can install Tex Live and the other requirements using:
-
-      ```bash
-      sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
-      ```
-
-Please see [Matplotlib's guide to using Latex for more troubleshooting tips](https://matplotlib.org/3.1.0/tutorials/text/usetex.html).
+Please see the [FAQ]((https://github.com/garrettj403/SciencePlots#faq) section for more information and troubleshooting.
 
 Using the Styles
 ----------------
@@ -170,49 +159,31 @@ You can checkout [Matplotlib's documentation](https://matplotlib.org/tutorials/i
 FAQ
 ---
 
-1. Errors related to Latex:
+1. Installing Latex:
 
-   - If you get an error saying ``RuntimeError: Failed to process string with tex because latex could not be found``, this means that you do not have Latex installed on your computer (or at least Python can't find it). You have three options: (1) install Latex, (2) fix the path to Latex, or (3) disable Latex using the ``no-latex`` option:
+   - SciencePlots requires Latex to be installed on your machine.
+
+      - On MacOS, I recommend [MacTex](https://www.tug.org/mactex/). Make sure that this Latex installation is added to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/18#issuecomment-752744850).
+
+      - On Windows, I recommend [MikTex](https://miktex.org/). Again, you have to add Latex to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/9).
+
+      - On Linux (Ubuntu), you can install Tex Live and the other requirements using:
+
+         ```bash
+         sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
+         ```
+
+   - Please see [Matplotlib's guide to using Latex for more troubleshooting tips](https://matplotlib.org/3.1.0/tutorials/text/usetex.html).
+
+   - If you don't want to install Latex, you can disable Latex by using:
 
       ```python
       plt.style.use(['science','no-latex'])
       ```
 
-   - See ["Installing Latex"](#Installing-Latex) for more information.
+2. Installing CJK fonts
 
-2. Manual installation:
-
-   - If you like, you can install the ``*.mplstyle`` files manually. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
-
-      ```python
-      import matplotlib
-      print(matplotlib.get_configdir())
-      ```
-
-   - You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory):
-
-      ```bash
-      cp styles/*/*.mplstyle ~/.matplotlib/stylelib/
-      ```
-
-3. Using different fonts:
-
-   - SciencePlots uses the default serif font. If you would like to specify a different font, you can use:
-
-      ```python
-      import matplotlib.pyplot as plt 
-      plt.style.use('science')
-      plt.rcParams.update({
-          "font.family": "serif",   # specify font family here
-          "font.serif": ["Times"],  # specify font here
-          "font.size":11})          # specify font size here
-      ```
-
-   - If you would like to use Times New Roman specifically, please see the discussion in [this issue](https://github.com/garrettj403/SciencePlots/issues/30).
-
-4. Using CJK fonts:
-
-   - To use CJK fonts, you first need to install [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
+   - To use Chinese, Japanese or Korean fonts, you first need to install [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
 
       ```bash
       # Ubuntu / Debian
@@ -230,16 +201,46 @@ FAQ
       $ sudo pacman -S noto-fonts-cjk
       ```
 
-      Note that `matplotlib` may not find the fonts correctly. You can refresh the font cache by running:
+   - For Windows Subsystem for Linux (WSL), you will need to manually download and install the fonts by following [these instructions](https://www.google.com/get/noto/help/install/).
+
+   - Note that `matplotlib` may not find the fonts correctly. You can refresh the font cache by running:
 
       ```python
       import matplotlib.font_manager as fm
       fm._rebuild()
       ```
 
-   - You should use the parameter `backend='pgf'` for the `savefig()` to use XeLaTeX instead of PdfLaTeX (this LaTeX engine doesn't work with CJK fonts properly). Besides, it can't export the `jpg` format when you use the parameter `backend='pgf'` for the `savefig()`.
-
    - See [this issue](https://github.com/garrettj403/SciencePlots/issues/16) for more information.
+
+3. Installing SciencePlots manually:
+
+   - If you like, you can install the ``*.mplstyle`` files manually. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
+
+      ```python
+      import matplotlib
+      print(matplotlib.get_configdir())
+      ```
+
+   - You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory):
+
+      ```bash
+      cp styles/*/*.mplstyle ~/.matplotlib/stylelib/
+      ```
+
+4. Using different fonts:
+
+   - SciencePlots uses the default serif font. If you would like to specify a different font, you can use:
+
+      ```python
+      import matplotlib.pyplot as plt 
+      plt.style.use('science')
+      plt.rcParams.update({
+          "font.family": "serif",   # specify font family here
+          "font.serif": ["Times"],  # specify font here
+          "font.size":11})          # specify font size here
+      ```
+
+   - If you would like to use Times New Roman specifically, please see the discussion in [this issue](https://github.com/garrettj403/SciencePlots/issues/30).
 
 5. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
 
@@ -279,7 +280,7 @@ Citing SciencePlots
 You don't have to cite SciencePlots if you use it but it's nice if you do:
 
     @article{SciencePlots,
-      author       = {J. D. Garrett and
+      author       = {John D. Garrett and
                       Hsin-Hsiang Peng},
       title        = {{garrettj403/SciencePlots}},
       month        = feb,
