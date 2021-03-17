@@ -24,15 +24,27 @@ with plt.style.context(['science']):
 
 with plt.style.context(['science', 'ieee']):
     fig, ax = plt.subplots()
-    for p in [10, 20, 50]:
+    for p in [10, 20, 40, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order')
     ax.autoscale(tight=True)
     ax.set(**pparam)
     # Note: $\mu$ doesn't work with Times font (used by ieee style)
     ax.set_ylabel(r'Current (\textmu A)')  
-    fig.savefig('figures/fig2.pdf')
-    fig.savefig('figures/fig2.jpg', dpi=300)
+    fig.savefig('figures/fig2a.pdf')
+    fig.savefig('figures/fig2a.jpg', dpi=300)
+
+with plt.style.context(['science', 'ieee', 'std-colors']):
+    fig, ax = plt.subplots()
+    for p in [10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.autoscale(tight=True)
+    ax.set(**pparam)
+    # Note: $\mu$ doesn't work with Times font (used by ieee style)
+    ax.set_ylabel(r'Current (\textmu A)')  
+    fig.savefig('figures/fig2b.pdf')
+    fig.savefig('figures/fig2b.jpg', dpi=300)
 
 with plt.style.context(['science', 'scatter']):
     fig, ax = plt.subplots(figsize=(4, 4))
@@ -163,8 +175,8 @@ with plt.style.context(['science', 'no-latex', 'cjk-tc-font']):
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='電壓 (mV)')
-    ax.set(ylabel='電流 ($\mu$A)')
+    ax.set(xlabel=r'電壓 (mV)')
+    ax.set(ylabel=r'電流 ($\mu$A)')
     ax.autoscale(tight=True)
     fig.savefig('figures/fig14a.jpg', dpi=300)
 
@@ -173,8 +185,8 @@ with plt.style.context(['science', 'no-latex', 'cjk-sc-font']):
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='电压 (mV)')
-    ax.set(ylabel='电流 ($\mu$A)')
+    ax.set(xlabel=r'电压 (mV)')
+    ax.set(ylabel=r'电流 ($\mu$A)')
     ax.autoscale(tight=True)
     fig.savefig('figures/fig14b.jpg', dpi=300)
 
@@ -183,8 +195,8 @@ with plt.style.context(['science', 'no-latex', 'cjk-jp-font']):
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='電圧 (mV)')
-    ax.set(ylabel='電気 ($\mu$A)')
+    ax.set(xlabel=r'電圧 (mV)')
+    ax.set(ylabel=r'電気 ($\mu$A)')
     ax.autoscale(tight=True)
     fig.savefig('figures/fig14c.jpg', dpi=300)
 
@@ -193,8 +205,8 @@ with plt.style.context(['science', 'no-latex', 'cjk-kr-font']):
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
     ax.legend(title='Order', fontsize=7)
-    ax.set(xlabel='전압 (mV)')
-    ax.set(ylabel='전류 ($\mu$A)')
+    ax.set(xlabel=r'전압 (mV)')
+    ax.set(ylabel=r'전류 ($\mu$A)')
     ax.autoscale(tight=True)
     fig.savefig('figures/fig14d.jpg', dpi=300)
 
@@ -211,12 +223,12 @@ with plt.style.context(['science', 'no-latex', 'cjk-kr-font']):
 #         ]
 # })
 
-# with plt.style.context(['science', 'cjk-fonts']):
+# with plt.style.context(['science', 'cjk-tc-font']):
 #     fig, ax = plt.subplots()
 #     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
 #         ax.plot(x, model(x, p), label=p)
 #     ax.legend(title='Order', fontsize=7)
-#     ax.set(xlabel='電壓电压電圧 (mV)')  #전압
-#     ax.set(ylabel='電流电流電気 ($\mu$A)')  #전류
+#     ax.set(xlabel=r'電壓 (mV)') 
+#     ax.set(ylabel=r'電流 ($\mu$A)')
 #     ax.autoscale(tight=True)
 #     fig.savefig('figures/fig15.pdf', backend='pgf')
