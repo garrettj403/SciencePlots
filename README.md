@@ -72,7 +72,7 @@ The ``science`` + ``grid`` styles:
 
 The ``science`` + ``ieee`` styles for IEEE papers:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2a.jpg" width="500">
 
    - IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
 
@@ -138,6 +138,10 @@ The ``light`` color cycle (9 colors):
 
 Other Color Cycles
 ------------------
+
+The ``std-colors`` color cycle (used to override other color cycles, e.g., the color cycle from ``ieee``):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2b.jpg" width="500">
 
 The ``high-vis`` color cycle:
 
