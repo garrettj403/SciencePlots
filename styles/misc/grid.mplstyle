@@ -2,6 +2,7 @@
 
 # Grid lines
 axes.grid : True
+axes.axisbelow : True
 grid.linestyle : --
 grid.color : k
 grid.alpha : 0.5
