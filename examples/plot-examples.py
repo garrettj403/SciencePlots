@@ -57,7 +57,7 @@ with plt.style.context(['science', 'scatter']):
         ax.plot(x1, y1, label=r"$^\#${}".format(i+1))
     ax.legend(title='Sample', loc=2)
     xlbl = r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$"
-    ylbl = r"$\log_{10}\left(\frac{L_\mathrm{6.2}}{\mathrm{L}_\odot}\right)$"
+    ylbl = r"$\log_{10}\left(\frac{L_\circledast}{\mathrm{L}_\odot}\right)$"
     ax.set_xlabel(xlbl)
     ax.set_ylabel(ylbl)
     ax.set_xlim([-2, 2])

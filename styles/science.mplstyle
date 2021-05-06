@@ -45,4 +45,4 @@ mathtext.fontset : dejavuserif
 
 # Use LaTeX for math formatting
 text.usetex : True
-text.latex.preamble : \usepackage{amsmath}
+text.latex.preamble : \usepackage{amsmath, amssymb}
