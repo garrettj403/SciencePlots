@@ -1,5 +1,22 @@
-v1.0.7 (28-02-2021)
-===================
+v1.0.8 (02-Jun-2021)
+====================
+
+- ``nature``:
+   - Added style for Nature articles
+   - Uses sans-serif fonts
+- ``latex-sans``:
+   - Added style for using LaTeX with sans-serif fonts
+- ``std-colors``:
+   - Added style to recover the standard color cycle of the SciencePlots package
+   - For example, if you use ``plt.style.use(["science", "ieeee"]). The figure will use the ``"ieee"`` color cycle. To revert to the standard color cycle, you can use ``plt.style.use(["science", "ieee", "std-colors"])``.
+- ``science``:
+   - Added ``amssymb`` to LaTeX preamble
+- ``grid``: 
+   - Set ``axes.axisbelow`` to True
+- Minor updates to README
+
+v1.0.7 (28-Feb-2021)
+====================
 
 - Add support for CJK fonts:
    - see README for details
