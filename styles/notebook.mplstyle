@@ -30,6 +30,7 @@ lines.linewidth : 2.
 
 # Use sans-serif fonts
 font.family : sans-serif
+mathtext.fontset : dejavusans
 
 # Use LaTeX for math formatting
 text.usetex : False
