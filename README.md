@@ -76,6 +76,12 @@ The ``science`` + ``ieee`` styles for IEEE papers:
 
    - IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
 
+The ``science`` + ``nature`` styles for Nature articles:
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2c.jpg" width="500">
+
+   - Nature recommends sans-serif fonts.
+
 The ``science`` + ``scatter`` styles for scatter plots:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig3.jpg" width="500">
