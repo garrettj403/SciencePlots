@@ -1,7 +1,9 @@
 .ipynb_checkpoints/
 .DS_STORE
 SciencePlots.egg-info/
+
 dist/
+dev/
 
 TODO.md
 new-version.md
