@@ -65,7 +65,8 @@ with plt.style.context(['science', 'scatter']):
         x1 = np.random.normal(0, 0.5, 10)
         y1 = x1 + np.random.normal(0, 0.2, 10)
         ax.plot(x1, y1, label=r"$^\#${}".format(i+1))
-    ax.legend(title='Sample', loc=2)
+    lgd = r"$\mathring{P}=\begin{cases}1&\text{if $\nu\geq0$}\\0&\text{if $\nu<0$}\end{cases}$"
+    ax.legend(title=lgd, loc=2, ncol=2)
     xlbl = r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$"
     ylbl = r"$\log_{10}\left(\frac{L_\circledast}{\mathrm{L}_\odot}\right)$"
     ax.set_xlabel(xlbl)
