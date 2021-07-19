@@ -1,3 +1,3 @@
 # Add LaTeX package to allow PGF plots
 
-text.latex.preamble : \usepackage{amsmath}, \usepackage[T1]{fontenc}, \usepackage{pgfplots}
+text.latex.preamble : \usepackage{amsmath} \usepackage[T1]{fontenc} \usepackage{pgfplots}

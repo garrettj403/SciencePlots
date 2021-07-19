@@ -8,4 +8,4 @@ text.usetex : True
 # In general, we need to be careful with the preamble. A common font for
 # sans serif LaTeX is cmbright. However, it does not support bold fontweights
 # so we use sfmath instead. 
-text.latex.preamble : \usepackage{amsmath, amssymb, sfmath}
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath}

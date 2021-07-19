@@ -28,4 +28,4 @@ lines.markersize: 3
 # savefig.pad_inches : 0.01  # Use virtually all space when we specify figure dimensions
 
 # LaTeX packages
-text.latex.preamble : \usepackage{amsmath, amssymb, sfmath}
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath}
