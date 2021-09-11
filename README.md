@@ -268,6 +268,8 @@ SciencePlots in Academic Papers
 
 The following papers use ``SciencePlots``:
 
+- Y. Liu, X. Liu, Y. Sun, ["QGrain: An open-source and easy-to-use software for the comprehensive analysis of grain size distributions"](https://doi.org/10.1016/j.sedgeo.2021.105980), *Sedimentary Geology*, vol. 423, 105980, Aug. 2021.
+
 - J. Garrett, and E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides,"](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Process. Lett.*, vol. 28, pp. 1175-1179, Jun. 2021.
 
 - G. Jegannathan, *et al.*, ["Current-Assisted SPAD with Improved p-n Junction and Enhanced NIR Performance"](https://www.mdpi.com/1424-8220/20/24/7105), *Sensors*, Dec 2020. ([open access](https://www.mdpi.com/1424-8220/20/24/7105))
