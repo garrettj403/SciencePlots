@@ -19,7 +19,7 @@ The easiest way to install SciencePlots is by using `pip`:
 
 ```bash
 # to install the lastest release (from PyPI)
-pip install SciencePlots
+pip install SciencePlots==1.0.9
 
 # to install the latest commit (from GitHub)
 pip install git+https://github.com/garrettj403/SciencePlots
