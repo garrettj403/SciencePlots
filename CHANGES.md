@@ -1,3 +1,13 @@
+v1.0.9 (16-Sep-2021)
+====================
+
+- `notebook`:
+   - make Latex fonts sans-serif
+- Fix bug with Latex packages:
+   - e.g., `\usepackage{amsmath, amssymb, sfmath}` --> `\usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath}`
+- Add `pyproject.toml` file (see PEP 517/518)
+- Minor updates to README, including adding more papers to publication list
+
 v1.0.8 (02-Jun-2021)
 ====================
 

@@ -22,7 +22,7 @@ The easiest way to install SciencePlots is by using `pip`:
 pip install SciencePlots
 
 # to install the latest commit (from GitHub)
-pip install git+https://github.com/garrettj403/SciencePlots.git
+pip install git+https://github.com/garrettj403/SciencePlots
 
 # to clone and then install from a local copy
 git clone https://github.com/garrettj403/SciencePlots.git
@@ -301,13 +301,12 @@ Citing SciencePlots
 You don't have to cite SciencePlots if you use it but it's nice if you do:
 
     @article{SciencePlots,
-      author       = {John D. Garrett and
-                      Hsin-Hsiang Peng},
+      author       = {John D. Garrett},
       title        = {{garrettj403/SciencePlots}},
-      month        = feb,
+      month        = sep,
       year         = 2021,
       publisher    = {Zenodo},
-      version      = {1.0.7},
+      version      = {1.0.9},
       doi          = {10.5281/zenodo.4106649},
       url          = {http://doi.org/10.5281/zenodo.4106649}
     }
