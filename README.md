@@ -8,7 +8,9 @@ Science Plots
 
 This repo has Matplotlib styles to format your figures for scientific papers, presentations and theses.
 
+<p align="center">
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
+</p>
 
 Getting Started
 ---------------
@@ -21,12 +23,17 @@ pip install SciencePlots
 
 # to install the latest commit (from GitHub)
 pip install git+https://github.com/garrettj403/SciencePlots.git
+
+# to clone and then install from a local copy
+git clone https://github.com/garrettj403/SciencePlots.git
+cd SciencePlots
+pip install -e .
 ```
 
-The pip installation will automatically move all of the Matplotlib style files `*.mplstyle` into the appropriate directory on your computer. 
+The pip installation will automatically move all of the Matplotlib style files `*.mplstyle` into the appropriate directory on your computer.
 
 **Notes:** 
-- SciencePlots also requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots#faq)). 
+- SciencePlots requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots#faq)). 
 - If you would like to use CJK fonts, you will need to install these font separately ([see CJK font installation instructions](https://github.com/garrettj403/SciencePlots#faq)).
 
 Please see the [FAQ](https://github.com/garrettj403/SciencePlots#faq) section for more information and troubleshooting.
@@ -197,18 +204,18 @@ FAQ
 
       ```bash
       # Ubuntu / Debian
-      $ sudo apt update
-      $ sudo apt install fonts-noto-cjk
+      sudo apt update
+      sudo apt install fonts-noto-cjk
 
       # macOS
-      $ brew tap homebrew/cask-fonts
-      $ brew cask install font-noto-serif-cjk-tc
-      $ brew cask install font-noto-serif-cjk-sc
-      $ brew cask install font-noto-serif-cjk-jp
-      $ brew cask install font-noto-serif-cjk-kr
+      brew tap homebrew/cask-fonts
+      brew cask install font-noto-serif-cjk-tc
+      brew cask install font-noto-serif-cjk-sc
+      brew cask install font-noto-serif-cjk-jp
+      brew cask install font-noto-serif-cjk-kr
 
       # archlinux
-      $ sudo pacman -S noto-fonts-cjk
+      sudo pacman -S noto-fonts-cjk
       ```
 
    - For Windows Subsystem for Linux (WSL), you will need to manually download and install the fonts by following [these instructions](https://www.google.com/get/noto/help/install/).
