@@ -124,6 +124,13 @@ Korean (`science` + `no-latex` + `cjk-kr-font`):
 
 See the [FAQ](https://github.com/garrettj403/SciencePlots#faq) for information on installing CJK fonts.
 
+Other Languages
+---------------
+
+Russian/cyrillic (`science` + `russian-font`):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig16.jpg" width="500">
+
 Color Blind Safe Color Cycles
 -----------------------------
 
