@@ -243,3 +243,13 @@ with plt.style.context(['science', 'no-latex', 'cjk-kr-font']):
 #     ax.set(ylabel=r'電流 ($\mu$A)')
 #     ax.autoscale(tight=True)
 #     fig.savefig('figures/fig15.pdf', backend='pgf')
+
+with plt.style.context(['science', 'russian-font']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title=r'Число', fontsize=7)
+    ax.set(xlabel=r'Напряжение (mV)')
+    ax.set(ylabel=r'Текущий (uA)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig16.jpg', dpi=300)
