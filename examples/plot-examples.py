@@ -250,6 +250,6 @@ with plt.style.context(['science', 'russian-font']):
         ax.plot(x, model(x, p), label=p)
     ax.legend(title=r'Число', fontsize=7)
     ax.set(xlabel=r'Напряжение (mV)')
-    ax.set(ylabel=r'Текущий (uA)')
+    ax.set(ylabel=r'Сила тока ($\mu$A)')
     ax.autoscale(tight=True)
     fig.savefig('figures/fig16.jpg', dpi=300)
