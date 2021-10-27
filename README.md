@@ -69,13 +69,18 @@ with plt.style.context(['science', 'ieee']):
 Examples
 --------
 
-The ``science`` style:
+The ``science`` style is the primary style of SciencePltos:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 
-The ``science`` + ``grid`` styles:
+It can be cascaded with other styles to tweak the appearance. For example, the ``science`` + ``notebook`` styles for Jupyter notebooks:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig11.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig10.jpg" width="500">
+
+Please see [the project Wiki](https://github.com/garrettj403/SciencePlots/wiki/Examples) for a full list of available styles.
+
+Specific Styles for Academic Journals
+-------------------------------------
 
 The ``science`` + ``ieee`` styles for IEEE papers:
 
@@ -89,87 +94,29 @@ The ``science`` + ``nature`` styles for Nature articles:
 
    - Nature recommends sans-serif fonts.
 
-The ``science`` + ``scatter`` styles for scatter plots:
+Other languages
+---------------
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig3.jpg" width="500">
+SciencePlots currently supports [traditional Chinese](https://github.com/garrettj403/SciencePlots/wiki/Examples#traditional-chinese), [simplified Chinese](https://github.com/garrettj403/SciencePlots/wiki/Examples#simplified-chinese), [Japanese](https://github.com/garrettj403/SciencePlots/wiki/Examples#japanese), [Korean](https://github.com/garrettj403/SciencePlots/wiki/Examples#korean) and [Russian](https://github.com/garrettj403/SciencePlots/wiki/Examples#russian).
 
-The ``science`` + ``notebook`` styles for Jupyter notebooks:
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig10.jpg" width="500">
-
-You can also combine these styles with the other styles that come with Matplotlib. For example, the ``dark_background`` + ``science`` + ``high-vis`` styles:
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig5.jpg" width="500">
-
-**Note:** See the ``examples/`` directory for more!
-
-CJK Fonts
----------
-
-Traditional Chinese (`science` + `no-latex` + `cjk-tc-font`):
+Example: Traditional Chinese (`science` + `no-latex` + `cjk-tc-font`):
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14a.jpg" width="500">
 
-Simplified Chinese (`science` + `no-latex` + `cjk-sc-font`):
+See the [FAQ](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-cjk-fonts) for information on installing CJK fonts.
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14b.jpg" width="500">
-
-Japanese (`science` + `no-latex` + `cjk-jp-font`):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14c.jpg" width="500">
-
-Korean (`science` + `no-latex` + `cjk-kr-font`):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14d.jpg" width="500">
-
-See the [FAQ](https://github.com/garrettj403/SciencePlots#faq) for information on installing CJK fonts.
-
-Other Languages
----------------
-
-Russian/cyrillic (`science` + `russian-font`):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig16.jpg" width="500">
-
-Color Blind Safe Color Cycles
------------------------------
-
-The ``bright`` color cycle (7 colors):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
-
-The ``vibrant`` color cycle (7 colors):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig7.jpg" width="500">
-
-The ``muted`` color cycle (10 colors):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig8.jpg" width="500">
-
-The ``high-contrast`` color cycle (3 colors):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig12.jpg" width="500">
-
-The ``light`` color cycle (9 colors):
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig13.jpg" width="500">
-
-**Note:** These color cycles are from [Paul Tol's website](https://personal.sron.nl/~pault/).
-
-Other Color Cycles
+Other color cycles
 ------------------
 
-The ``std-colors`` color cycle (used to override other color cycles, e.g., the color cycle from ``ieee``):
+SciencePlots comes with a variety of different color cycles. For a full list, [see the project Wiki](https://github.com/garrettj403/SciencePlots/wiki/Examples#color-cycles). Two examples are shown below.
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2b.jpg" width="500">
+The ``bright`` color cycle (color blind safe):
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
 
 The ``high-vis`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig4.jpg" width="500">
-
-The ``retro`` color cycle:
-
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig9.jpg" width="500">
 
 Help and Contributing
 ---------------------
@@ -183,99 +130,7 @@ You can checkout [Matplotlib's documentation](https://matplotlib.org/tutorials/i
 FAQ
 ---
 
-1. Installing Latex:
-
-   - SciencePlots requires Latex to be installed on your machine.
-
-      - On MacOS, I recommend [MacTex](https://www.tug.org/mactex/). Make sure that this Latex installation is added to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/18#issuecomment-752744850).
-
-      - On Windows, I recommend [MikTex](https://miktex.org/). Again, you have to add Latex to your path enviroment variable. See [this issue for more troubleshooting tips](https://github.com/garrettj403/SciencePlots/issues/9).
-
-      - On Linux (Ubuntu), you can install Tex Live and the other requirements using:
-
-         ```bash
-         sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
-         ```
-
-   - Please see [Matplotlib's guide to using Latex for more troubleshooting tips](https://matplotlib.org/3.1.0/tutorials/text/usetex.html).
-
-   - If you don't want to install Latex, you can disable Latex by using:
-
-      ```python
-      plt.style.use(['science','no-latex'])
-      ```
-
-2. Installing CJK fonts
-
-   - To use Chinese, Japanese or Korean fonts, you first need to install [Noto CJK Fonts](https://www.google.com/get/noto/help/cjk/). You can download and install these fonts from the given link or you can install them with a package manager:
-
-      ```bash
-      # Ubuntu / Debian
-      sudo apt update
-      sudo apt install fonts-noto-cjk
-
-      # macOS
-      brew tap homebrew/cask-fonts
-      brew cask install font-noto-serif-cjk-tc
-      brew cask install font-noto-serif-cjk-sc
-      brew cask install font-noto-serif-cjk-jp
-      brew cask install font-noto-serif-cjk-kr
-
-      # archlinux
-      sudo pacman -S noto-fonts-cjk
-      ```
-
-   - For Windows Subsystem for Linux (WSL), you will need to manually download and install the fonts by following [these instructions](https://www.google.com/get/noto/help/install/).
-
-   - Note that `matplotlib` may not find the fonts correctly. You can refresh the font cache by running:
-
-      ```python
-      import matplotlib.font_manager as fm
-      fm._rebuild()
-      ```
-
-   - See [this issue](https://github.com/garrettj403/SciencePlots/issues/16) for more information.
-
-3. Installing SciencePlots manually:
-
-   - If you like, you can install the ``*.mplstyle`` files manually. First, clone the repository and then copy all of the ``*.mplstyle`` files into your Matplotlib style directory. If you're not sure where this is, in an interactive python console type:
-
-      ```python
-      import matplotlib
-      print(matplotlib.get_configdir())
-      ```
-
-   - You should get back something like ``/home/garrett/.matplotlib``. You would then put the ``*.mplstyle`` files in ``/home/garrett/.matplotlib/stylelib/`` (you may need to create the ``stylelib`` directory):
-
-      ```bash
-      cp styles/*/*.mplstyle ~/.matplotlib/stylelib/
-      ```
-
-4. Using different fonts:
-
-   - SciencePlots uses the default serif font. If you would like to specify a different font, you can use:
-
-      ```python
-      import matplotlib.pyplot as plt 
-      plt.style.use('science')
-      plt.rcParams.update({
-          "font.family": "serif",   # specify font family here
-          "font.serif": ["Times"],  # specify font here
-          "font.size":11})          # specify font size here
-      ```
-
-   - If you would like to use Times New Roman specifically, please see the discussion in [this issue](https://github.com/garrettj403/SciencePlots/issues/30).
-
-5. Installing SciencePlots within Google Colab, IPython, Jupyter Notebooks, etc.:
-
-   - After installing SciencePlots within one of these environments, you may need to reload the Matplotlib style library. For example:
-
-      ```python
-      !pip install SciencePlots
-      import matplotlib.pyplot as plt
-      plt.style.reload_library()
-      plt.style.use('science')
-      ```
+You can find [the FAQ in the project Wiki.](https://github.com/garrettj403/SciencePlots/wiki/FAQ)
 
 SciencePlots in Academic Papers
 -------------------------------
