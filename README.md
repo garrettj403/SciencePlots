@@ -19,12 +19,12 @@ The easiest way to install SciencePlots is by using `pip`:
 
 ```bash
 # to install the lastest release (from PyPI)
-pip install SciencePlots==1.0.9
+pip install SciencePlots
 
 # to install the latest commit (from GitHub)
 pip install git+https://github.com/garrettj403/SciencePlots
 
-# to clone and then install from a local copy
+# to clone and install from a local copy
 git clone https://github.com/garrettj403/SciencePlots.git
 cd SciencePlots
 pip install -e .
@@ -33,15 +33,15 @@ pip install -e .
 The pip installation will automatically move all of the Matplotlib style files `*.mplstyle` into the appropriate directory on your computer.
 
 **Notes:** 
-- SciencePlots requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots#faq)). 
-- If you would like to use CJK fonts, you will need to install these font separately ([see CJK font installation instructions](https://github.com/garrettj403/SciencePlots#faq)).
+- SciencePlots requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-latex)). 
+- If you would like to use CJK fonts, you will need to install these font separately ([see CJK font installation instructions](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-cjk-fonts)).
 
-Please see the [FAQ](https://github.com/garrettj403/SciencePlots#faq) section for more information and troubleshooting.
+Please see the [FAQ](https://github.com/garrettj403/SciencePlots/wiki/FAQ) for more information and troubleshooting.
 
 Using the Styles
 ----------------
 
-``"science"`` is the main style from this repo. Whenever you want to use it, simply add the following to the top of your python script:
+``"science"`` is the primary style in this repo. Whenever you want to use it, simply add the following to the top of your python script:
 
 ```python
 import matplotlib.pyplot as plt
@@ -60,7 +60,7 @@ In this case, the ``ieee`` style will override some of the parameters from the `
 To use any of the styles temporarily, you can use:
 
 ```python
-with plt.style.context(['science', 'ieee']):
+with plt.style.context('science'):
     plt.figure()
     plt.plot(x, y)
     plt.show()
@@ -69,11 +69,11 @@ with plt.style.context(['science', 'ieee']):
 Examples
 --------
 
-The ``science`` style is the primary style of SciencePltos:
+The basic ``science`` style is shown below:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 
-It can be cascaded with other styles to tweak the appearance. For example, the ``science`` + ``notebook`` styles for Jupyter notebooks:
+It can be cascaded with other styles to fine-tune the appearance. For example, the ``science`` + ``notebook`` styles (intended for Jupyter notebooks):
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig10.jpg" width="500">
 
@@ -123,7 +123,7 @@ Help and Contributing
 
 Please feel free to contribute to the SciencePlots repo! For example, it would be good to add new styles for different journals and add new color cycles. Before starting a new style or making any changes, please create an issue through the [GitHub issue tracker](https://github.com/garrettj403/SciencePlots/issues). That way we can discuss if the changes are necessary and the best approach.
 
-If you need any help with SciencePlots, please first check the [FAQ](https://github.com/garrettj403/SciencePlots#faq) and search through the [previous GitHub issues](https://github.com/garrettj403/SciencePlots/issues). If you can't find an answer, create a new issue through the [GitHub issue tracker](https://github.com/garrettj403/SciencePlots/issues).
+If you need any help with SciencePlots, please first check the [FAQ](https://github.com/garrettj403/SciencePlots/wiki/FAQ) and search through the [previous GitHub issues](https://github.com/garrettj403/SciencePlots/issues). If you can't find an answer, create a new issue through the [GitHub issue tracker](https://github.com/garrettj403/SciencePlots/issues).
 
 You can checkout [Matplotlib's documentation](https://matplotlib.org/tutorials/introductory/customizing.html) for more information on plotting settings.
 
