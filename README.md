@@ -77,7 +77,7 @@ It can be cascaded with other styles to fine-tune the appearance. For example, t
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig10.jpg" width="500">
 
-Please see [the project Wiki](https://github.com/garrettj403/SciencePlots/wiki/Examples) for a full list of available styles.
+Please see [the project Wiki](https://github.com/garrettj403/SciencePlots/wiki/Gallery) for a full list of available styles.
 
 Specific Styles for Academic Journals
 -------------------------------------
@@ -97,7 +97,7 @@ The ``science`` + ``nature`` styles for Nature articles:
 Other languages
 ---------------
 
-SciencePlots currently supports [traditional Chinese](https://github.com/garrettj403/SciencePlots/wiki/Examples#traditional-chinese), [simplified Chinese](https://github.com/garrettj403/SciencePlots/wiki/Examples#simplified-chinese), [Japanese](https://github.com/garrettj403/SciencePlots/wiki/Examples#japanese), [Korean](https://github.com/garrettj403/SciencePlots/wiki/Examples#korean) and [Russian](https://github.com/garrettj403/SciencePlots/wiki/Examples#russian).
+SciencePlots currently supports [traditional Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#traditional-chinese), [simplified Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#simplified-chinese), [Japanese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#japanese), [Korean](https://github.com/garrettj403/SciencePlots/wiki/Gallery#korean) and [Russian](https://github.com/garrettj403/SciencePlots/wiki/Gallery#russian).
 
 Example: Traditional Chinese (`science` + `no-latex` + `cjk-tc-font`):
 
@@ -108,7 +108,7 @@ See the [FAQ](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-cj
 Other color cycles
 ------------------
 
-SciencePlots comes with a variety of different color cycles. For a full list, [see the project Wiki](https://github.com/garrettj403/SciencePlots/wiki/Examples#color-cycles). Two examples are shown below.
+SciencePlots comes with a variety of different color cycles. For a full list, [see the project Wiki](https://github.com/garrettj403/SciencePlots/wiki/Gallery#color-cycles). Two examples are shown below.
 
 The ``bright`` color cycle (color blind safe):
 
