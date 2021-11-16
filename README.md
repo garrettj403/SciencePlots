@@ -12,6 +12,8 @@ This repo has Matplotlib styles to format your figures for scientific papers, pr
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
 </p>
 
+You can find [the full gallery of included styles here](https://github.com/garrettj403/SciencePlots/wiki/Gallery).
+
 Getting Started
 ---------------
 
