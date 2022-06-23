@@ -139,7 +139,9 @@ SciencePlots in Academic Papers
 
 The following papers use ``SciencePlots``:
 
-- Y. Liu, X. Liu, Y. Sun, ["QGrain: An open-source and easy-to-use software for the comprehensive analysis of grain size distributions"](https://doi.org/10.1016/j.sedgeo.2021.105980), *Sedimentary Geology*, vol. 423, 105980, Aug. 2021.
+- J. Garrett, and E. Tong, ["Measuring Cryogenic Waveguide Loss in the Terahertz Regime,"](https://ieeexplore.ieee.org/document/9727077) *IEEE Trans. THz Sci. Technol.*, vol. 12, no. 3, pp. 293-299, May 2022.
+
+- Y. Liu, X. Liu, and Y. Sun, ["QGrain: An open-source and easy-to-use software for the comprehensive analysis of grain size distributions"](https://doi.org/10.1016/j.sedgeo.2021.105980), *Sedimentary Geology*, vol. 423, 105980, Aug. 2021.
 
 - J. Garrett, and E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides,"](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Process. Lett.*, vol. 28, pp. 1175-1179, Jun. 2021.
 
