@@ -1,0 +1,10 @@
+# Sans-serif
+font.family : sans-serif
+
+# Latex with sans-serif fonts
+mathtext.fontset : dejavusans
+
+# In general, we need to be careful with the preamble. A common font for
+# sans serif LaTeX is cmbright. However, it does not support bold fontweights
+# so we use sfmath instead. 
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath}
