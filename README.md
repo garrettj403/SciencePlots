@@ -47,6 +47,7 @@ Using the Styles
 
 ```python
 import matplotlib.pyplot as plt
+import scienceplots
 
 plt.style.use('science')
 ```
@@ -138,6 +139,8 @@ SciencePlots in Academic Papers
 -------------------------------
 
 The following papers use ``SciencePlots``:
+
+- J. Garrett, B.-K. Tan, C. Chaumont, F. Boussaha, and G. Yassin, ["A 230-GHz Endfire SIS Mixer With Near Quantum-Limited Performance,"](https://ieeexplore.ieee.org/document/9833810) *IEEE Microw. Wirel. Compon. Lett.*, Jul. 2022. ([open access](https://ora.ox.ac.uk/objects/uuid:59a100bf-c997-499a-be20-01fc66fffe2b))
 
 - J. Garrett, and E. Tong, ["Measuring Cryogenic Waveguide Loss in the Terahertz Regime,"](https://ieeexplore.ieee.org/document/9727077) *IEEE Trans. THz Sci. Technol.*, vol. 12, no. 3, pp. 293-299, May 2022.
 
