@@ -2,7 +2,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-
+import scienceplots
 
 def model(x, p):
     return x ** (2 * p + 1) / (1 + x ** (2 * p))
