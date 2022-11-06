@@ -51,7 +51,7 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='SciencePlots',
+    name='scienceplots',
     version='1.1.0',
     author="John Garrett",
     author_email="garrettj403@gmail.com",
