@@ -1,7 +1,7 @@
 """Install SciencePlots.
 
 This script (setup.py) will install the SciencePlots package.
-In order to expose .mplstyle files to matplotlib, "import SciencePlots"
+In order to expose .mplstyle files to matplotlib, "import scienceplots"
 must be called before plt.style.use(...).
 """
 
@@ -62,9 +62,9 @@ setup(
     url="https://github.com/garrettj403/SciencePlots/",
 
     install_requires=['matplotlib'],
-    packages=["SciencePlots"],
+    packages=["scienceplots"],
     package_data={
-      'SciencePlots': ['styles/**/*.mplstyle'],
+      'scienceplots': ['styles/**/*.mplstyle'],
     },
 
     classifiers=[
