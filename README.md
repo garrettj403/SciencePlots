@@ -32,7 +32,7 @@ cd SciencePlots
 pip install -e .
 ```
 
-The pip installation will automatically move all of the Matplotlib style files `*.mplstyle` into the appropriate directory on your computer.
+From version `v1.1.0` on, `import scienceplots` is needed on top of your scripts so Matplotlib can make use of the styles.
 
 **Notes:** 
 - SciencePlots requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-latex)). 

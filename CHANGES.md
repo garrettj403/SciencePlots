@@ -1,3 +1,10 @@
+v1.1.0 (07-Nov-2022)
+====================
+- Major change in distribution system
+  - Now needs import directive `import scienceplots`
+- Fix not using raw string in `plot-example.py`
+- Update README
+
 v1.0.9 (16-Sep-2021)
 ====================
 
