@@ -1,3 +1,8 @@
+v2.0.0 (21-Nov-2022)
+====================
+- Fix import on case sensitive OSs
+- Finally bump to this version, following breaking change of distribution
+
 v1.1.0 (07-Nov-2022)
 ====================
 - Major change in distribution system
