@@ -1,6 +1,9 @@
 Science Plots
 =============
 
+> **Warning**
+> : As of version 2.0.0, you need to add `import scienceplots` before setting the style (`plt.style.use('science')`).
+
 [![PyPI version](https://badge.fury.io/py/SciencePlots.svg)](https://badge.fury.io/py/SciencePlots)
 [![DOI](https://zenodo.org/badge/144605189.svg)](https://zenodo.org/badge/latestdoi/144605189)
 
