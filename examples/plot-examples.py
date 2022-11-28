@@ -253,3 +253,13 @@ with plt.style.context(['science', 'russian-font']):
     ax.set(ylabel=r'Сила тока ($\mu$A)')
     ax.autoscale(tight=True)
     fig.savefig('figures/fig16.jpg', dpi=300)
+    
+with plt.style.context(['science', 'turkish-font']):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title=r'Düzen', fontsize=7)
+    ax.set(xlabel=r'Gerilim/Volt (mV)')
+    ax.set(ylabel=r'Mevcut Güç/Akım ($\mu$A)')
+    ax.autoscale(tight=True)
+    fig.savefig('figures/fig17.jpg', dpi=300)
