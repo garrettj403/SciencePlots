@@ -103,7 +103,13 @@ The ``science`` + ``nature`` styles for Nature articles:
 Other languages
 ---------------
 
-SciencePlots currently supports [traditional Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#traditional-chinese), [simplified Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#simplified-chinese), [Japanese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#japanese), [Korean](https://github.com/garrettj403/SciencePlots/wiki/Gallery#korean) and [Russian](https://github.com/garrettj403/SciencePlots/wiki/Gallery#russian).
+SciencePlots currently supports:
+ * [Traditional Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#traditional-chinese)
+ * [Simplified Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#simplified-chinese)
+ * [Japanese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#japanese)
+ * [Korean](https://github.com/garrettj403/SciencePlots/wiki/Gallery#korean)
+ * [Russian](https://github.com/garrettj403/SciencePlots/wiki/Gallery#russian)
+ * [Turkish](https://github.com/garrettj403/SciencePlots/wiki/Gallery#turkish)
 
 Example: Traditional Chinese (`science` + `no-latex` + `cjk-tc-font`):
 
