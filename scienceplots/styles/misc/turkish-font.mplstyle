@@ -1,0 +1,3 @@
+# Add Latex packages for Turkish (Türkçe) fonts
+
+text.latex.preamble : \usepackage[turkish,shorthands=:!]{babel} \usepackage[utf8]{inputenc} % also latin5 \usepackage[T1]{fontenc} \usepackage{amsmath} \usepackage{amssymb}
