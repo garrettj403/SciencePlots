@@ -1,6 +1,6 @@
 v2.0.1 (03-Nov-2022)
 ====================
-- Add Turkish `turkish` language style
+- Add Turkish `turkish-font` language style
 
 v2.0.0 (21-Nov-2022)
 ====================
