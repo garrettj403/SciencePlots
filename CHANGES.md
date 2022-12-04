@@ -1,4 +1,4 @@
-v2.0.1 (03-Nov-2022)
+v2.0.1 (03-Dec-2022)
 ====================
 - Add Turkish `turkish-font` language style
 
