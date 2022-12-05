@@ -17,5 +17,9 @@ for inode in listdir(styles_path):
     if isdir(new_data_path):
         new_stylesheets = plt.style.core.read_style_directory(new_data_path)
         stylesheets.update(new_stylesheets)
+
 # Update dictionary of styles
 plt.style.core.update_nested_dict(plt.style.library, stylesheets)
+# Update `plt.style.available`, copy-paste from:
+# https://github.com/matplotlib/matplotlib/blob/a170539a421623bb2967a45a24bb7926e2feb542/lib/matplotlib/style/core.py#L266
+plt.style.core.available[:] = sorted(plt.style.library.keys())
