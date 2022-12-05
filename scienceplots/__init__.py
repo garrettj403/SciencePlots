@@ -3,15 +3,17 @@ from os.path import isdir, join
 
 import matplotlib.pyplot as plt
 
-import pkg_resources
+import scienceplots
 
 # register the included stylesheet in the matplotlib style library
-# TODO: migrate to importlib_resources when possible
-data_path = pkg_resources.resource_filename('scienceplots', 'styles/')
-stylesheets = plt.style.core.read_style_directory(data_path) # Reads styles in /styles
+scienceplots_path = scienceplots.__path__[0]
+styles_path = join(scienceplots_path, 'styles')
+
+# Reads styles in /styles
+stylesheets = plt.style.core.read_style_directory(styles_path)
 # Reads styles in /styles subfolders
-for inode in listdir(data_path):
-    new_data_path = join(data_path, inode)
+for inode in listdir(styles_path):
+    new_data_path = join(styles_path, inode)
     if isdir(new_data_path):
         new_stylesheets = plt.style.core.read_style_directory(new_data_path)
         stylesheets.update(new_stylesheets)
