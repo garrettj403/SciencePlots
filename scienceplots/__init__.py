@@ -22,4 +22,4 @@ for inode in listdir(styles_path):
 plt.style.core.update_nested_dict(plt.style.library, stylesheets)
 # Update `plt.style.available`, copy-paste from:
 # https://github.com/matplotlib/matplotlib/blob/a170539a421623bb2967a45a24bb7926e2feb542/lib/matplotlib/style/core.py#L266
-plt.style.core.available = sorted(plt.style.library.keys())
+plt.style.core.available[:] = sorted(plt.style.library.keys())
