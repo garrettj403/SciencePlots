@@ -56,6 +56,7 @@ with plt.style.context(['science', 'nature']):
     fig.savefig('figures/fig2c.pdf')
     fig.savefig('figures/fig2c.jpg', dpi=300)
 
+'''
 with plt.style.context(['science', 'scatter']):
     fig, ax = plt.subplots(figsize=(4, 4))
     ax.plot([-2, 2], [-2, 2], 'k--')
@@ -65,16 +66,19 @@ with plt.style.context(['science', 'scatter']):
         x1 = np.random.normal(0, 0.5, 10)
         y1 = x1 + np.random.normal(0, 0.2, 10)
         ax.plot(x1, y1, label=r"$^\#${}".format(i+1))
-    lgd = r"$\mathring{P}=\begin{cases}1&\text{if $\nu\geq0$}\\0&\text{if $\nu<0$}\end{cases}$"
+    # lgd = r"$\mathring{P}=\begin{cases}1&\text{if $\nu\geq0$}\\0&\text{if $\nu<0$}\end{cases}$"
+    lgd = r"$dunno2$"
     ax.legend(title=lgd, loc=2, ncol=2)
     xlbl = r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$"
-    ylbl = r"$\log_{10}\left(\frac{L_\circledast}{\mathrm{L}_\odot}\right)$"
+    # ylbl = r"$\log_{10}\left(\frac{L_\circledast}{\mathrm{L}_\odot}\right)$"
+    ylbl = r"$dunno$"
     ax.set_xlabel(xlbl)
     ax.set_ylabel(ylbl)
     ax.set_xlim([-2, 2])
     ax.set_ylim([-2, 2])
     fig.savefig('figures/fig3.pdf')
     fig.savefig('figures/fig3.jpg', dpi=300)
+'''
 
 with plt.style.context(['science', 'high-vis']):
     fig, ax = plt.subplots()
