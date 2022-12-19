@@ -19,12 +19,14 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.napoleon',
     'sphinx.ext.extlinks',
+    'sphinx.ext.autosectionlabel',
     'sphinx_copybutton'
 ]
 
 templates_path = ['_templates']
 exclude_patterns = []
 
+# sphinx.ext.extlinks config
 # External links aliases
 repo_base_link = 'https://github.com/garrettj403/SciencePlots/'
 extlinks = {
@@ -36,6 +38,12 @@ extlinks = {
 }
 # Warn replaceable hardcoded links
 extlinks_detect_hardcoded_links = True
+
+# sphinx.ext.autosectionlabel config
+# prefix each section label with name of the doc it is in, followed by a colon
+autosectionlabel_prefix_document = True
+# sections for labeling by its depth
+autosectionlabel_maxdepth = 2
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
