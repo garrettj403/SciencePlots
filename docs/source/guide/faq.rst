@@ -24,8 +24,7 @@ SciencePlots requires Latex to be installed on your machine.
 
   .. code-block:: bash
 
-    sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended
-      cm-super
+    sudo apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
 
 
 - Please see `Matplotlib's guide to using Latex
