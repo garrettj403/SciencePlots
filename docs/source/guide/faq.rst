@@ -129,7 +129,7 @@ After version ``2.0.0``, using SciencePlots is the same as explained above.
 Prior to version ``2.0.0``, you may have had to reload the Matplotlib style
 library.
 
-.. code-block:: IPython
+.. code-block::
 
     !pip install SciencePlots
     import matplotlib.pyplot as plt
