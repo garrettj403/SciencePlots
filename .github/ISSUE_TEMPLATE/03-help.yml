@@ -1,7 +1,7 @@
 name: Help request
 description: File a help request
 title: "[Help Request]: "
-labels: ["question"]
+labels: ["user question/help"]
 # assignees:
 
 body:
