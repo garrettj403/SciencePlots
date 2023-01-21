@@ -38,6 +38,7 @@ body:
         Matplotlib: 0.0.0
         Latex distro: (populate manually)
       value: ""
+      render: "Python console"
     validations:
       required: true
 
@@ -56,7 +57,7 @@ body:
     attributes:
       label: "How can we reproduce it?"
       description: "Be as accurate as possible, it will help us very much."
-      placeholder: "Paste inline code between backticks [\`] and code blocks between 3 [\`\`\`]"
+      placeholder: "Paste inline code between backticks [`] and code blocks between 3 [```]"
       value: ""
     validations:
       required: true
