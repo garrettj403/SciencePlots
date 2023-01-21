@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        "_Thanks for taking the time to fill this out!_"
+        "Thanks for taking the time to fill this out!"
 
   - type: markdown
     attributes:
@@ -45,9 +45,9 @@ body:
   - type: textarea
     id: user-description
     attributes:
-      label: "What do expect? What happens?"
+      label: "Describe your issue here"
       # description: ""
-      placeholder: "Describe your issue here"
+      placeholder: "What do you expect? What happens?"
       # value: ""
     validations:
       required: true
