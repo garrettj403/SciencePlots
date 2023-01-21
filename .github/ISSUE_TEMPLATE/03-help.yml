@@ -1,0 +1,72 @@
+name: Help request
+description: File a help request
+title: "[Help Request]: "
+labels: ["question"]
+# assignees:
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        "_Thanks for taking the time to fill this out!_"
+
+  - type: markdown
+    attributes:
+      value: |
+        First of all, let's have a look to your environment: run the following Python code snippet and paste the output below.
+        Also, please note that if the issue is related to the Latex binding, you have to type it manually.
+        ```python
+        import platform
+        import sys
+        from importlib.metadata import version
+        print('System: ' + platform.platform())
+        print('Python: ' + sys.version)
+        print('SciencePlots: ' + version('scienceplots'))
+        print('Matplotlib: ' + version('matplotlib'))
+        print('Latex distro: ' + '(populate manually)')
+        ```
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Paste here the output of the code above
+      placeholder: |
+        System: Windows-10-10.0.19044-SP0
+        Python: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 1984, 24:00:00) [MSC v.1929 64 bit (AMD64)]
+        SciencePlots: 0.0.0
+        Matplotlib: 0.0.0
+        Latex distro: (populate manually)
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-description
+    attributes:
+      label: "What do you want to achieve? What happens?"
+      description: ""
+      placeholder: "Describe your issue here"
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: "How can we reproduce it?"
+      description: "Be as accurate as possible, it will help us very much."
+      placeholder: "Paste inline code between backticks [\`] and code blocks between 3 [\`\`\`]"
+      value: ""
+    validations:
+      required: true
+  
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Extra info"
+      description: "Please, specify anything else that may be of help (e.g. troubleshooting you made, links to other issues that may be related, stackoverflow posts, etc.)"
+      placeholder: ""
+      value: ""
+    validations:
+      required: false
