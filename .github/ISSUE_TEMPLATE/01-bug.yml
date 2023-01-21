@@ -1,15 +1,14 @@
-name: Help request
-description: File a help request
-title: "[Help Request]: "
-labels: ["question"]
+name: Bug report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
 # assignees:
 
 body:
   - type: markdown
     attributes:
       value: |
-        First, please check there isn't a duplicate in the [issue tracker](../).
-        And thanks for taking the time to fill this out! It really helps us a lot.
+        "Thanks for taking the time to fill this out! It really helps us a lot."
 
   - type: markdown
     attributes:
@@ -46,7 +45,7 @@ body:
   - type: textarea
     id: user-description
     attributes:
-      label: "Describe your issue here"
+      label: "Describe the issue here"
       # description: ""
       placeholder: "What do you expect? What happens?"
       # value: ""
