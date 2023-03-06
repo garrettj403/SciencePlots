@@ -8,6 +8,13 @@ must be called before plt.style.use(...).
 import os
 from setuptools import setup
 
+EXTRAS_REQUIRE = {
+    'test': ['pytest'],
+    'docs': ['sphinx', 'sphinx-gallery', 'sphinx_copybutton',
+             'pydata-sphinx-theme', 'Jinja2', 'numpy']
+}
+EXTRAS_REQUIRE['all'] = sorted(set(sum(EXTRAS_REQUIRE.values(), [])))
+
 # Get description from README
 root = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
@@ -24,15 +31,19 @@ setup(
     license="MIT",
     url="https://github.com/garrettj403/SciencePlots/",
 
-    install_requires=['matplotlib'],
     packages=["scienceplots"],
     package_data={
       'scienceplots': ['styles/**/*.mplstyle'],
     },
+    install_requires=['matplotlib'],
+
+    extras_require=EXTRAS_REQUIRE,
+    tests_require=EXTRAS_REQUIRE['test'],
 
     classifiers=[
         'Framework :: Matplotlib', 
         'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python',
         'Programming Language :: Python :: 3'
     ],
     keywords=[
