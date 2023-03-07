@@ -128,7 +128,7 @@ LANG_PARAMS = {  # Language dicts to generate examples
                     'ylabel': r'전류 ($\mu$A)'},
     'russian-font': {'legend_title': r'Число',
                      'xlabel': r'Напряжение (mV)',
-                     'ylabel': r'電流 ($\mu$A)'},
+                     'ylabel': r'Сила тока ($\mu$A)'},
     'turkish-font': {'legend_title': r'Düzen',
                      'xlabel': r'Gerilim/Volt (mV)',
                      'ylabel': r'Mevcut Güç/Akım ($\mu$A)'},
