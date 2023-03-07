@@ -1,0 +1,12 @@
+/* Custom Sphinx-Gallery CSS */
+
+/*   Bigger thumbnails */
+/*     Grid: Double column size */
+.sphx-glr-thumbnails {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));  /* Default is 160px */
+}
+/*     Thumbnails: use as much space as possible */
+.sphx-glr-thumbcontainer img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+}

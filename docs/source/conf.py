@@ -62,4 +62,12 @@ sphinx_gallery_conf = {
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'pydata_sphinx_theme'
+
+# These folders are copied to the documentation's HTML output
 html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom_sphinx_gallery.css',  # bigger size of thumbnails
+]
