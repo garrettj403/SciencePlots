@@ -54,8 +54,9 @@ sphinx_gallery_conf = {
     'run_stale_examples': True,  # rebuild all examples
     'nested_sections': True,
     'within_subsection_order': ExampleTitleSortKey,  # examples sorting order
-    'filename_pattern': 'plot_.*\.py',
-    'ignore_pattern': '__.*\.py',
+    'filename_pattern': r'plot_.*\.py',
+    'ignore_pattern': r'__.*\.py',
+    'remove_config_comments': True,
 }
 
 # -- Options for HTML output -------------------------------------------------
