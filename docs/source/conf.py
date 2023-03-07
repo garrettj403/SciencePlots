@@ -56,7 +56,6 @@ sphinx_gallery_conf = {
     'within_subsection_order': ExampleTitleSortKey,  # examples sorting order
     'filename_pattern': r'plot_.*\.py',
     'ignore_pattern': r'__.*\.py',
-    'remove_config_comments': True,
 }
 
 # -- Options for HTML output -------------------------------------------------
