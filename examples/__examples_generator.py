@@ -43,7 +43,7 @@ OUTPUT_FOLDERS = {k: '_'.join([k, 'styles']).title()
 #     - Use 'ignore' to leave out any of the styles
 #
 # TEMPLATES REFERENCE:
-# * base_example.py.jinja2
+# * base_example.jinja2
 #     Main basic example, extended by other examples templates
 #       Input:
 #         * styles: list-like (just what you would pass to plt.style.use(...))
@@ -57,17 +57,17 @@ OUTPUT_FOLDERS = {k: '_'.join([k, 'styles']).title()
 #             Default values for them can be looked up in source file.
 #             Can also be used to insert constant code, like np.random.seed()
 #         * body: defaults to general example code.
-# * scatter_example.py.jinja2
+# * scatter_example.jinja2
 #     Substitutes body code in order to generate legacy fig3.jpg
 #     under old 'examples/figures'
 #       Defines blocks:
 #         * lang_texts: labels are formulae and equations
 #         * body: mentioned example code
-# * language_example.py.jinja2
+# * language_example.jinja2
 #     General example template for languages. Allows broader input of labels
 #     and titles.
 #       Input:
-#           - styles: list-like (same as in base_example.py.jinja2)
+#           - styles: list-like (same as in base_example.jinja2)
 #           - legend_title: raw string, title for the legend
 #           - xlabel: raw string, label for x-axis
 #           - ylabel: raw string, label for y-axis
@@ -119,9 +119,9 @@ for folder_name in OUTPUT_FOLDERS.values():
             readme_file.write(readme)
 
 # Read templates
-plot_template = template_env.get_template('base_example.py.jinja2')
-scatter_template = template_env.get_template('scatter_example.py.jinja2')
-language_template = template_env.get_template('language_example.py.jinja2')
+plot_template = template_env.get_template('base_example.jinja2')
+scatter_template = template_env.get_template('scatter_example.jinja2')
+language_template = template_env.get_template('language_example.jinja2')
 
 LANG_PARAMS = {  # Dicts to generate language examples
     'cjk-tc-font': {'legend_title': 'Order',
@@ -210,15 +210,24 @@ n_total_examples += n_group_examples
 
 # LANGUAGE Styles
 group = 'LANGUAGE'
-ignore = {}
+# Create examples for languages that do not require latex
+ignore = {sty for sty in STYLES[group] if sty.startswith('cjk')}
 n_group_examples = 0
 output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 for style in STYLES[group]:
     if style in ignore:
         continue
     current_example_path = output_folder.joinpath('plot_' + style + '.py')
-    if style in {'turkish-font'}:
-        no_latex_optional = True
+    example_styles = ['science'] + [style]
+    example_text = language_template.render(styles=example_styles,
+                                            # Unpack language strings
+                                            **LANG_PARAMS[style])
+    with current_example_path.open('w', encoding='UTF-8') as example:
+        example.write(example_text)
+        n_group_examples += 1
+# Create examples for ignored languages TODO
+for style in ignore:
+    current_example_path = output_folder.joinpath('plot_' + style + '.py')
     example_styles = ['science', 'no-latex'] + [style]
     example_text = language_template.render(styles=example_styles,
                                             # Unpack language strings

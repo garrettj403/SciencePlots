@@ -5,8 +5,8 @@
 # PLEASE REFER TO __examples_generator.py TO ADD OTHER EXAMPLES
 # sphinx_gallery_end_ignore
 """
-{{ styles | join(' + ') | reverse() }}
-=========================================
+{{ styles | reverse() | list() | join(' + ') }}
+===============================================
 
 Example with ``{{ styles | pprint() | trim('[]') }}``
 {%- block description_extended %}{% endblock description_extended %}
