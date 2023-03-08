@@ -41,7 +41,7 @@ setup(
     tests_require=EXTRAS_REQUIRE['test'],
 
     classifiers=[
-        'Framework :: Matplotlib', 
+        'Framework :: Matplotlib',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3'

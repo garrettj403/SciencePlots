@@ -7,7 +7,7 @@ import scienceplots  # NOQA: F401
 
 # Paths we will need
 THIS_FILEDIR = Path(__file__).parent.resolve()
-STYLES_PATH = THIS_FILEDIR.joinpath('..\\scienceplots\\styles')
+STYLES_PATH = THIS_FILEDIR.joinpath('../scienceplots/styles')
 TEMPLATE_PLOT_FILE = THIS_FILEDIR.joinpath('template_plot.py.jinja2')
 TEMPLATE_PLOT_SCATTER_FILE = \
     THIS_FILEDIR.joinpath('template_plot_scatter.py.jinja2')
@@ -89,6 +89,7 @@ for folder_name in OUTPUT_FOLDERS.values():
 # EXAMPLE GENERATOR TEMPLATE:
 # group = 'BASE'
 # ignore = {'scatter'}
+# n_group_examples = 0
 # output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 # for style in STYLES[group]:
 #     if style in ignore:
@@ -99,6 +100,8 @@ for folder_name in OUTPUT_FOLDERS.values():
 #     example_text = plot_template.render(styles=example_styles)
 #     with current_example_path.open('w') as example:
 #         example.write(example_text)
+# print(f'Group {group}: created {n_group_examples} examples')
+# n_total_examples += n_group_examples
 # END OF TEMPLATE
 # See BASE Styles code for a complete pattern including ignored styles
 
@@ -134,9 +137,12 @@ LANG_PARAMS = {  # Language dicts to generate examples
                      'ylabel': r'Mevcut Güç/Akım ($\mu$A)'},
 }
 
+n_total_examples = 0
+
 # BASE Styles
 group = 'BASE'
 ignore = {'scatter'}
+n_group_examples = 0
 output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 for style in STYLES[group]:
     if style in ignore:
@@ -144,20 +150,25 @@ for style in STYLES[group]:
     current_example_path = output_folder.joinpath('plot_' + style + '.py')
     example_styles = [style]  # Convert each item to list (input to template)
     example_text = plot_template.render(styles=example_styles)
-    with current_example_path.open('w') as example:
+    with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
+        n_group_examples += 1
 # ignored styles
 # Use same output folder
 for style in ignore:
     current_example_path = output_folder.joinpath('plot_' + style + '.py')
     example_styles = [style] + ['science']
     example_text = scatter_template.render(styles=example_styles)
-    with current_example_path.open('w') as example:
+    with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
+        n_group_examples += 1
+print(f'Group {group}: created {n_group_examples} examples')
+n_total_examples += n_group_examples
 
 # COLOR Styles
 group = 'COLOR'
 ignore = {}
+n_group_examples = 0
 output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 for style in STYLES[group]:
     if style in ignore:
@@ -167,10 +178,14 @@ for style in STYLES[group]:
     example_text = plot_template.render(styles=example_styles)
     with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
+        n_group_examples += 1
+print(f'Group {group}: created {n_group_examples} examples')
+n_total_examples += n_group_examples
 
 # JOURNALS Styles
 group = 'JOURNAL'
 ignore = {}
+n_group_examples = 0
 output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 for style in STYLES[group]:
     if style in ignore:
@@ -180,10 +195,14 @@ for style in STYLES[group]:
     example_text = plot_template.render(styles=example_styles)
     with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
+        n_group_examples += 1
+print(f'Group {group}: created {n_group_examples} examples')
+n_total_examples += n_group_examples
 
 # LANGUAGE Styles
 group = 'LANGUAGE'
 ignore = {}
+n_group_examples = 0
 output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 for style in STYLES[group]:
     if style in ignore:
@@ -195,10 +214,14 @@ for style in STYLES[group]:
                                             **LANG_PARAMS[style])
     with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
+        n_group_examples += 1
+print(f'Group {group}: created {n_group_examples} examples')
+n_total_examples += n_group_examples
 
 # MISCELLANEOUS Styles
 group = 'MISCELLANEOUS'
 ignore = {}
+n_group_examples = 0
 output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 for style in STYLES[group]:
     if style in ignore:
@@ -208,3 +231,10 @@ for style in STYLES[group]:
     example_text = plot_template.render(styles=example_styles)
     with current_example_path.open('w') as example:
         example.write(example_text)
+        n_group_examples += 1
+print(f'Group {group}: created {n_group_examples} examples')
+n_total_examples += n_group_examples
+
+n_of_styles = sum(len(STYLES[k]) for k in STYLES.keys())
+print(f'(Created examples) / (Number of Styles): '
+      f'{n_total_examples} / {n_of_styles}')
