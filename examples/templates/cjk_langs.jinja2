@@ -1,0 +1,10 @@
+{% extends "language_example.jinja2" %}
+{#- Inspired by https://github.com/garrettj403/SciencePlots/pull/29
+and the old commented example at 'examples/plot-figures.py' -#}
+
+{% block env_config_code %}
+import matplotlib
+
+# PGF backend is needed for CJK support
+matplotlib.use('pgf')
+{% endblock env_config_code %}

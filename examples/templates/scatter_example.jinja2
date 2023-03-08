@@ -1,14 +1,18 @@
 {% extends "base_example.jinja2" %}
+
 {% block lang_texts -%}
-np.random.seed(20020906)  # Set random state == a nice reproducible example
 lang_pparam = dict(
     xlabel=r"$\log_{10}\left(\frac{L_\mathrm{IR}}{\mathrm{L}_\odot}\right)$",
     ylabel=r"$\log_{10}\left(\frac{L_\circledast}{\mathrm{L}_\odot}\right)$")
 lang_legend = r"$\mathring{P}=\begin{cases}1&\text{if $\nu\geq0$}" \
-             r"\\0&\text{if $\nu<0$}\end{cases}$"
-{%- endblock lang_texts %}
+              r"\\0&\text{if $\nu<0$}\end{cases}$"
+{% endblock lang_texts %}
 
-{%- block body %}
+{% block env_config_code %}
+np.random.seed(20020906)  # Set random state == a nice reproducible example
+{% endblock env_config_code %}
+
+{% block body %}
 fig, ax = plt.subplots(figsize=(4, 4))
 ax.plot([-2, 2], [-2, 2], 'k--')
 ax.fill_between([-2, 2], [-2.2, 1.8], [-1.8, 2.2],
@@ -19,4 +23,4 @@ for i in range(7):
     ax.scatter(x1, y1, label=r"$^\#${}".format(i+1))
 ax.legend(title=lang_legend, loc=2, ncol=2)
 ax.set(xlim=(-2, 2), ylim=(-2, 2))
-{%- endblock body %}
+{% endblock body %}

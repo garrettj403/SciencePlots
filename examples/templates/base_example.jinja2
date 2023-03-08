@@ -15,7 +15,8 @@ Example with ``{{ styles | pprint() | trim('[]') }}``
 import numpy as np
 import matplotlib.pyplot as plt
 import scienceplots  # NOQA: F401
-
+{%- block env_config_code %}
+{% endblock env_config_code %}
 
 def model(x, p):
     return x ** (2 * p + 1) / (1 + x ** (2 * p))
@@ -26,7 +27,6 @@ lang_pparam = dict(xlabel='Voltage (mV)', ylabel=r'Current ($\mu$A)')
 lang_legend = 'Order'
 {% endblock lang_texts %}
 x = np.linspace(0.75, 1.25, 201)
-
 plt.style.use({{ styles | pprint() }})
 {%- block body %}
 fig, ax = plt.subplots()
