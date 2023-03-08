@@ -1,0 +1,7 @@
+{% extends "base_example.py.jinja2" %}
+
+{% block lang_texts -%}
+lang_pparam = dict(xlabel=r'{{ xlabel }}',
+                   ylabel=r'{{ ylabel }}')
+lang_legend = r'{{ legend_title }}'
+{% endblock lang_texts %}
