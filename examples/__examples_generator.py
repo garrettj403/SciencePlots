@@ -55,7 +55,9 @@ OUTPUT_FOLDERS = {k: '_'.join([k, 'styles']).title()
 #               - lang_pparam: dict of str with keys xlabel and ylabel
 #               - lang_legend: str
 #             Default values for them can be looked up in source file.
-#             Can also be used to insert constant code, like np.random.seed()
+#         * env_config_code: defaults to nothing
+#             Space reserved to insert code that configures the example
+#             environment, like np.random.seed() or matplotlib.use()
 #         * body: defaults to general example code.
 # * scatter_example.jinja2
 #     Substitutes body code in order to generate legacy fig3.jpg
@@ -71,6 +73,10 @@ OUTPUT_FOLDERS = {k: '_'.join([k, 'styles']).title()
 #           - legend_title: raw string, title for the legend
 #           - xlabel: raw string, label for x-axis
 #           - ylabel: raw string, label for y-axis
+# * cjk_langs.jinja2
+#     Extends "language_example.jinja2".
+#       Defines block:
+#         * env_config_code: import matplotlib \ matplotlib.use('pgf')
 # * README.rst.jinja2
 #     Creates title for subsection in Gallery.
 #     Input:
@@ -122,6 +128,7 @@ for folder_name in OUTPUT_FOLDERS.values():
 plot_template = template_env.get_template('base_example.jinja2')
 scatter_template = template_env.get_template('scatter_example.jinja2')
 language_template = template_env.get_template('language_example.jinja2')
+cjk_template = template_env.get_template('cjk_langs.jinja2')
 
 LANG_PARAMS = {  # Dicts to generate language examples
     'cjk-tc-font': {'legend_title': 'Order',
@@ -225,13 +232,13 @@ for style in STYLES[group]:
     with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
         n_group_examples += 1
-# Create examples for ignored languages TODO
+# Create examples for CJK
 for style in ignore:
     current_example_path = output_folder.joinpath('plot_' + style + '.py')
     example_styles = ['science', 'no-latex'] + [style]
-    example_text = language_template.render(styles=example_styles,
-                                            # Unpack language strings
-                                            **LANG_PARAMS[style])
+    example_text = cjk_template.render(styles=example_styles,
+                                       # Unpack language strings
+                                       **LANG_PARAMS[style])
     with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
         n_group_examples += 1
