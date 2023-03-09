@@ -13,11 +13,11 @@ build:
 # TODO: add noto-sans-cjk ?
 # https://docs.readthedocs.io/en/stable/config-file/v2.html#build-apt-packages
   # apt_packages:
-# TODO: requires testing & might be added in github instead
+# TODO: add github action instead?
 # https://docs.readthedocs.io/en/stable/config-file/v2.html#build-jobs
-  # jobs:
-    # pre_build:
-      # - python ./examples/__examples_generator.py
+  jobs:
+    pre_build:
+      - python ./examples/__examples_generator.py
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:

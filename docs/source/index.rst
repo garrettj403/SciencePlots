@@ -12,7 +12,6 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    guide/getting_started
    guide/faq
