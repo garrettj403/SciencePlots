@@ -14,7 +14,10 @@ build:
 # https://docs.readthedocs.io/en/stable/config-file/v2.html#build-apt-packages
   apt_packages:
     # From FAQ
-    - dvipng texlive-latex-extra texlive-fonts-recommended cm-super
+    - dvipng
+    - texlive-latex-extra
+    - texlive-fonts-recommended
+    - cm-super
 # TODO: add github action instead?
 # https://docs.readthedocs.io/en/stable/config-file/v2.html#build-jobs
   jobs:
