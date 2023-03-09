@@ -1,0 +1,35 @@
+# .readthedocs.yaml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Set the version of Python and other tools you might need
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.8"
+# TODO: add noto-sans-cjk ?
+# https://docs.readthedocs.io/en/stable/config-file/v2.html#build-apt-packages
+  # apt_packages:
+# TODO: requires testing & might be added in github instead
+# https://docs.readthedocs.io/en/stable/config-file/v2.html#build-jobs
+  # jobs:
+    # pre_build:
+      # - python ./examples/__examples_generator.py
+
+# Build documentation in the docs/ directory with Sphinx
+sphinx:
+   configuration: docs/source/conf.py
+
+# Optionally declare the Python requirements required to build your docs
+python:
+  install:
+    - method: pip
+      path: .
+      extra_requirements:
+        - docs
+
+# TODO: possibly add search priority
+# https://docs.readthedocs.io/en/stable/config-file/v2.html#search

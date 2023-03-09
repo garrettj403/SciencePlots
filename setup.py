@@ -8,8 +8,10 @@ must be called before plt.style.use(...).
 import os
 from setuptools import setup
 
+PYTHON_VERSION = '>=3.8'
+INSTALL_REQUIRE = ['matplotlib']
 EXTRAS_REQUIRE = {
-    'test': ['pytest'],
+    'test': ['pytest', 'flake8'],
     'docs': ['sphinx', 'sphinx-gallery', 'sphinx_copybutton',
              'pydata-sphinx-theme', 'Jinja2', 'numpy']
 }
@@ -35,10 +37,10 @@ setup(
     package_data={
       'scienceplots': ['styles/**/*.mplstyle'],
     },
-    install_requires=['matplotlib'],
-
-    extras_require=EXTRAS_REQUIRE,
+    python_version=PYTHON_VERSION,
+    install_requires=INSTALL_REQUIRE,
     tests_require=EXTRAS_REQUIRE['test'],
+    extras_require=EXTRAS_REQUIRE,
 
     classifiers=[
         'Framework :: Matplotlib',
