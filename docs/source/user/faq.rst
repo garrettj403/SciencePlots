@@ -1,5 +1,13 @@
 FAQ
 ===
+If you need any help with SciencePlots, please first check the
+the question has not already been addressed here and search through
+`previous GitHub issues <|repo_base_link + "issues?q=is%3Aissue"|>`_.
+If you didn't find an answer, you can create a new issue.
+
+You can checkout `Matplotlib's documentation
+<https://matplotlib.org/tutorials/introductory/customizing.html>`_
+for more information on plotting settings.
 
 .. contents:: I want to know more about...
     :local:
