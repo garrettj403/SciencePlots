@@ -21,6 +21,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.extlinks',
     'sphinx.ext.autosectionlabel',
+    'sphinx.ext.intersphinx',
     'sphinx_copybutton',
     'sphinx_gallery.gen_gallery'
 ]
@@ -35,8 +36,10 @@ extlinks = {
     'ghissue': (repo_base_link + 'issues/%s', 'issue %s'),
     'ghpull': (repo_base_link + 'pull/%s', 'pull request '),
     'ghwiki': (repo_base_link + 'wiki/%s', 'wiki '),
-    'ghuser': ('https://github.com/%s', '@'),
-    'doi': ('http://doi.org/%s', 'DOI: ')
+    'ghuser': ('https://github.com/%s', '@%s'),
+    'doi': ('http://doi.org/%s', 'DOI: %s'),
+    'ghmatplotlibissue': ('https://github.com/matplotlib/matplotlib/issues/%s',
+                          'Matplotlib issue %s')
 }
 # Warn replaceable hardcoded links
 extlinks_detect_hardcoded_links = True
@@ -57,6 +60,7 @@ sphinx_gallery_conf = {
     'filename_pattern': r'plot_.*\.py',
     'ignore_pattern': r'__.*\.py',
     'remove_config_comments': True,
+    'line_numbers': True,
 }
 
 # -- Options for HTML output -------------------------------------------------
