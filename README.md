@@ -35,7 +35,7 @@ cd SciencePlots
 pip install -e .
 ```
 
-From version `v1.1.0` on, `import scienceplots` is needed on top of your scripts so Matplotlib can make use of the styles.
+From version `v2.0.0` on, `import scienceplots` is needed on top of your scripts so Matplotlib can make use of the styles.
 
 **Notes:** 
 - SciencePlots requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-latex)). 
