@@ -46,45 +46,6 @@ SciencePlots requires Latex to be installed on your machine.
       plt.style.use(['science','no-latex'])
 
 
-Installing CJK fonts
---------------------
-
-To use Chinese, Japanese or Korean fonts, you first need to install `Noto CJK
-Fonts <https://www.google.com/get/noto/help/cjk/>`_. You can download and
-install these fonts from the given link or you can install them with a package
-manager:
-
-.. code-block:: bash
-
-    # Ubuntu / Debian
-    sudo apt update
-    sudo apt install fonts-noto-cjk
-
-    # macOS
-    brew tap homebrew/cask-fonts
-    brew cask install font-noto-serif-cjk-tc
-    brew cask install font-noto-serif-cjk-sc
-    brew cask install font-noto-serif-cjk-jp
-    brew cask install font-noto-serif-cjk-kr
-
-    # archlinux
-    sudo pacman -S noto-fonts-cjk
-
-- For Windows Subsystem for Linux (WSL), you will need to manually download and
-  install the fonts by following
-  `these instructions <https://www.google.com/get/noto/help/install/>`_.
-
-- Note that `matplotlib` may not find the fonts correctly. You can refresh the
-  font cache by running:
-
-    .. code-block:: python
-
-        import matplotlib.font_manager as fm
-        fm._rebuild()
-
-- See this :ghissue:`16` for more information.
-
-
 Installing SciencePlots manually
 --------------------------------
 
@@ -96,7 +57,6 @@ python console type:
 .. code-block:: python
 
     import matplotlib
-    import scienceplots
     print(matplotlib.get_configdir())
 
 You should get back something like ``/home/garrett/.matplotlib``. You would

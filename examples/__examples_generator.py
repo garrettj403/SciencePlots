@@ -73,6 +73,7 @@ OUTPUT_FOLDERS = {k: '_'.join([k, 'styles']).title()
 #           - legend_title: raw string, title for the legend
 #           - xlabel: raw string, label for x-axis
 #           - ylabel: raw string, label for y-axis
+# TODO: remove CJK support
 # * cjk_langs.jinja2
 #     Extends "language_example.jinja2".
 #       Defines block:
@@ -128,21 +129,23 @@ for folder_name in OUTPUT_FOLDERS.values():
 plot_template = template_env.get_template('base_example.jinja2')
 scatter_template = template_env.get_template('scatter_example.jinja2')
 language_template = template_env.get_template('language_example.jinja2')
-cjk_template = template_env.get_template('cjk_langs.jinja2')
+# TODO: remove CJK support
+# cjk_template = template_env.get_template('cjk_langs.jinja2')
 
 LANG_PARAMS = {  # Dicts to generate language examples
-    'cjk-tc-font': {'legend_title': 'Order',
-                    'xlabel': r'電壓 (mV)',
-                    'ylabel': r'電流 ($\mu$A)'},
-    'cjk-sc-font': {'legend_title': 'Order',
-                    'xlabel': r'电压 (mV)',
-                    'ylabel': r'电流 ($\mu$A)'},
-    'cjk-jp-font': {'legend_title': 'Order',
-                    'xlabel': r'電圧 (mV)',
-                    'ylabel': r'電気 ($\mu$A)'},
-    'cjk-kr-font': {'legend_title': 'Order',
-                    'xlabel': r'전압 (mV)',
-                    'ylabel': r'전류 ($\mu$A)'},
+# TODO: remove CJK support
+    # 'cjk-tc-font': {'legend_title': 'Order',
+    #                 'xlabel': r'電壓 (mV)',
+    #                 'ylabel': r'電流 ($\mu$A)'},
+    # 'cjk-sc-font': {'legend_title': 'Order',
+    #                 'xlabel': r'电压 (mV)',
+    #                 'ylabel': r'电流 ($\mu$A)'},
+    # 'cjk-jp-font': {'legend_title': 'Order',
+    #                 'xlabel': r'電圧 (mV)',
+    #                 'ylabel': r'電気 ($\mu$A)'},
+    # 'cjk-kr-font': {'legend_title': 'Order',
+    #                 'xlabel': r'전압 (mV)',
+    #                 'ylabel': r'전류 ($\mu$A)'},
     'russian-font': {'legend_title': r'Число',
                      'xlabel': r'Напряжение (mV)',
                      'ylabel': r'Сила тока ($\mu$A)'},
@@ -232,16 +235,18 @@ for style in STYLES[group]:
     with current_example_path.open('w', encoding='UTF-8') as example:
         example.write(example_text)
         n_group_examples += 1
+
+# TODO: remove CJK support
 # Create examples for CJK
-for style in ignore:
-    current_example_path = output_folder.joinpath('plot_' + style + '.py')
-    example_styles = ['science', 'no-latex'] + [style]
-    example_text = cjk_template.render(styles=example_styles,
-                                       # Unpack language strings
-                                       **LANG_PARAMS[style])
-    with current_example_path.open('w', encoding='UTF-8') as example:
-        example.write(example_text)
-        n_group_examples += 1
+# for style in ignore:
+#     current_example_path = output_folder.joinpath('plot_' + style + '.py')
+#     example_styles = ['science', 'no-latex'] + [style]
+#     example_text = cjk_template.render(styles=example_styles,
+#                                        # Unpack language strings
+#                                        **LANG_PARAMS[style])
+#     with current_example_path.open('w', encoding='UTF-8') as example:
+#         example.write(example_text)
+#         n_group_examples += 1
 print(f'Group {group}: {n_group_examples} / {len(STYLES[group])}')
 n_total_examples += n_group_examples
 

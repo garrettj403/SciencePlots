@@ -19,11 +19,11 @@ The easiest way to install SciencePlots is by using ``pip``:
     py -m pip install -e .
 
 .. warning:: 
-    - SciencePlots requires Latex (see :ref:`user/faq:Installing Latex`). 
-    - If you would like to use CJK fonts, you will need to install these fonts
-      separately. See :ref:`user/faq:Installing CJK fonts`.
-      Please see the :doc:`faq` for more information and troubleshooting.
+    SciencePlots requires Latex (see :ref:`guides/faq:Installing Latex`). 
 
+.. deprecationwarning::
+    CJK fonts were deprecated, in favor of other packages that support and
+    maintain them. E.g. `mplfonts<https://github.com/Clarmy/mplfonts>`_.
 
 Using the Styles
 ----------------
@@ -52,7 +52,7 @@ To use any of the styles temporarily, you can use:
 
 .. danger::
     It has been reported that `plt.style.context()` has issues with LaTeX
-    preambles, so it is recommended to stick to `plt.style.use()`.
+    preambles, so it's better to stick to `plt.style.use()`.
     See :ghmatplotlibissue:`17931`.
 
 .. code-block:: python
@@ -61,5 +61,3 @@ To use any of the styles temporarily, you can use:
     plt.figure()
     plt.plot(x, y)
     plt.show()
-
-TODO: ADD INFO ABOUT OTHER Styles
