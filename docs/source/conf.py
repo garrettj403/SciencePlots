@@ -9,7 +9,7 @@ from sphinx_gallery.sorting import ExampleTitleSortKey
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'SciencePlots'
-copyright = '2022, John D. Garrett'
+copyright = '2022, John D. Garrett and contributors'
 author = 'John D. Garrett'
 release = '2.0.1'
 
