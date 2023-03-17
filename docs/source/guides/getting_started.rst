@@ -21,7 +21,7 @@ The easiest way to install SciencePlots is by using ``pip``:
 .. warning:: 
     SciencePlots requires Latex (see :ref:`guides/faq:Installing Latex`). 
 
-.. deprecationwarning::
+.. deprecated::
     CJK fonts were deprecated, in favor of other packages that support and
     maintain them. E.g. `mplfonts<https://github.com/Clarmy/mplfonts>`_.
 

@@ -10,5 +10,5 @@ See :ghissue:`84`.
 .. hint::
 
     Use other packages that actively maintain CJK fonts,
-    e.g. `mplfonts<https://github.com/Clarmy/mplfonts>`_.
+    e.g. `mplfonts <https://github.com/Clarmy/mplfonts>`_.
 
