@@ -221,7 +221,8 @@ n_total_examples += n_group_examples
 # LANGUAGE Styles
 group = 'LANGUAGE'
 # Create examples for languages that do not require latex
-ignore = {sty for sty in STYLES[group] if sty.startswith('cjk')}
+ignore = {sty for sty in STYLES[group] if sty.startswith('cjk')} \
+         + {'russian-font'}
 n_group_examples = 0
 output_folder = THIS_FILEDIR.joinpath(OUTPUT_FOLDERS[group])
 for style in STYLES[group]:
