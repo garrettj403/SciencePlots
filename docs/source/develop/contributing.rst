@@ -22,7 +22,6 @@ Let's have a close look to relevant dependencies of this project:
    that helps creating the examples that are fed to `sphinx-gallery`.
  * `ReadTheDocs <https://github.com/readthedocs/readthedocs.org>`_ is the
    hosting solution we rely on.
- * And `matplotlib <https://matplotlib.org/>`_, of course!
  * `flake8 <https://flake8.pycqa.org/en/latest/>`_ is a code linter for
    Python, following PEP8 rules. You should set it up in your favourite IDE.
  * `pytest <https://pytest.org/>`_ for testing code (well, we have to include
