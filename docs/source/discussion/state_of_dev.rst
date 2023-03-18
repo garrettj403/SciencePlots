@@ -8,6 +8,7 @@ Styles without examples
 Due to the following error on ReadTheDocs servers:
 
 .. code-block::
+    
     FileNotFoundError: Matplotlib's TeX implementation searched for a file named 'larm1000.tfm' in your texmf tree, but could not find it
 
 Example `plot_russian-font.py` is not shown at the web.

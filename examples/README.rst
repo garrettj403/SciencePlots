@@ -2,7 +2,7 @@ Style Gallery
 =============
 
 See examples for styles provided by SciencePlots!
-Want to add more? See :ref:`dev/contributing:Contributing`.
+Want to add more? See :ref:`develop/contributing:Contributing`.
 
 .. warning::
     Language style ``russian-font`` is not shown here. See
