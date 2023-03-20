@@ -50,14 +50,14 @@ fontsizes, etc.).
 
 To use any of the styles temporarily, you can use:
 
+.. code-block:: python
+
+    with plt.style.context('science'):
+        plt.figure()
+        plt.plot(x, y)
+        plt.show()
+
 .. danger::
     It has been reported that `plt.style.context()` has issues with LaTeX
     preambles, so it's better to stick to `plt.style.use()`.
     See :ghmatplotlibissue:`17931`.
-
-.. code-block:: python
-
-    plt.style.use('science'):
-    plt.figure()
-    plt.plot(x, y)
-    plt.show()
