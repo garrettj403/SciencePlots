@@ -76,3 +76,24 @@ html_static_path = ['_static']
 html_css_files = [
     'css/custom_sphinx_gallery.css',
 ]
+
+# -- From PyData theme --------------------------------------------------------
+# https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/header-links.html
+# https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/source-buttons.html
+html_theme_options = {
+    "use_edit_page_button": True,
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/garrettj403/SciencePlots",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "PyPI",
+            "url": "https://pypi.org/project/SciencePlots/",
+            "icon": "fa-solid fa-box",
+        },
+    ],
+}
+html_show_sourcelink = False
