@@ -12,4 +12,5 @@ figure.dpi : 600
 # Font sizes
 font.size : 8
 font.family : serif
-font.serif : Times
+font.serif : STIXGeneral
+mathtext.fontset : stix
