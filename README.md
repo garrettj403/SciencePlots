@@ -12,7 +12,7 @@ Science Plots
 This repo has Matplotlib styles to format your figures for scientific papers, presentations and theses.
 
 <p align="center">
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig01.jpg" width="500">
 </p>
 
 You can find [the full gallery of included styles here](https://github.com/garrettj403/SciencePlots/wiki/Gallery).
@@ -77,7 +77,7 @@ Examples
 
 The basic ``science`` style is shown below:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig01.jpg" width="500">
 
 It can be cascaded with other styles to fine-tune the appearance. For example, the ``science`` + ``notebook`` styles (intended for Jupyter notebooks):
 
@@ -90,13 +90,13 @@ Specific Styles for Academic Journals
 
 The ``science`` + ``ieee`` styles for IEEE papers:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2a.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig02a.jpg" width="500">
 
    - IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
 
 The ``science`` + ``nature`` styles for Nature articles:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2c.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig02c.jpg" width="500">
 
    - Nature recommends sans-serif fonts.
 
@@ -124,11 +124,11 @@ SciencePlots comes with a variety of different color cycles. For a full list, [s
 
 The ``bright`` color cycle (color blind safe):
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig06.jpg" width="500">
 
 The ``high-vis`` color cycle:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig4.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig04.jpg" width="500">
 
 Help and Contributing
 ---------------------
