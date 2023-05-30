@@ -15,7 +15,7 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
 
 setup(
     name='SciencePlots',
-    version='2.0.1',
+    version='2.1.0',
     author="John Garrett",
     author_email="garrettj403@gmail.com",
     maintainer="Echedey Luis",

@@ -1,3 +1,8 @@
+v2.1.0 (30-May-2023)
+====================
+- Change `science` and `ieee` to use Times New Roman look-alike fonts
+- Tweak `plot-examples.py` and clean PDF output
+
 v2.0.1 (03-Dec-2022)
 ====================
 - Add Turkish `turkish-font` language style
