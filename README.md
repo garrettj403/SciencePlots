@@ -171,6 +171,8 @@ The following papers use ``SciencePlots``:
 
 - J. Garrett, ["A 230 GHz Focal Plane Array Using a Wide IF Bandwidth SIS Receiver,"](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis) DPhil thesis, University of Oxford, Oxford, UK, 2018. ([open access](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis))
 
+- M. Gasanov, *et al.*, ["A New Multi-objective Approach to Optimize Irrigation Using a Crop Simulation Model and Weather History"](https://link.springer.com/chapter/10.1007/978-3-030-77970-2_7) *Computational Science–ICCS 2021: 21st International Conference, Krakow, Poland*, Proceedings, Part IV (pp. 75-88), June 16–18, 2021. ([open access](https://www.researchgate.net/profile/Sergey-Matveev-5/publication/352285985_A_New_Multi-objective_Approach_to_Optimize_Irrigation_Using_a_Crop_Simulation_Model_and_Weather_History/links/60e74b88b8c0d5588ce2da07/A-New-Multi-objective-Approach-to-Optimize-Irrigation-Using-a-Crop-Simulation-Model-and-Weather-History.pdf))
+
 If you use ``SciencePlots`` in your paper/thesis, feel free to add it to the list!
 
 Citing SciencePlots
