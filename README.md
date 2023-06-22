@@ -149,11 +149,15 @@ SciencePlots in Academic Papers
 
 The following papers use ``SciencePlots``:
 
+- J. D. Garrett, C.-Y. E. Tong, L. Zeng, T.-J. Chen and M.-J. Wang, ["A 345 GHz Sideband-Separating Receiver Prototype with Ultra-Wide Instantaneous Bandwidth,"](https://ieeexplore.ieee.org/document/10089556) *IEEE Trans. THz Sci. Technol.*, vol. 13, no. 3, pp. 237-245, Mar. 2023.
+
 - J. Garrett, B.-K. Tan, C. Chaumont, F. Boussaha, and G. Yassin, ["A 230-GHz Endfire SIS Mixer With Near Quantum-Limited Performance,"](https://ieeexplore.ieee.org/document/9833810) *IEEE Microw. Wirel. Compon. Lett.*, Jul. 2022. ([open access](https://ora.ox.ac.uk/objects/uuid:59a100bf-c997-499a-be20-01fc66fffe2b))
 
 - J. Garrett, and E. Tong, ["Measuring Cryogenic Waveguide Loss in the Terahertz Regime,"](https://ieeexplore.ieee.org/document/9727077) *IEEE Trans. THz Sci. Technol.*, vol. 12, no. 3, pp. 293-299, May 2022.
 
 - Y. Liu, X. Liu, and Y. Sun, ["QGrain: An open-source and easy-to-use software for the comprehensive analysis of grain size distributions"](https://doi.org/10.1016/j.sedgeo.2021.105980), *Sedimentary Geology*, vol. 423, 105980, Aug. 2021.
+
+- M. Gasanov, *et al.*, ["A New Multi-objective Approach to Optimize Irrigation Using a Crop Simulation Model and Weather History"](https://link.springer.com/chapter/10.1007/978-3-030-77970-2_7) in *Computational Science–ICCS 2021*, Krakow, Poland, Jun. 2021, pp. 75-88. ([open access](https://www.researchgate.net/profile/Sergey-Matveev-5/publication/352285985_A_New_Multi-objective_Approach_to_Optimize_Irrigation_Using_a_Crop_Simulation_Model_and_Weather_History/links/60e74b88b8c0d5588ce2da07/A-New-Multi-objective-Approach-to-Optimize-Irrigation-Using-a-Crop-Simulation-Model-and-Weather-History.pdf))
 
 - J. Garrett, and E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides,"](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Process. Lett.*, vol. 28, pp. 1175-1179, Jun. 2021.
 
@@ -170,8 +174,6 @@ The following papers use ``SciencePlots``:
 - J. Garrett, *et al.*, ["A Compact and Easy to Fabricate E-plane Waveguide Bend,"](https://ieeexplore.ieee.org/document/8760521) *IEEE Microw. Wireless Compon. Lett.*, vol. 29, no. 8, pp. 529-531, Aug. 2019. ([open access](https://ora.ox.ac.uk/objects/uuid:496855f9-be2a-47cd-b498-1753d8033f50/download_file?file_format=pdf&safe_filename=Waveguide_Bend__IEEE_MWCL_.pdf&type_of_work=Journal+article))
 
 - J. Garrett, ["A 230 GHz Focal Plane Array Using a Wide IF Bandwidth SIS Receiver,"](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis) DPhil thesis, University of Oxford, Oxford, UK, 2018. ([open access](https://ora.ox.ac.uk/objects/uuid:d47fbf3b-1cf3-4e58-be97-767b9893066e/download_file?file_format=pdf&safe_filename=GarrettJ_DPhilThesis.pdf&type_of_work=Thesis))
-
-- M. Gasanov, *et al.*, ["A New Multi-objective Approach to Optimize Irrigation Using a Crop Simulation Model and Weather History"](https://link.springer.com/chapter/10.1007/978-3-030-77970-2_7) *Computational Science–ICCS 2021: 21st International Conference, Krakow, Poland*, Proceedings, Part IV (pp. 75-88), June 16–18, 2021. ([open access](https://www.researchgate.net/profile/Sergey-Matveev-5/publication/352285985_A_New_Multi-objective_Approach_to_Optimize_Irrigation_Using_a_Crop_Simulation_Model_and_Weather_History/links/60e74b88b8c0d5588ce2da07/A-New-Multi-objective-Approach-to-Optimize-Irrigation-Using-a-Crop-Simulation-Model-and-Weather-History.pdf))
 
 If you use ``SciencePlots`` in your paper/thesis, feel free to add it to the list!
 
