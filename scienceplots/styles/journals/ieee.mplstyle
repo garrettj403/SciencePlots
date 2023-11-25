@@ -11,8 +11,5 @@ figure.dpi : 600
 
 # Font sizes
 font.size : 8
-
-# Stix is designed to look similar to Times.
 font.family : serif
-font.serif : STIXGeneral
-mathtext.fontset : stix
+font.serif : Times
