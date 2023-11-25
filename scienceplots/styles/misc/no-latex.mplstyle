@@ -3,6 +3,8 @@
 
 text.usetex : False
 
-# Stix is designed to look similar to Times.
-font.family: STIXGeneral
-mathtext.fontset: stix
+# Set fonts to be LaTeX defaults
+font.serif : cmr10, Computer Modern Serif, DejaVu Serif
+font.family : serif
+axes.formatter.use_mathtext : True
+mathtext.fontset : cm
