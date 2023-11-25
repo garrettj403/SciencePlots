@@ -29,7 +29,17 @@ with plt.style.context(['science']):
     ax.legend(title='Order')
     ax.autoscale(tight=True)
     ax.set(**pparam)
-    fig.savefig('figures/fig01.jpg', dpi=300)
+    fig.savefig('figures/fig01a.jpg', dpi=300)
+    plt.close()
+
+with plt.style.context(['science', 'no-latex']):
+    fig, ax = plt.subplots()
+    for p in [10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.autoscale(tight=True)
+    ax.set(**pparam)
+    fig.savefig('figures/fig01b.jpg', dpi=300)
     plt.close()
 
 with plt.style.context(['science', 'ieee']):
