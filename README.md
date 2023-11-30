@@ -12,7 +12,7 @@ Science Plots
 This repo has Matplotlib styles to format your figures for scientific papers, presentations and theses.
 
 <p align="center">
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig01.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig01a.jpg" width="500">
 </p>
 
 You can find [the full gallery of included styles here](https://github.com/garrettj403/SciencePlots/wiki/Gallery).
