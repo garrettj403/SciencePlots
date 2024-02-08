@@ -1,3 +1,7 @@
+v2.1.2 (upcoming release)
+====================
+- Install from `conda-forge` is now available! Updated `README.md`.
+
 v2.1.1 (25-Nov-2023)
 ====================
 - Avoid Matplotlib issuing `INFO` log statements about no available fonts

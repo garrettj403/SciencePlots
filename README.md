@@ -26,6 +26,9 @@ The easiest way to install SciencePlots is by using `pip`:
 # to install the lastest release (from PyPI)
 pip install SciencePlots
 
+# to install the lastest release (using Conda)
+conda install -c conda-forge scienceplots
+
 # to install the latest commit (from GitHub)
 pip install git+https://github.com/garrettj403/SciencePlots
 
