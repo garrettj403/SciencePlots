@@ -61,7 +61,9 @@ body:
     id: styles
     attributes:
       label: Affected styles
-      description: Which styles are the possible source of the problem?
+      description: >
+        List all styles you are using.
+        Do not miss anyone, they may change the behaviour entirely.
       placeholder: |
         ["science", "no-latex"]
       # value: ""
