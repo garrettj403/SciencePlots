@@ -15,9 +15,11 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
 
 setup(
     name='SciencePlots',
-    version='2.0.1',
+    version='2.1.1',
     author="John Garrett",
     author_email="garrettj403@gmail.com",
+    maintainer="Echedey Luis",
+    maintainer_email="echelual@gmail.com",
     description="Format Matplotlib for scientific plotting",
     long_description=long_description,
     long_description_content_type='text/markdown',

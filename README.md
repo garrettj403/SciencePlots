@@ -12,7 +12,7 @@ Science Plots
 This repo has Matplotlib styles to format your figures for scientific papers, presentations and theses.
 
 <p align="center">
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig01a.jpg" width="500">
 </p>
 
 You can find [the full gallery of included styles here](https://github.com/garrettj403/SciencePlots/wiki/Gallery).
@@ -77,7 +77,7 @@ Examples
 
 The basic ``science`` style is shown below:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig1.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig01a.jpg" width="500">
 
 It can be cascaded with other styles to fine-tune the appearance. For example, the ``science`` + ``notebook`` styles (intended for Jupyter notebooks):
 
@@ -90,13 +90,13 @@ Specific Styles for Academic Journals
 
 The ``science`` + ``ieee`` styles for IEEE papers:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2a.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig02a.jpg" width="500">
 
    - IEEE requires figures to be readable when printed in black and white. The ``ieee`` style also sets the figure width to fit within one column of an IEEE paper.
 
 The ``science`` + ``nature`` styles for Nature articles:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig2c.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig02c.jpg" width="500">
 
    - Nature recommends sans-serif fonts.
 
@@ -124,11 +124,11 @@ SciencePlots comes with a variety of different color cycles. For a full list, [s
 
 The ``bright`` color cycle (color blind safe):
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig6.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig06.jpg" width="500">
 
 The ``high-vis`` color cycle:
 
-<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig4.jpg" width="500">
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig04.jpg" width="500">
 
 Help and Contributing
 ---------------------
@@ -149,11 +149,15 @@ SciencePlots in Academic Papers
 
 The following papers use ``SciencePlots``:
 
+- J. D. Garrett, C.-Y. E. Tong, L. Zeng, T.-J. Chen and M.-J. Wang, ["A 345 GHz Sideband-Separating Receiver Prototype with Ultra-Wide Instantaneous Bandwidth,"](https://ieeexplore.ieee.org/document/10089556) *IEEE Trans. THz Sci. Technol.*, vol. 13, no. 3, pp. 237-245, Mar. 2023.
+
 - J. Garrett, B.-K. Tan, C. Chaumont, F. Boussaha, and G. Yassin, ["A 230-GHz Endfire SIS Mixer With Near Quantum-Limited Performance,"](https://ieeexplore.ieee.org/document/9833810) *IEEE Microw. Wirel. Compon. Lett.*, Jul. 2022. ([open access](https://ora.ox.ac.uk/objects/uuid:59a100bf-c997-499a-be20-01fc66fffe2b))
 
 - J. Garrett, and E. Tong, ["Measuring Cryogenic Waveguide Loss in the Terahertz Regime,"](https://ieeexplore.ieee.org/document/9727077) *IEEE Trans. THz Sci. Technol.*, vol. 12, no. 3, pp. 293-299, May 2022.
 
 - Y. Liu, X. Liu, and Y. Sun, ["QGrain: An open-source and easy-to-use software for the comprehensive analysis of grain size distributions"](https://doi.org/10.1016/j.sedgeo.2021.105980), *Sedimentary Geology*, vol. 423, 105980, Aug. 2021.
+
+- M. Gasanov, *et al.*, ["A New Multi-objective Approach to Optimize Irrigation Using a Crop Simulation Model and Weather History"](https://link.springer.com/chapter/10.1007/978-3-030-77970-2_7) in *Computational Science–ICCS 2021*, Krakow, Poland, Jun. 2021, pp. 75-88. ([open access](https://www.researchgate.net/profile/Sergey-Matveev-5/publication/352285985_A_New_Multi-objective_Approach_to_Optimize_Irrigation_Using_a_Crop_Simulation_Model_and_Weather_History/links/60e74b88b8c0d5588ce2da07/A-New-Multi-objective-Approach-to-Optimize-Irrigation-Using-a-Crop-Simulation-Model-and-Weather-History.pdf))
 
 - J. Garrett, and E. Tong, ["A Dispersion-Compensated Algorithm for the Analysis of Electromagnetic Waveguides,"](https://ieeexplore.ieee.org/document/9447194) *IEEE Signal Process. Lett.*, vol. 28, pp. 1175-1179, Jun. 2021.
 
