@@ -1,6 +1,6 @@
 name: Any Report
 description: File a general purpose report
-title: ""
+# title:
 labels: ["bug", "user question/help"]
 # assignees:
 
