@@ -1,30 +1,31 @@
-name: Bug report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug"]
+name: Any Report
+description: File a general purpose report
+# title:
+labels: ["bug", "user question/help"]
 # assignees:
 
 body:
   - type: markdown
     attributes:
       value: |
-        Please check it hasn't been already reported in the [issue tracker](../).
-        And thanks for taking the time to fill this out! It really helps us a lot.
+        Please check it hasn't already been reported in the [issue tracker](../).
+        Thanks for taking the time to fill this out! It really helps us a lot.
 
   - type: markdown
     attributes:
       value: |
         First of all, let's have a look to your environment: run the following Python code snippet and paste the output below.
-        Also, please note that if the issue is related to the Latex binding, you have to type it manually.
         ```python
         import platform
         import sys
+        import subprocess
         from importlib.metadata import version
         print('System: ' + platform.platform())
         print('Python: ' + sys.version)
         print('SciencePlots: ' + version('scienceplots'))
         print('Matplotlib: ' + version('matplotlib'))
-        print('Latex distro: ' + '(populate manually)')
+        print('LaTeX distro:')
+        subprocess.run(["latex", "-v"])
         ```
 
   - type: textarea
@@ -37,7 +38,34 @@ body:
         Python: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 1984, 24:00:00) [MSC v.1929 64 bit (AMD64)]
         SciencePlots: 0.0.0
         Matplotlib: 0.0.0
-        Latex distro: (populate manually)
+        LaTeX distro:
+        pdfTeX 3.141592653589793238-pi (TeX Live 2022)
+        kpathsea version 6.3.4
+        Copyright 2022 Han The Thanh (pdfTeX) et al.
+        There is NO warranty.  Redistribution of this software is
+        covered by the terms of both the pdfTeX copyright and
+        the Lesser GNU General Public License.
+        For more information about these matters, see the file
+        named COPYING and the pdfTeX source.
+        Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+        Compiled with libpng 1.6.37; using libpng 1.6.37
+        Compiled with zlib 1.2.11; using zlib 1.2.11
+        Compiled with xpdf version 4.03
+        CompletedProcess(args=['latex', '-v'], returncode=O)
+      # value: ""
+      render: "Python console"
+    validations:
+      required: true
+
+  - type: textarea
+    id: styles
+    attributes:
+      label: Affected styles
+      description: >
+        List all styles you are using.
+        Do not miss anyone, they may change the behaviour entirely.
+      placeholder: |
+        ["science", "no-latex"]
       # value: ""
       render: "Python console"
     validations:
@@ -56,7 +84,7 @@ body:
   - type: textarea
     id: how-to-reproduce
     attributes:
-      label: "How can we reproduce it? What have you tried?"
+      label: "How can we replicate it? What have you tried? Please, add a reproducible example"
       description: "Paste inline code between backticks [`] and code blocks between 3 [```]"
       placeholder: "Be as accurate as possible, it will help us very much."
       # value: ""
@@ -67,7 +95,7 @@ body:
     id: extra
     attributes:
       label: "Extra info"
-      description: "Please, specify anything else that may be of help (e.g. links to other issues that may be related anywhere, stackoverflow posts, etc.)"
+      description: "Please, specify anything else that may be of help (e.g. links to other issues that may be related anywhere, StackOverflow posts, etc.)"
       # placeholder: ""
       # value: ""
     validations:

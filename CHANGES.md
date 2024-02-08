@@ -1,6 +1,7 @@
 v2.1.2 (upcoming release)
 ====================
 - Install from `conda-forge` is now available! Updated `README.md`.
+- Upgrade & unify issue template.
 
 v2.1.1 (25-Nov-2023)
 ====================
