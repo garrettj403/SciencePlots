@@ -152,6 +152,8 @@ SciencePlots in Academic Papers
 
 The following papers use ``SciencePlots``:
 
+- D. T. Zhang, L. Baldauf, S. Roet, A. Lervik and T. S. van Erp, ["Highly parallelizable path sampling with minimal rejectionsusing asynchronous replica exchange and infinite swaps"](https://doi.org/10.1073/pnas.2318731121) *Proc. Natl. Acad. Sci. U. S. A.*, vol. 121, no. 7, Feb. 2024.
+
 - J. D. Garrett, C.-Y. E. Tong, L. Zeng, T.-J. Chen and M.-J. Wang, ["A 345 GHz Sideband-Separating Receiver Prototype with Ultra-Wide Instantaneous Bandwidth,"](https://ieeexplore.ieee.org/document/10089556) *IEEE Trans. THz Sci. Technol.*, vol. 13, no. 3, pp. 237-245, Mar. 2023.
 
 - J. Garrett, B.-K. Tan, C. Chaumont, F. Boussaha, and G. Yassin, ["A 230-GHz Endfire SIS Mixer With Near Quantum-Limited Performance,"](https://ieeexplore.ieee.org/document/9833810) *IEEE Microw. Wirel. Compon. Lett.*, Jul. 2022. ([open access](https://ora.ox.ac.uk/objects/uuid:59a100bf-c997-499a-be20-01fc66fffe2b))
