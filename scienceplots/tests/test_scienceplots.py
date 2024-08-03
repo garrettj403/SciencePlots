@@ -38,7 +38,7 @@ def test_usage_of_each_style(
                 for y in ys:
                     ax.plot(x, y)
                 ax.legend(p, title="Order")
-                ax.autoscale(tight=True)
                 ax.set(**pparam)
-                fig.tight_layout()
+                ax.autoscale(tight=True)
                 fig.savefig(output_file)
+                plt.close(fig)
