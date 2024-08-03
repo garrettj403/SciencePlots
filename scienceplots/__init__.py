@@ -1,25 +1,20 @@
-from os import listdir
-from os.path import isdir, join
-
+import os  # pathlib.Path.walk not available in Python <3.12
 import matplotlib.pyplot as plt
 
 import scienceplots
 
-# register the included stylesheet in the matplotlib style library
+# register the bundled stylesheets in the matplotlib style library
 scienceplots_path = scienceplots.__path__[0]
-styles_path = join(scienceplots_path, 'styles')
+styles_path = os.path.join(scienceplots_path, 'styles')
 
-# Reads styles in /styles
-stylesheets = plt.style.core.read_style_directory(styles_path)
-# Reads styles in /styles subfolders
-for inode in listdir(styles_path):
-    new_data_path = join(styles_path, inode)
-    if isdir(new_data_path):
-        new_stylesheets = plt.style.core.read_style_directory(new_data_path)
-        stylesheets.update(new_stylesheets)
+# Reads styles in /styles folder and all subfolders
+stylesheets = {}  # plt.style.library is a dictionary
+for folder, _, _ in os.walk(styles_path):
+    new_stylesheets = plt.style.core.read_style_directory(folder)
+    stylesheets.update(new_stylesheets)
 
-# Update dictionary of styles
+# Update dictionary of styles - plt.style.library
 plt.style.core.update_nested_dict(plt.style.library, stylesheets)
 # Update `plt.style.available`, copy-paste from:
-# https://github.com/matplotlib/matplotlib/blob/a170539a421623bb2967a45a24bb7926e2feb542/lib/matplotlib/style/core.py#L266
+# https://github.com/matplotlib/matplotlib/blob/a170539a421623bb2967a45a24bb7926e2feb542/lib/matplotlib/style/core.py#L266  # noqa: E501
 plt.style.core.available[:] = sorted(plt.style.library.keys())
