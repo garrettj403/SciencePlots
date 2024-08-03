@@ -29,6 +29,7 @@ classifiers = [
 
 dynamic = ["version"]
 
+requires-python = ">=3.8"
 dependencies = ["matplotlib"]
 
 [project.optional-dependencies]
