@@ -6,7 +6,7 @@ from .styles_discovery import read_styles_in_folders
 
 # register the bundled stylesheets in the matplotlib style library
 scienceplots_path = scienceplots.__path__[0]
-styles_path = os.path.join(scienceplots_path, 'styles')
+styles_path = os.path.join(scienceplots_path, "styles")
 
 # Reads styles in /styles folder and all subfolders
 stylesheets = read_styles_in_folders(styles_path)

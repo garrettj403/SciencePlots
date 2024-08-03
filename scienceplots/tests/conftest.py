@@ -17,11 +17,11 @@ def get_styles_in_dir(dir):
     Input: directory path
     Output: set of matplotlib styles filenames (without trailing '.mplstyle')
     """
-    styles_paths = Path(dir).glob('*.mplstyle')
+    styles_paths = Path(dir).glob("*.mplstyle")
     return set(fn.stem for fn in styles_paths)
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope="session")
 def styles_in_scienceplots_per_folder():
     """
     Output: dictionary of styles per folder in SciencePlots
@@ -38,6 +38,7 @@ def xy_example_values():
     """
     Output: "x" 1D values, "y" 2D values, and 1D "p" values for the example plot
     """
+
     def model(x, p):  # from examples/plot-examples.py
         return x ** (2 * p + 1) / (1 + x ** (2 * p))
 
