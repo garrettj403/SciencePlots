@@ -1,6 +1,0 @@
-#%%
-import scienceplots
-import matplotlib.pyplot as plt
-print(plt.style.available)
-# plt.style.use(["science", "discrete-rainbow-12"])
-# %%
