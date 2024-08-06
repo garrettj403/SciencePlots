@@ -33,7 +33,7 @@ requires-python = ">=3.8"
 dependencies = ["matplotlib"]
 
 [project.optional-dependencies]
-test = ["pytest", "numpy", "ruff"]
+test = ["pytest", "numpy"]
 all = ["SciencePlots[test]"]
 
 [project.urls]
