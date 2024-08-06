@@ -4,20 +4,21 @@ Science Plots
 > **Warning**
 > : As of version 2.0.0, you need to add `import scienceplots` before setting the style (`plt.style.use('science')`).
 
-<table>
+<table align="center">
     <tr>
-        <td>PyPI version</td>
-        <td><a href="https://badge.fury.io/py/SciencePlots"><img src="https://badge.fury.io/py/SciencePlots.svg" alt="PyPI version" height="18" /></a></td>
+        <td align="center">PyPI version</td>
+        <td align="center"><a href="https://badge.fury.io/py/SciencePlots"><img src="https://badge.fury.io/py/SciencePlots.svg" alt="PyPI version" height="18"></a></td>
     </tr>
     <tr>
-        <td>conda-forge version</td>
-        <td><a href="https://anaconda.org/conda-forge/pvlib"><img src="https://anaconda.org/conda-forge/scienceplots/badges/version.svg" alt="conda-forge version" height="18" /></a></td>
+        <td align="center">conda-forge version</td>
+        <td align="center"><a href="https://anaconda.org/conda-forge/pvlib"><img src="https://anaconda.org/conda-forge/scienceplots/badges/version.svg" alt="conda-forge version" height="18"></a></td>
     </tr>
     <tr>
-        <td>DOI</td>
-        <td><a href="https://zenodo.org/badge/latestdoi/144605189"><img src="https://zenodo.org/badge/144605189.svg" alt="conda-forge version" height="18" /></a></td>
+        <td align="center">DOI</td>
+        <td align="center"><a href="https://zenodo.org/badge/latestdoi/144605189"><img src="https://zenodo.org/badge/144605189.svg" alt="conda-forge version" height="18"></a></td>
     </tr>
 </table>
+
 
 *Matplotlib styles for scientific figures*
 
