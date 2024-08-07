@@ -31,6 +31,7 @@ Science Plots
     </tr>
 </table>
 
+
 *Matplotlib styles for scientific figures*
 
 This repo has Matplotlib styles to format your figures for scientific papers, presentations and theses.
