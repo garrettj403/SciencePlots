@@ -1,9 +1,6 @@
 Science Plots
 =============
 
-> **Warning**
-> : As of version 2.0.0, you need to add `import scienceplots` before setting the style (`plt.style.use('science')`).
-
 <p align="left">
     <table>
         <tr>
@@ -32,6 +29,9 @@ Science Plots
         </tr>
     </table>
 </p>
+
+> **Warning**
+> : As of version 2.0.0, you need to add `import scienceplots` before setting the style (`plt.style.use('science')`).
 
 *Matplotlib styles for scientific figures*
 
