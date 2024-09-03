@@ -1,11 +1,8 @@
 import os  # pathlib.Path.walk not available in Python <3.12
 import matplotlib.pyplot as plt
 
-import scienceplots
-
 # register the bundled stylesheets in the matplotlib style library
-scienceplots_path = scienceplots.__path__[0]
-styles_path = os.path.join(scienceplots_path, 'styles')
+styles_path = os.path.join(__file__, 'styles')
 
 # Reads styles in /styles folder and all subfolders
 stylesheets = {}  # plt.style.library is a dictionary
