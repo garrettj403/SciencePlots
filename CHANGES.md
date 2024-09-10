@@ -1,12 +1,15 @@
-v2.1.3 (05-Aug-2024)
-====================
-- Now all subdirectories of the ``styles`` folder are parsed for styles
-- Added all 23 "discrete rainbow" styles proposed by Paul Tol on his website
-
 v2.1.2 (upcoming release)
 ====================
-- Install from `conda-forge` is now available! Updated `README.md`.
-- Upgrade & unify issue template.
+New features
+------------
+- Added all 23 "discrete rainbow" styles proposed by Paul Tol on his website
+  Access them with the style names `discrete-rainbow-1`, `discrete-rainbow-2`, ..., `discrete-rainbow-23`
+- Updated `README.md` to reflect that _Install from `conda-forge` is now available!_
+
+Maintenance
+-----------
+- Now all subdirectories of the ``styles`` folder are parsed for styles, instead of the first two levels only
+- Upgrade & unify issue templates
 
 v2.1.1 (25-Nov-2023)
 ====================
