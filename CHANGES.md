@@ -2,7 +2,7 @@ v2.1.2 (upcoming release)
 ====================
 New features
 ------------
-- Added all 23 "discrete rainbow" styles proposed by Paul Tol on his website
+- Added all 23 "discrete rainbow" styles proposed by Paul Tol on his website (by @IchBinGROOT)
   Access them with the style names `discrete-rainbow-1`, `discrete-rainbow-2`, ..., `discrete-rainbow-23`
 - Updated `README.md` to reflect that _Install from `conda-forge` is now available!_
 
