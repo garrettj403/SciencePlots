@@ -1,0 +1,5 @@
+# Discrete rainbow color scheme with 23 colors
+# from Paul Tol's website: https://personal.sron.nl/~pault/
+
+# Set color cycle
+axes.prop_cycle : cycler('color', ['E8ECFB', 'D9CCE3', 'CAACCB', 'BA8DB4', 'AA6F9E', '994F88', '882E72', '1965B0', '437DBF', '6195CF', '7BAFDE', '4EB265', '90C987', 'CAE0AB', 'F7F056', 'F7CB45', 'F4A736', 'EE8026', 'E65518', 'DC050C', 'A5170E', '72190E', '42150A'])

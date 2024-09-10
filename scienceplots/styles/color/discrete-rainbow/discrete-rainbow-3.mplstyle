@@ -1,0 +1,5 @@
+# Discrete rainbow color scheme with 3 colors
+# from Paul Tol's website: https://personal.sron.nl/~pault/
+
+# Set color cycle
+axes.prop_cycle : cycler('color', ['1965B0', 'F7F056', 'DC050C'])
