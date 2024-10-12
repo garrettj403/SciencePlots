@@ -14,7 +14,7 @@ Science Plots
         <tr>
             <td style="text-align: center;">conda-forge version</td>
             <td style="text-align: center;">
-                <a href="https://anaconda.org/conda-forge/pvlib">
+                <a href="https://anaconda.org/conda-forge/scienceplots">
                     <img src="https://anaconda.org/conda-forge/scienceplots/badges/version.svg" alt="conda-forge version" height="18"/>
                 </a>
             </td>
@@ -23,7 +23,7 @@ Science Plots
             <td style="text-align: center;">DOI</td>
             <td style="text-align: center;">
                 <a href="https://zenodo.org/badge/latestdoi/144605189">
-                    <img src="https://zenodo.org/badge/144605189.svg" alt="conda-forge version" height="18"/>
+                    <img src="https://zenodo.org/badge/144605189.svg" alt="DOI" height="18"/>
                 </a>
             </td>
         </tr>
