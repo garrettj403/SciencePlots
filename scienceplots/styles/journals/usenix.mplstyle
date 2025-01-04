@@ -1,0 +1,33 @@
+# Matplotlib style for USENIX plots
+# This style should work for most two-column journals
+
+# Set color cycle
+# Set line style as well for black and white graphs
+axes.prop_cycle : (cycler('color', ['k', 'r', 'b', 'g']) + cycler('ls', ['-', '--', ':', '-.']))
+
+# Set default figure size
+figure.figsize : 3.49, 2.15
+figure.dpi : 600
+
+# Font sizes
+axes.labelsize: 7
+xtick.labelsize: 7
+ytick.labelsize: 7
+legend.fontsize: 7
+font.size: 7
+
+# Font Family
+font.family: sans-serif
+font.sans-serif: Arial, Helvetica, Lucida Grande, Verdana, Geneva, Lucid, Avant Garde, sans-serif
+
+# Set line widths
+axes.linewidth : 0.5
+grid.linewidth : 0.5
+lines.linewidth : 1.
+lines.markersize: 3
+
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.01
+
+text.usetex : False
