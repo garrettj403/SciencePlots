@@ -1,0 +1,66 @@
+# Matplotlib Style for IEEE Line art Plots
+# This style is tailored for use with most two-column journal formats.
+
+# Set color cycle
+# Define line styles for compatibility with Line Art printing
+axes.prop_cycle : cycler('color', ['k', 'k', 'k', 'k']) + cycler('linestyle', ['-', '--', ':', '-.'])
+
+# Set default figure size and resolution (Black and white: 300 DPI, Grayscale: 300 DPI, Line art: 1200 DPI, CMYK: 300 DPI)
+figure.figsize : 3.3, 2.5
+figure.dpi : 1200
+
+# Zemin rengi için varsayılan ayarlar (bu, Python kodunda değiştirilebilir)
+figure.facecolor : white
+
+# Ensure figure and text remain within the frame
+# This section can be adjusted to control padding and alignment of elements.
+axes.autolimit_mode : round_numbers
+axes.xmargin : 0.05
+axes.ymargin : 0.05
+
+# Axis ticks settings
+xtick.direction : in
+xtick.major.size : 3
+xtick.major.width : 0.5
+xtick.minor.size : 1.5
+xtick.minor.width : 0.5
+xtick.minor.visible : True
+xtick.top : True
+
+ytick.direction : in
+ytick.major.size : 3
+ytick.major.width : 0.5
+ytick.minor.size : 1.5
+ytick.minor.width : 0.5
+ytick.minor.visible : True
+ytick.right : True
+
+# Line widths
+axes.linewidth : 0.5
+grid.linewidth : 0.5
+lines.linewidth : 1.0
+
+# Legend settings
+legend.frameon : False
+legend.fontsize : 8
+
+# Save settings
+savefig.bbox : tight
+savefig.pad_inches : 0.05
+
+# Font settings
+font.size : 8
+# Support both serif and sans-serif fonts
+font.family : serif, sans-serif
+# Define serif fonts for IEEE compliance
+font.serif : Times New Roman, Times
+# Define sans-serif fonts for IEEE compliance
+font.sans-serif : Arial
+
+# Fallback to Matplotlib's default font if Times or Arial is unavailable
+# This prevents errors due to missing fonts on certain operating systems.
+mathtext.fontset : dejavuserif
+
+# LaTeX settings
+text.usetex : True  # Enable LaTeX for professional-quality text rendering
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath} \usepackage{lmodern}
