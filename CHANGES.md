@@ -8,6 +8,10 @@ New features
 
 Maintenance
 -----------
+- Improve `turkish-font.mplstyle` (may add some breaking changes)
+   1. `:` and `!` are now interpreted as characters by default, and not by control sequences.
+   2. Assume UTF-8 encoding by default.
+   3. Enhance compatibility, especially with T1 font encoding, by using the package `lmodern`.
 - Now all subdirectories of the ``styles`` folder are parsed for styles, instead of the first two levels only
 - Upgrade & unify issue templates
 
