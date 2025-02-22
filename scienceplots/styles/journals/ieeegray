@@ -15,7 +15,7 @@ axes.autolimit_mode : round_numbers
 axes.xmargin : 0.05
 axes.ymargin : 0.05
 
-# Zemin rengi için varsayılan ayarlar (bu, Python kodunda değiştirilebilir)
+# Default settings for the ground color (this can be changed in the Python code)
 figure.facecolor : white
 
 # Axis ticks settings
