@@ -9,7 +9,7 @@ axes.prop_cycle : cycler('color', ['k', 'k', 'k', 'k']) + cycler('linestyle', ['
 figure.figsize : 3.3, 2.5
 figure.dpi : 1200
 
-# Zemin rengi için varsayılan ayarlar (bu, Python kodunda değiştirilebilir)
+# Default settings for the ground color (this can be changed in the Python code)
 figure.facecolor : white
 
 # Ensure figure and text remain within the frame
