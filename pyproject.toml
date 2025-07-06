@@ -34,7 +34,11 @@ dependencies = ["matplotlib"]
 
 [project.optional-dependencies]
 test = ["pytest", "numpy"]
-all = ["SciencePlots[test]"]
+dev = [
+    "SciencePlots[test]",
+    "ruff"
+]
+all = ["SciencePlots[dev]"]
 
 [project.urls]
 Homepage = "https://github.com/garrettj403/SciencePlots/wiki"
@@ -44,7 +48,9 @@ Issues = "https://github.com/garrettj403/SciencePlots/issues"
 Changelog = "https://github.com/garrettj403/SciencePlots/blob/master/CHANGES.md"
 
 [tool.setuptools_scm]
-# blank section to avoid warning
+# This section enables setuptools_scm to dynamically determine the version
+# from Git tags. Leaving it empty uses default configuration.
+# The project's version is declared as dynamic in the [project] table.
 
 [tool.pytest.ini_options]
 addopts = "-ra"
@@ -56,4 +62,4 @@ line-length = 88
 indent-width = 4
 
 # Exclude annotations and type comments
-lint.ignore = ["ANN"]
+# lint.ignore = ["ANN"]  # Allow Ruff to check for type annotations
