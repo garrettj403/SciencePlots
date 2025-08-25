@@ -178,6 +178,8 @@ SciencePlots in Academic Papers
 
 The following papers use ``SciencePlots``:
 
+- M. Hellmeier, *et al.*, ["Innamark: A Whitespace Replacement Information-Hiding Method"](https://ieeexplore.ieee.org/document/11052249), *IEEE Access*, vol. 13, pp. 123120-123135, Jun. 2025. ([open access](https://ieeexplore.ieee.org/document/11052249))
+
 - Keçeci, Mehmet. "Scalable Complexity: Mathematical Analysis and Potential for Physical Applications of the Keçeci Circle Fractal", 13 May 2025. https://doi.org/10.5281/zenodo.15396198. (Reference has been made to the module "SciencePlots".)
 
 - J. D. Garrett, C.-Y. E. Tong, L. Zeng, T.-J. Chen and M.-J. Wang, ["A 345 GHz Sideband-Separating Receiver Prototype with Ultra-Wide Instantaneous Bandwidth,"](https://ieeexplore.ieee.org/document/10089556) *IEEE Trans. THz Sci. Technol.*, vol. 13, no. 3, pp. 237-245, Mar. 2023.
