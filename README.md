@@ -180,6 +180,8 @@ The following papers use ``SciencePlots``:
 
 - Keçeci, Mehmet. "Scalable Complexity: Mathematical Analysis and Potential for Physical Applications of the Keçeci Circle Fractal", 13 May 2025. https://doi.org/10.5281/zenodo.15396198. (Reference has been made to the module "SciencePlots".)
 
+- Zhang, Y., Lin, K. End-to-end optimized image compression with the frequency-oriented transform. Machine Vision and Applications 35, 27 (2024). https://doi.org/10.1007/s00138-023-01507-x
+
 - J. D. Garrett, C.-Y. E. Tong, L. Zeng, T.-J. Chen and M.-J. Wang, ["A 345 GHz Sideband-Separating Receiver Prototype with Ultra-Wide Instantaneous Bandwidth,"](https://ieeexplore.ieee.org/document/10089556) *IEEE Trans. THz Sci. Technol.*, vol. 13, no. 3, pp. 237-245, Mar. 2023.
 
 - J. Garrett, B.-K. Tan, C. Chaumont, F. Boussaha, and G. Yassin, ["A 230-GHz Endfire SIS Mixer With Near Quantum-Limited Performance,"](https://ieeexplore.ieee.org/document/9833810) *IEEE Microw. Wirel. Compon. Lett.*, Jul. 2022. ([open access](https://ora.ox.ac.uk/objects/uuid:59a100bf-c997-499a-be20-01fc66fffe2b))
