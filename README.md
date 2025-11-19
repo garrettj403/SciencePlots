@@ -159,6 +159,10 @@ The ``high-vis`` color cycle:
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig04.jpg" width="500">
 
+Paul Tol's discrete rainbow color sets are available as well, with the style identifier ``discrete-rainbow-<n>``, where ``<n>`` is the number of unique colors. ``<n>`` ranges from ``1`` to ``23`` (inclusive). For example, ``discrete-rainbow-15``:
+
+<img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig_dr_15.jpg" width="500">
+
 Help and Contributing
 ---------------------
 
