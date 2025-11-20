@@ -15,7 +15,7 @@ Maintenance
    1. `:` and `!` are now interpreted as text by default, not as control characters.
    2. Assume UTF-8 encoding by default.
    3. Enhance compatibility, especially with T1 font encoding, by using the package `lmodern`.
-- Now all subdirectories of the ``styles`` folder are parsed for styles, instead of the first two levels only.
+- Now all subdirectories of the ``styles`` folder are parsed for styles, instead of just the first two levels.
 - Upgrade & unify issue templates.
 
 v2.1.1 (25-Nov-2023)
