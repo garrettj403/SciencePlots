@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=64", "setuptools_scm>=8"]
+requires = ["setuptools>=77", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,8 @@ authors = [{ name = "John Garrett", email = "garrettj403@gmail.com" }]
 maintainers = [{ name = "Echedey Luis", email = "echelual@gmail.com" }]
 description = "Format Matplotlib for scientific plotting"
 readme = { file = "README.md", content-type = "text/markdown" }
-license = { file = "LICENSE" }
+license = "MIT"
+license-files = ["LICENSE"]
 
 keywords = [
     "matplotlib-style-sheets",
