@@ -1,5 +1,6 @@
 """Plot examples of SciencePlot styles."""
 
+# %%
 import numpy as np
 import matplotlib.pyplot as plt
 import scienceplots  # noqa: F401
@@ -23,6 +24,10 @@ pparam = dict(xlabel="Voltage (mV)", ylabel=r"Current ($\mu$A)")
 
 x = np.linspace(0.75, 1.25, 201)
 
+
+# %%
+# Style 'science'
+
 with plt.style.context(["science"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -33,6 +38,8 @@ with plt.style.context(["science"]):
     fig.savefig("figures/fig01a.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'no-latex'
 with plt.style.context(["science", "no-latex"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -43,6 +50,8 @@ with plt.style.context(["science", "no-latex"]):
     fig.savefig("figures/fig01b.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'ieee'
 with plt.style.context(["science", "ieee"]):
     fig, ax = plt.subplots()
     for p in [10, 20, 40, 100]:
@@ -53,6 +62,9 @@ with plt.style.context(["science", "ieee"]):
     fig.savefig("figures/fig02a.jpg", dpi=300)
     plt.close()
 
+
+# %%
+# Styles 'science', 'ieee', 'std-colors'
 with plt.style.context(["science", "ieee", "std-colors"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -63,6 +75,8 @@ with plt.style.context(["science", "ieee", "std-colors"]):
     fig.savefig("figures/fig02b.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'nature'
 with plt.style.context(["science", "nature"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -73,6 +87,8 @@ with plt.style.context(["science", "nature"]):
     fig.savefig("figures/fig02c.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'scatter'
 with plt.style.context(["science", "scatter"]):
     fig, ax = plt.subplots(figsize=(4, 4))
     ax.plot([-2, 2], [-2, 2], "k--")
@@ -94,6 +110,8 @@ with plt.style.context(["science", "scatter"]):
     fig.savefig("figures/fig03.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'high-vis'
 with plt.style.context(["science", "high-vis"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -104,6 +122,8 @@ with plt.style.context(["science", "high-vis"]):
     fig.savefig("figures/fig04.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'dark_background', 'science', 'high-vis'
 with plt.style.context(["dark_background", "science", "high-vis"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -114,6 +134,8 @@ with plt.style.context(["dark_background", "science", "high-vis"]):
     fig.savefig("figures/fig05.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'notebook'
 with plt.style.context(["science", "notebook"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -124,8 +146,11 @@ with plt.style.context(["science", "notebook"]):
     fig.savefig("figures/fig10.jpg", dpi=300)
     plt.close()
 
+# %%
 # Plot different color cycles
 
+# %%
+# Styles 'science', 'bright'
 with plt.style.context(["science", "bright"]):
     fig, ax = plt.subplots()
     for p in [5, 10, 15, 20, 30, 50, 100]:
@@ -136,6 +161,8 @@ with plt.style.context(["science", "bright"]):
     fig.savefig("figures/fig06.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'vibrant'
 with plt.style.context(["science", "vibrant"]):
     fig, ax = plt.subplots()
     for p in [5, 10, 15, 20, 30, 50, 100]:
@@ -146,6 +173,8 @@ with plt.style.context(["science", "vibrant"]):
     fig.savefig("figures/fig07.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'muted'
 with plt.style.context(["science", "muted"]):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100, 500]:
@@ -156,6 +185,8 @@ with plt.style.context(["science", "muted"]):
     fig.savefig("figures/fig08.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'retro'
 with plt.style.context(["science", "retro"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -166,6 +197,8 @@ with plt.style.context(["science", "retro"]):
     fig.savefig("figures/fig09.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'grid'
 with plt.style.context(["science", "grid"]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
@@ -176,6 +209,8 @@ with plt.style.context(["science", "grid"]):
     fig.savefig("figures/fig11.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'high-contrast'
 with plt.style.context(["science", "high-contrast"]):
     fig, ax = plt.subplots()
     for p in [10, 20, 50]:
@@ -186,6 +221,8 @@ with plt.style.context(["science", "high-contrast"]):
     fig.savefig("figures/fig12.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'light'
 with plt.style.context(["science", "light"]):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
@@ -196,9 +233,13 @@ with plt.style.context(["science", "light"]):
     fig.savefig("figures/fig13.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles for CJK languages
 # Note: You need to install the Noto Serif CJK Fonts before running
 # examples 14 and 15. See FAQ in README.
 
+# %%
+# Styles 'science', 'no-latex', 'cjk-*-font'
 with plt.style.context(["science", "no-latex", "cjk-tc-font"]):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
@@ -267,6 +308,8 @@ with plt.style.context(["science", "no-latex", "cjk-kr-font"]):
 #     fig.savefig('figures/fig15.pdf', backend='pgf')
 #     plt.close()
 
+# %%
+# Styles 'science', 'russian-font'
 with plt.style.context(["science", "russian-font"]):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
@@ -278,6 +321,8 @@ with plt.style.context(["science", "russian-font"]):
     fig.savefig("figures/fig16.jpg", dpi=300)
     plt.close()
 
+# %%
+# Styles 'science', 'turkish-font'
 with plt.style.context(["science", "turkish-font"]):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
@@ -288,3 +333,21 @@ with plt.style.context(["science", "turkish-font"]):
     ax.autoscale(tight=True)
     fig.savefig("figures/fig17.jpg", dpi=300)
     plt.close()
+
+# %%
+# Styles 'science', 'no-latex', 'discrete-rainbow-*'
+# Plot all discrete-rainbow styles
+p_list = np.logspace(0, 2, 23)
+for index in range(1, 23 + 1):
+    style_name = f"discrete-rainbow-{index}"
+    figure_name = f"fig_dr_{index}.jpg"
+    with plt.style.context(["science", "no-latex", style_name]):
+        fig, ax = plt.subplots()
+        for p in p_list[: index]:
+            ax.plot(x, model(x, p))
+        ax.autoscale(tight=True)
+        ax.set(**pparam)
+        fig.savefig(f"figures/{figure_name}", dpi=300)
+        plt.close()
+
+# %%
