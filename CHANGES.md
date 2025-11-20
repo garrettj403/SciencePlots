@@ -10,7 +10,7 @@ New features
 
 Maintenance
 -----------
-- Update link to Paul Tol's page to https://sronpersonalpages.nl/~pault/ in relevant comments through the project.
+- Update Paul Tol's webpage link to https://sronpersonalpages.nl/~pault/ in relevant comments through the project.
 - Improve `turkish-font.mplstyle` (may add some breaking changes)
    1. `:` and `!` are now interpreted as text by default, not as control characters.
    2. Assume UTF-8 encoding by default.
