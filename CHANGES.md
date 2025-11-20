@@ -1,16 +1,18 @@
-v2.1.2 (upcoming release)
+v2.2.0 (20-Nov-2025)
 ====================
 New features
 ------------
-- Added all 23 "discrete rainbow" styles proposed by Paul Tol on his website (by @IchBinGROOT).
-  Access them with the style names `discrete-rainbow-1`, `discrete-rainbow-2`, ..., `discrete-rainbow-23`.
-- Updated `README.md` to reflect that _Install from `conda-forge` is now available!_
+- Fix `['science', 'no-latex']` font does not work with symbols (e.g. degree symbol)
+  This style set was found to be incompatible with _Cartopy_.
+- Add all 23 "discrete rainbow" styles proposed by Paul Tol on his website (by @IchBinGROOT)
+  Access them with the style names `discrete-rainbow-1`, `discrete-rainbow-2`, ..., `discrete-rainbow-23`
+- Update `README.md` to reflect that _Install from `conda-forge` is now available!_
 
 Maintenance
 -----------
 - Update link to Paul Tol's page to https://sronpersonalpages.nl/~pault/ in relevant comments through the project.
 - Improve `turkish-font.mplstyle` (may add some breaking changes)
-   1. `:` and `!` are now interpreted as characters by default, and not by control sequences.
+   1. `:` and `!` are now interpreted as text by default, and as control characters.
    2. Assume UTF-8 encoding by default.
    3. Enhance compatibility, especially with T1 font encoding, by using the package `lmodern`.
 - Now all subdirectories of the ``styles`` folder are parsed for styles, instead of the first two levels only.
