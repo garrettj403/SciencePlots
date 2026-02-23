@@ -2,7 +2,7 @@
 # By default 'setuptools_scm' includes all git-tracked files (all .py files are included by default by 'setuptools')
 # In sdist downloads, .git is non existent.  Ref: https://github.com/garrettj403/SciencePlots/issues/151
 # Required data files are exhaustively listed here:
-recursive-include scienceplots/styles
+recursive-include src/scienceplots/styles *.mplstyle
 include CHANGES.md
 include LICENSE
 include MANIFEST.in
