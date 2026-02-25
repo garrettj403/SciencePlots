@@ -1,3 +1,11 @@
+v2.2.1 (xx-yyy-2026)
+====================
+Maintenance
+-----------
+- Mitigate packaging issue where styles are not included in local bdist when `.git` folder is not present.
+  Affected users exclusively are those building the wheel by themselves from a version repo source file, e.g., via AUR.
+  See issue 151: https://github.com/garrettj403/SciencePlots/issues/151
+
 v2.2.0 (20-Nov-2025)
 ====================
 New features

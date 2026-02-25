@@ -1,6 +1,15 @@
+# https://setuptools.pypa.io/en/latest/userguide/miscellaneous.html#controlling-files-in-the-distribution (accessed on 2026-02-20)
+# By default 'setuptools_scm' includes all git-tracked files (all .py files are included by default by 'setuptools')
+# In sdist downloads, .git is non existent.  Ref: https://github.com/garrettj403/SciencePlots/issues/151
+# Required data files are exhaustively listed here:
+recursive-include src/scienceplots/styles *.mplstyle
+include CHANGES.md
+include LICENSE
+include MANIFEST.in
+include pyproject.toml
+include README.md
+
+# Clean unnecessary files in source distribution:
 prune .github
 prune .git
 prune examples
-
-exclude .gitignore
-exclude CHANGES.md
