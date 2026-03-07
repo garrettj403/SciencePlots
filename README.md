@@ -184,6 +184,8 @@ The following papers use ``SciencePlots``:
 
 - C.-S. Li, S.-P. Ma, and T.-H. Lin, ["FMSA: A Universal Microservice Architecture Based on FHIR Medical Informatics Standard,"](https://ieeexplore.ieee.org/document/11326732) 2025 Second International Conference on Artificial Intelligence for Medicine, Health and Care (AIxMHC), pp. 42–49, Oct. 2025.
 
+- D. A. Onishchuk, A. P. Litvin and P. S. Parfenov,  ["Calibration of a Kelvin Scanning Probe Microscope and Measurement of the Fermi Levels of Lead Sulfide Nanocrystals,"](https://doi.org/10.1134/S0020441225700824) *Instrum Exp Tech*, vol. 68, no. 4, pp. 649-656, Apr. 2025. 
+
 - Keçeci, Mehmet. "Scalable Complexity: Mathematical Analysis and Potential for Physical Applications of the Keçeci Circle Fractal", 13 May 2025. https://doi.org/10.5281/zenodo.15396198. (Reference has been made to the module "SciencePlots".)
 
 - J. D. Garrett, C.-Y. E. Tong, L. Zeng, T.-J. Chen and M.-J. Wang, ["A 345 GHz Sideband-Separating Receiver Prototype with Ultra-Wide Instantaneous Bandwidth,"](https://ieeexplore.ieee.org/document/10089556) *IEEE Trans. THz Sci. Technol.*, vol. 13, no. 3, pp. 237-245, Mar. 2023.
