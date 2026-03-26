@@ -68,7 +68,7 @@ From version `v1.1.0` on, `import scienceplots` is needed on top of your scripts
 
 **Notes:** 
 - SciencePlots requires Latex ([see Latex installation instructions](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-latex)). 
-- If you would like to use CJK fonts, you will need to install these font separately ([see CJK font installation instructions](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-cjk-fonts)).
+- For non-Latin scripts, prefer selecting a system-installed font directly. SciencePlots does not manage CJK font installation, and the recommended workflow is to set the fonts you want in Matplotlib yourself.
 
 Please see the [FAQ](https://github.com/garrettj403/SciencePlots/wiki/FAQ) for more information and troubleshooting.
 
@@ -132,7 +132,9 @@ The ``science`` + ``nature`` styles for Nature articles:
 Other languages
 ---------------
 
-SciencePlots currently supports:
+For non-Latin scripts, prefer selecting system-installed fonts directly with `plt.rcParams["font.family"]`. The legacy `cjk-*` helper styles remain available for compatibility, but they are no longer the recommended way to configure CJK fonts.
+
+SciencePlots currently includes language-specific styles for:
  * [Traditional Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#traditional-chinese)
  * [Simplified Chinese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#simplified-chinese)
  * [Japanese](https://github.com/garrettj403/SciencePlots/wiki/Gallery#japanese)
@@ -140,11 +142,19 @@ SciencePlots currently supports:
  * [Russian](https://github.com/garrettj403/SciencePlots/wiki/Gallery#russian)
  * [Turkish](https://github.com/garrettj403/SciencePlots/wiki/Gallery#turkish)
 
-Example: Traditional Chinese (`science` + `no-latex` + `cjk-tc-font`):
+Example: Traditional Chinese with system fonts:
+
+```python
+import matplotlib.pyplot as plt
+import scienceplots
+
+plt.style.use(["science", "no-latex"])
+plt.rcParams["font.family"] = ["Times New Roman", "SimSun"]
+```
 
 <img src="https://github.com/garrettj403/SciencePlots/raw/master/examples/figures/fig14a.jpg" width="500">
 
-See the [FAQ](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-cjk-fonts) for information on installing CJK fonts.
+See the [FAQ](https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-latex) and your system font settings for more information on font setup.
 
 Other color cycles
 ------------------
