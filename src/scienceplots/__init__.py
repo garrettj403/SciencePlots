@@ -4,6 +4,13 @@ import matplotlib.pyplot as plt
 import scienceplots
 from .styles_discovery import read_styles_in_folders
 
+# Conditionally import plotly if available
+try:
+    from . import plotly
+    __all__ = ['plotly']
+except ImportError:
+    __all__ = []
+
 # register the bundled stylesheets in the matplotlib style library
 scienceplots_path = scienceplots.__path__[0]
 styles_path = os.path.join(scienceplots_path, "styles")
