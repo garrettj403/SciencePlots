@@ -4,9 +4,10 @@ Test SciencePlots against Matplotlib<=3.10
 Tests MPL API before after namespace changes in 3.11
 """
 
+import pytest
 import matplotlib.pyplot as plt
 
-import pytest
+import scienceplots
 from .conftest import matplotlib_le_3_10
 
 skip_if_mpl_le_3_10 = pytest.mark.skipif(not matplotlib_le_3_10, reason="Matplotlib 3.10 or earlier is not installed")
@@ -23,6 +24,8 @@ def test_matplotlib_required_api_existence():
     assert hasattr(plt.style, "available")
     assert hasattr(plt.style, "library")
 
+    scienceplots.styles("science")
+    scienceplots.styles(["science"])
 
 @skip_if_mpl_le_3_10
 def test_styles_existence(styles_in_scienceplots_per_folder):
@@ -30,9 +33,8 @@ def test_styles_existence(styles_in_scienceplots_per_folder):
     for folder, styles in styles_in_scienceplots_per_folder.items():
         assert len(styles) > 0, f"No styles found in {folder}."
         for style in styles:
-            assert (  # both in list of names and the library they are retrieved from hello
-                style in plt.style.available and style in plt.style.library
-            ), f"'{style}' not in available styles. Style in folder {folder}."
+            with plt.style.context(scienceplots.styles([style.stem])):
+                pass
 
 
 @skip_if_mpl_le_3_10
@@ -45,7 +47,7 @@ def test_usage_of_each_style(
     for folder, styles in styles_in_scienceplots_per_folder.items():
         folder = folder.replace("/", "_").replace("\\", "_")  # Fix accessing styles subfolders
         for style in styles:
-            output_file = tmp_path / f"test_{folder}_{style}.png"
+            output_file = tmp_path / f"test_{folder}_{style.stem}.png"
             with plt.style.context(style):
                 fig, ax = plt.subplots()
                 for y in ys:
