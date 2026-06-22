@@ -1,0 +1,10 @@
+# Matplotlib style for short, text-only legends
+# Removes the legend handles (the little line/marker samples) and colours
+# each label like its line instead — the coloured text IS the key.
+# No frame, no eye travel between handle and text.
+
+legend.frameon : False
+legend.labelcolor : linecolor
+legend.markerscale : 0
+legend.handlelength : 0
+legend.handletextpad : 0

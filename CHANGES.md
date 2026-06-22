@@ -7,6 +7,15 @@ Bugfixes
 
 v2.2.1 (21-Feb-2026)
 ====================
+New features
+------------
+- Add `editable-text` style: embed fonts as TrueType (Type 42) in PDF/PS output and keep
+  SVG text as text, so labels stay editable in Illustrator/Inkscape (a common journal
+  artwork requirement). Only affects matplotlib-rendered text (e.g. with `no-latex`).
+- Add `short-legend` style: a frameless, text-only legend — the handles are removed
+  (`legend.handlelength: 0`) and each label is coloured like its line
+  (`legend.labelcolor: linecolor`).
+
 Maintenance
 -----------
 - Mitigate packaging issue where styles are not included in local bdist when `.git` folder is not present.

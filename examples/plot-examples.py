@@ -351,3 +351,13 @@ for index in range(1, 23 + 1):
         plt.close()
 
 # %%
+# Styles 'science', 'short-legend'
+with plt.style.context(["science", "short-legend"]):
+    fig, ax = plt.subplots()
+    for p in [10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title="Order")
+    ax.autoscale(tight=True)
+    ax.set(**pparam)
+    fig.savefig("figures/fig_short_legend.jpg", dpi=300)
+    plt.close()
