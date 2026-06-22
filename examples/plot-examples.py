@@ -150,6 +150,18 @@ with plt.style.context(["science", "notebook"]):
 # Plot different color cycles
 
 # %%
+# Styles 'science', 'okabe-ito'
+with plt.style.context(["science", "okabe-ito"]):
+    fig, ax = plt.subplots()
+    for p in [5, 7, 10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title="Order", fontsize=7)
+    ax.autoscale(tight=True)
+    ax.set(**pparam)
+    fig.savefig("figures/fig_okabe-ito.jpg", dpi=300)
+    plt.close()
+
+# %%
 # Styles 'science', 'bright'
 with plt.style.context(["science", "bright"]):
     fig, ax = plt.subplots()
@@ -343,7 +355,7 @@ for index in range(1, 23 + 1):
     figure_name = f"fig_dr_{index}.jpg"
     with plt.style.context(["science", "no-latex", style_name]):
         fig, ax = plt.subplots()
-        for p in p_list[: index]:
+        for p in p_list[:index]:
             ax.plot(x, model(x, p))
         ax.autoscale(tight=True)
         ax.set(**pparam)

@@ -7,6 +7,10 @@ Bugfixes
 
 v2.2.1 (21-Feb-2026)
 ====================
+New features
+------------
+- Add `okabe-ito` color style
+
 Maintenance
 -----------
 - Mitigate packaging issue where styles are not included in local bdist when `.git` folder is not present.

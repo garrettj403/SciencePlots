@@ -1,0 +1,9 @@
+# Okabe-Ito color scheme
+# color-blind safe
+# from Okabe and Ito's color universal design palette
+# Source: Okabe, M. & Ito, K. — "Color Universal Design (CUD)"
+# Reference: https://jfly.uni-koeln.de/color/
+# Note: Bang Wong popularized this palette in his 2011 Nature Methods column https://doi.org/10.1038/nmeth.1618
+
+# Set color cycle
+axes.prop_cycle : cycler('color', ['E69F00', '56B4E9', '009E73', 'F0E442', '0072B2', 'D55E00', 'CC79A7', '000000'])
