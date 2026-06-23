@@ -3,7 +3,7 @@
 # %%
 import numpy as np
 import matplotlib.pyplot as plt
-import scienceplots  # noqa: F401
+import scienceplots
 
 import os
 
@@ -28,7 +28,7 @@ x = np.linspace(0.75, 1.25, 201)
 # %%
 # Style 'science'
 
-with plt.style.context(["science"]):
+with plt.style.context(scienceplots.styles("science")):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -40,7 +40,7 @@ with plt.style.context(["science"]):
 
 # %%
 # Styles 'science', 'no-latex'
-with plt.style.context(["science", "no-latex"]):
+with plt.style.context(scienceplots.styles(["science", "no-latex"])):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -52,7 +52,7 @@ with plt.style.context(["science", "no-latex"]):
 
 # %%
 # Styles 'science', 'ieee'
-with plt.style.context(["science", "ieee"]):
+with plt.style.context(scienceplots.styles(["science", "ieee"])):
     fig, ax = plt.subplots()
     for p in [10, 20, 40, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -65,7 +65,7 @@ with plt.style.context(["science", "ieee"]):
 
 # %%
 # Styles 'science', 'ieee', 'std-colors'
-with plt.style.context(["science", "ieee", "std-colors"]):
+with plt.style.context(scienceplots.styles(["science", "ieee", "std-colors"])):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -77,7 +77,7 @@ with plt.style.context(["science", "ieee", "std-colors"]):
 
 # %%
 # Styles 'science', 'nature'
-with plt.style.context(["science", "nature"]):
+with plt.style.context(scienceplots.styles(["science", "nature"])):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -89,7 +89,7 @@ with plt.style.context(["science", "nature"]):
 
 # %%
 # Styles 'science', 'scatter'
-with plt.style.context(["science", "scatter"]):
+with plt.style.context(scienceplots.styles(["science", "scatter"])):
     fig, ax = plt.subplots(figsize=(4, 4))
     ax.plot([-2, 2], [-2, 2], "k--")
     ax.fill_between(
@@ -112,7 +112,7 @@ with plt.style.context(["science", "scatter"]):
 
 # %%
 # Styles 'science', 'high-vis'
-with plt.style.context(["science", "high-vis"]):
+with plt.style.context(scienceplots.styles(["science", "high-vis"])):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -124,7 +124,8 @@ with plt.style.context(["science", "high-vis"]):
 
 # %%
 # Styles 'dark_background', 'science', 'high-vis'
-with plt.style.context(["dark_background", "science", "high-vis"]):
+with plt.style.context(["dark_background",
+                        *scienceplots.styles(["science", "high-vis"])]):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -136,7 +137,7 @@ with plt.style.context(["dark_background", "science", "high-vis"]):
 
 # %%
 # Styles 'science', 'notebook'
-with plt.style.context(["science", "notebook"]):
+with plt.style.context(scienceplots.styles(["science", "notebook"])):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -151,7 +152,7 @@ with plt.style.context(["science", "notebook"]):
 
 # %%
 # Styles 'science', 'bright'
-with plt.style.context(["science", "bright"]):
+with plt.style.context(scienceplots.styles(["science", "bright"])):
     fig, ax = plt.subplots()
     for p in [5, 10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -163,7 +164,7 @@ with plt.style.context(["science", "bright"]):
 
 # %%
 # Styles 'science', 'vibrant'
-with plt.style.context(["science", "vibrant"]):
+with plt.style.context(scienceplots.styles(["science", "vibrant"])):
     fig, ax = plt.subplots()
     for p in [5, 10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -175,7 +176,7 @@ with plt.style.context(["science", "vibrant"]):
 
 # %%
 # Styles 'science', 'muted'
-with plt.style.context(["science", "muted"]):
+with plt.style.context(scienceplots.styles(["science", "muted"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100, 500]:
         ax.plot(x, model(x, p), label=p)
@@ -187,7 +188,7 @@ with plt.style.context(["science", "muted"]):
 
 # %%
 # Styles 'science', 'retro'
-with plt.style.context(["science", "retro"]):
+with plt.style.context(scienceplots.styles(["science", "retro"])):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -199,7 +200,7 @@ with plt.style.context(["science", "retro"]):
 
 # %%
 # Styles 'science', 'grid'
-with plt.style.context(["science", "grid"]):
+with plt.style.context(scienceplots.styles(["science", "grid"])):
     fig, ax = plt.subplots()
     for p in [10, 15, 20, 30, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -211,7 +212,7 @@ with plt.style.context(["science", "grid"]):
 
 # %%
 # Styles 'science', 'high-contrast'
-with plt.style.context(["science", "high-contrast"]):
+with plt.style.context(scienceplots.styles(["science", "high-contrast"])):
     fig, ax = plt.subplots()
     for p in [10, 20, 50]:
         ax.plot(x, model(x, p), label=p)
@@ -223,7 +224,7 @@ with plt.style.context(["science", "high-contrast"]):
 
 # %%
 # Styles 'science', 'light'
-with plt.style.context(["science", "light"]):
+with plt.style.context(scienceplots.styles(["science", "light"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -240,7 +241,7 @@ with plt.style.context(["science", "light"]):
 
 # %%
 # Styles 'science', 'no-latex', 'cjk-*-font'
-with plt.style.context(["science", "no-latex", "cjk-tc-font"]):
+with plt.style.context(scienceplots.styles(["science", "no-latex", "cjk-tc-font"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -251,7 +252,7 @@ with plt.style.context(["science", "no-latex", "cjk-tc-font"]):
     fig.savefig("figures/fig14a.jpg", dpi=300)
     plt.close()
 
-with plt.style.context(["science", "no-latex", "cjk-sc-font"]):
+with plt.style.context(scienceplots.styles(["science", "no-latex", "cjk-sc-font"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -262,7 +263,7 @@ with plt.style.context(["science", "no-latex", "cjk-sc-font"]):
     fig.savefig("figures/fig14b.jpg", dpi=300)
     plt.close()
 
-with plt.style.context(["science", "no-latex", "cjk-jp-font"]):
+with plt.style.context(scienceplots.styles(["science", "no-latex", "cjk-jp-font"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -273,7 +274,7 @@ with plt.style.context(["science", "no-latex", "cjk-jp-font"]):
     fig.savefig("figures/fig14c.jpg", dpi=300)
     plt.close()
 
-with plt.style.context(["science", "no-latex", "cjk-kr-font"]):
+with plt.style.context(scienceplots.styles(["science", "no-latex", "cjk-kr-font"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -297,7 +298,7 @@ with plt.style.context(["science", "no-latex", "cjk-kr-font"]):
 #         ]
 # })
 
-# with plt.style.context(['science', 'cjk-tc-font']):
+# with plt.style.context(scienceplots.styles(['science', 'cjk-tc-font'])):
 #     fig, ax = plt.subplots()
 #     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
 #         ax.plot(x, model(x, p), label=p)
@@ -310,7 +311,7 @@ with plt.style.context(["science", "no-latex", "cjk-kr-font"]):
 
 # %%
 # Styles 'science', 'russian-font'
-with plt.style.context(["science", "russian-font"]):
+with plt.style.context(scienceplots.styles(["science", "russian-font"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -323,7 +324,7 @@ with plt.style.context(["science", "russian-font"]):
 
 # %%
 # Styles 'science', 'turkish-font'
-with plt.style.context(["science", "turkish-font"]):
+with plt.style.context(scienceplots.styles(["science", "turkish-font"])):
     fig, ax = plt.subplots()
     for p in [5, 7, 10, 15, 20, 30, 38, 50, 100]:
         ax.plot(x, model(x, p), label=p)
@@ -341,7 +342,7 @@ p_list = np.logspace(0, 2, 23)
 for index in range(1, 23 + 1):
     style_name = f"discrete-rainbow-{index}"
     figure_name = f"fig_dr_{index}.jpg"
-    with plt.style.context(["science", "no-latex", style_name]):
+    with plt.style.context(scienceplots.styles(["science", "no-latex", style_name])):
         fig, ax = plt.subplots()
         for p in p_list[: index]:
             ax.plot(x, model(x, p))

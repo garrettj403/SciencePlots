@@ -33,6 +33,9 @@ Science Plots
 > **Warning**
 > : As of version 2.0.0, you need to add `import scienceplots` before setting the style (`plt.style.use('science')`).
 
+> **Warning**
+> : As of version 3.0.0, SciencePlots styles are not loaded automatically. You must use it as `plt.style.use(scienceplots.styles('science'))`
+
 *Matplotlib styles for scientific figures*
 
 This repo has Matplotlib styles to format your figures for scientific papers, presentations and theses.
@@ -81,13 +84,13 @@ Using the Styles
 import matplotlib.pyplot as plt
 import scienceplots
 
-plt.style.use('science')
+plt.style.use(scienceplots.styles('science'))
 ```
 
 You can also combine multiple styles together by:
 
 ```python
-plt.style.use(['science','ieee'])
+plt.style.use(scienceplots.styles(['science','ieee']))
 ```
 
 In this case, the ``ieee`` style will override some of the parameters from the ``science`` style in order to configure the plot for IEEE papers (column width, fontsizes, etc.).
@@ -95,7 +98,7 @@ In this case, the ``ieee`` style will override some of the parameters from the `
 To use any of the styles temporarily, you can use:
 
 ```python
-with plt.style.context('science'):
+with plt.style.context(scienceplots.styles('science')):
     plt.figure()
     plt.plot(x, y)
     plt.show()

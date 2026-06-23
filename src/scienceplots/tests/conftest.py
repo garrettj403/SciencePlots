@@ -3,15 +3,16 @@ Configuration of SciencePlots tests
 """
 
 import pytest
-import scienceplots
 import numpy as np
 
 import importlib.metadata
 import os
 from packaging.version import Version
 from pathlib import Path
+import importlib.resources
 
-SCIENCEPLOTS_STYLES_PATH = Path(scienceplots.__path__[0], "styles")
+with importlib.resources.path("scienceplots", "styles") as path:
+    SCIENCEPLOTS_STYLES_PATH = path.resolve()
 
 
 matplotlib_version = Version(importlib.metadata.version("matplotlib"))
@@ -26,10 +27,10 @@ matplotlib_eq_3_11_or_3_12 = not matplotlib_ge_3_13 and not matplotlib_le_3_10
 def get_styles_in_dir(folder):
     """
     Input: directory path
-    Output: set of matplotlib styles filenames (without trailing '.mplstyle')
+    Output: set of matplotlib styles paths.
     """
     styles_paths = Path(folder).glob("*.mplstyle")
-    return set(fn.stem for fn in styles_paths)
+    return set(fn for fn in styles_paths)
 
 
 @pytest.fixture(scope="session")
